@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "Kaique de Queiroz - Site Launched"
 date: 2018-01-08
 ---
