@@ -39,7 +39,7 @@ header h2{
 
 header h2 a{color: black;text-decoration: none;}
 
-.headerimage {display: block;position: relative;width: 100%;}
+.headerimage {display: block; position: relative; width: 100%;}
 
 .headerbox {
     text-align: center;
