@@ -1,3 +1,5 @@
 name: Kaique de Queiroz
+author: Kaique de Queiroz
+email: kaique_q@live.com
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
