@@ -1,4 +1,5 @@
 body {
+    background-color: #000;
     margin: 60px auto;
     width: 70%;
 }
@@ -27,9 +28,20 @@ h4 { font-size: 1.9em; }
 
 p, ul { font-size: 1.5em; line-height: 1.4em; color: #333; }
 
-footer {
+/* Footer */
+footer{
     border-top: 1px solid #d5d5d5;
+    text-align: center;
     font-size: .8em;
+    color: white;
+    padding: 20px;
+    background: #000;
+}
+footer a{
+    color: white;
+}
+footer div{
+    margin: 10px;
 }
 
 /* Blog */
