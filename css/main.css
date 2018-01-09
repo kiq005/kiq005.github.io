@@ -34,6 +34,7 @@ a {
 
 a:hover {
   color: #e0fef9;
+  font-weight: bold;
 }
 
 a.active {
@@ -44,7 +45,6 @@ a.active {
 ::-moz-focus-inner {
   border: 0 !important;
 }
-
 
 /* Navigation */
 .topbar {
@@ -223,6 +223,12 @@ a.active {
 
 .tabcontent {
   width: 100%;
+}
+
+/* Special */
+.socialMedia img{
+  width: 16px;
+  height: 16px;
 }
 
 /* MEDIA */
