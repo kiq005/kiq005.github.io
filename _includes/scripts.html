@@ -77,6 +77,18 @@ var TxtType = function(el, toRotate, period) {
 
     window.onload = function() {
         displayRandomImage();
+        filterSelection("all");
+        document.getElementById("defaultOpen").click();
+
+        // Add active class to the current control button (highlight it)
+        var btns = document.getElementsByClassName("filter-btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
         
         var elements = document.getElementsByClassName('typewrite');
         for (var i=0; i<elements.length; i++) {
@@ -92,4 +104,41 @@ var TxtType = function(el, toRotate, period) {
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff; animation: blink .75s infinite;} @keyframes blink{ to{border-right: 0.08em solid #fff0;}}";
         document.body.appendChild(css);
     };
+</script>
+
+<!-- Games Table -->
+<script type="text/javascript">
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Display elements
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+    if (x[i].className.indexOf(c) > -1) x[i].style.display = "block";
+  }
+}
+
+
+
+function openGame(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the link that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
 </script>
