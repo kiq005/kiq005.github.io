@@ -13,8 +13,11 @@ html,body,h1,h2,h3,h4,h5,h6 {
 html{box-sizing:border-box;}*,*:before,*:after{box-sizing:inherit}
 
 body{
-  margin:0;
+  background-image: url("/assets/img/Cabeca-01.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
   background-color: #000;
+  margin:0;
   color: #eaece5;
 }
 h1,h2,h3,h4,h5,h6 {
@@ -47,7 +50,6 @@ a.active {
 .topbar {
   color:#eaece5;
   background-color:#2E2E28;
-  font-size:18px;
   position:fixed;
   width:100%;
   z-index:1;
@@ -59,7 +61,7 @@ a.active {
   z-index: 3;
   height:100%;
   width: 341px;
-  top: 47px;
+  top: 45px;
   bottom: 0;
   height: inherit;
   position:fixed;
@@ -154,6 +156,9 @@ a.active {
   padding: 1em 1em 1em 1em;
   margin: 1em 1em 1em 1em;
   border-radius: 1em;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Overlay */
@@ -173,7 +178,7 @@ a.active {
   color: #eaece5;
   border-radius: 1em;
   padding: 6px;
-  margin: 6px;
+  margin: 6px 0px;
 }
 
 .filter-btn:hover {
