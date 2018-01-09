@@ -1,9 +1,43 @@
+<!-- Hidding Menu -->
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function k_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function k_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
+<!-- Random Image -->
+<script>
+function displayRandomImage(){
+    var num = Math.floor(Math.random() * 3);
+    document.profile_image.src = '/assets/profile/kiq' + num + '.jpg';
+}
+</script>
+    
 <!-- Máquina de Escrever -->
 <script>
 var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
-        this.loopNum = 0;
+        this.loopNum = Math.floor(Math.random()*toRotate.length);
         this.period = parseInt(period, 10) || 2000;
         this.txt = '';
         this.tick();
@@ -20,7 +54,7 @@ var TxtType = function(el, toRotate, period) {
         this.txt = fullTxt.substring(0, this.txt.length + 1);
         }
 
-	    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+	    this.el.innerHTML = '<span class="wrap"><a href="/cv" style="text-decoration: none;">'+this.txt+'</a></span>';
 
         var that = this;
         var delta = 175 - Math.random() * 75;
@@ -42,6 +76,8 @@ var TxtType = function(el, toRotate, period) {
     };
 
     window.onload = function() {
+        displayRandomImage();
+        
         var elements = document.getElementsByClassName('typewrite');
         for (var i=0; i<elements.length; i++) {
             var toRotate = elements[i].getAttribute('data-type');
