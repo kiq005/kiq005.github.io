@@ -23,18 +23,21 @@ css: proj.css
   <div id="{{ proj.short }}" class="tabcontent">
     <h2>{{ proj.title }}</h2>
     <div class="slide">
-        <img class="slide_img" src="{{ proj.img1 }}">
-        <img class="slide_img" src="{{ proj.img2 }}">
-        <img class="slide_img" src="{{ proj.img3 }}">
+        <img class="slide_img" src="{{ proj.img1 }}" alt="{{ proj.title }}">
+        <img class="slide_img" src="{{ proj.img2 }}" alt="{{ proj.title }}">
+        <img class="slide_img" src="{{ proj.img3 }}" alt="{{ proj.title }}">
       <div class="slide_sel">
-        <img class="slide_btn low-opacity" onclick="currentDiv(1)" src="{{ proj.img1 }}">
-        <img class="slide_btn low-opacity" onclick="currentDiv(2)" src="{{ proj.img2 }}">
-        <img class="slide_btn low-opacity" onclick="currentDiv(3)" src="{{ proj.img3 }}">
+        <img class="slide_btn low-opacity" onclick="currentDiv(1)" src="{{ proj.img1 }}" alt="{{ proj.title }}">
+        <img class="slide_btn low-opacity" onclick="currentDiv(2)" src="{{ proj.img2 }}" alt="{{ proj.title }}">
+        <img class="slide_btn low-opacity" onclick="currentDiv(3)" src="{{ proj.img3 }}" alt="{{ proj.title }}">
       </div>
     </div>
     {{ proj.content }}
     {% if proj.youtube %}
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ proj.youtube }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/{{ proj.youtube }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+      <div class="youtube" data-embed="{{ proj.youtube }}">
+        <div class="play-button"></div>
+      </div>
     {% endif %}
   </div>
 {% endfor %}
@@ -105,6 +108,30 @@ function showDivs(n) {
   dots[slideIndex-1].className += " normal-opacity";
 }
 
+/* Youtube */
+var youtube = document.querySelectorAll( ".youtube" );
+for (var i = 0; i < youtube.length; i++) {
+  // Thumbnail image source
+  var source = "https://img.youtube.com/vi/"+ youtube[i].dataset.embed +"/sddefault.jpg";
+  var image = new Image();
+        image.src = source;
+        image.addEventListener( "load", function() {
+            youtube[ i ].appendChild( image );
+        }( i ) );
+  youtube[i].addEventListener( "click", function() {
+ 
+        var iframe = document.createElement( "iframe" );
+ 
+            iframe.setAttribute( "frameborder", "0" );
+            iframe.setAttribute( "allowfullscreen", "" );
+            iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1" );
+ 
+            this.innerHTML = "";
+            this.appendChild( iframe );
+    } );
+}
+
+/* Chamadas */
 showDivs(slideIndex);
 filterSelection("all");
 document.getElementById("defaultOpen").click();
