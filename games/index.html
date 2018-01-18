@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Projects
+css: proj.css
 ---
 <div class="about">
 	<h2>Projects</h2>
@@ -12,273 +13,31 @@ title: Projects
     <button class="filter-btn" onclick="filterSelection('personal')">Personal</button>
 	</div>
 	<div class="games-tab">
-	  <div class="filterDiv machine"><button class="tablinks" onclick="openGame(event, 'ub', 0)" id="defaultOpen">Urban Legends</button></div>
-	  <div class="filterDiv machine"><button class="tablinks" onclick="openGame(event, 'cr', 1)">Chameleon Runner</button></div>
-	  <div class="filterDiv jams"><button class="tablinks" onclick="openGame(event, 'ce', 2)">Cute Evil</button></div>
-	  <div class="filterDiv jams"><button class="tablinks" onclick="openGame(event, 'lk', 3)">Lunar Killer</button></div>
-	  <div class="filterDiv jams"><button class="tablinks" onclick="openGame(event, 'oe', 4)">Other Eyes</button></div>
-    <div class="filterDiv personal"><button class="tablinks" onclick="openGame(event, 'bh', 5)">Back to Home</button></div>
-    <div class="filterDiv personal"><button class="tablinks" onclick="openGame(event, 'ma', 6)">MAP</button></div>
-    <div class="filterDiv personal"><button class="tablinks" onclick="openGame(event, 'gh', 7)">GitHub Projects</button></div>
+    {% for proj in site.projects %}
+      <div class="filterDiv {{ proj.category }}"><button class="tablinks" onclick="openGame(event, '{{ proj.short }}', {{ forloop.index0 }})" {% if forloop.index0 == 0 %} id="defaultOpen" {% endif %} >{{ proj.title }}</button></div>
+    {% endfor %}
 	</div>
 </div>
 
-<div id="ub" class="tabcontent">
-  <h2>Urban Legends</h2>
-  <p class="slide">
-    <img class="slide_img" src="/assets/img/wallpaper-urban-legends-jeff-escuro.jpg">
-    <img class="slide_img" src="/assets/games/ub/ub5.jpg">
-    <img class="slide_img" src="/assets/games/ub/ub1.jpg">
-    <div class="slide_sel">
-      <img class="slide_btn low-opacity" onclick="currentDiv(1)" src="/assets/img/wallpaper-urban-legends-jeff-escuro.jpg">
-      <img class="slide_btn low-opacity" onclick="currentDiv(2)" src="/assets/games/ub/ub5.jpg">
-      <img class="slide_btn low-opacity" onclick="currentDiv(3)" src="/assets/games/ub/ub1.jpg">
+{% for proj in site.projects %}
+  <div id="{{ proj.short }}" class="tabcontent">
+    <h2>{{ proj.title }}</h2>
+    <div class="slide">
+        <img class="slide_img" src="{{ proj.img1 }}">
+        <img class="slide_img" src="{{ proj.img2 }}">
+        <img class="slide_img" src="{{ proj.img3 }}">
+      <div class="slide_sel">
+        <img class="slide_btn low-opacity" onclick="currentDiv(1)" src="{{ proj.img1 }}">
+        <img class="slide_btn low-opacity" onclick="currentDiv(2)" src="{{ proj.img2 }}">
+        <img class="slide_btn low-opacity" onclick="currentDiv(3)" src="{{ proj.img3 }}">
+      </div>
     </div>
-  </p>
-
-  <p>I worked on <a href="http://machinebear.com.br/urban-legends.html" target="_blank">Urban Legends</a> as game and level designer and programmer, at <a href="http://machinebear.com" target="_blank">Machine Bear</a>. </p>
-
-  <h4> The Game </h4>
-  <p> You play as P.J., a journalist, trapped in an abandoned hospital, looking for answers to the events of his past. To do so, he have to face <a href="https://en.wikipedia.org/wiki/Creepypasta#Jeff_the_Killer" target="_blank">Jeff, the Killer</a>. Hide in armchairs, bellow beds, run in the hospital, understand the methods of Jeff, plan aread, and get ready to face endless misteries.</p>
-
-  <h4>Reception</h4>
-  <p>The game was well recepted, it was in the <a href="http://steamcommunity.com/sharedfiles/filedetails/?id=252009436" target="_blank">Steam Greenlight</a> and get <a href="http://steamcommunity.com/sharedfiles/filedetails/updates/252009436/1400113588" target="_blank">accepted in 19 days</a>. The game received support, and were able to be translated to English, French, German, Norwegian, Portuguese(Brazil), Romanian and Spanish.</p>
-
-  <h4>Development</h4>
-  The greatest chalange developing this game, was to create a complex and permissive scenario, and to create an artificial intelligence that was capable to explore the minimum spaces of the scenario. The game was made originally with <a href="https://docs.unrealengine.com/udk/Three/WebHome.html" target="_blank">UDK 3</a>, and then updated to <a href="https://www.unrealengine.com/en-US/what-is-unreal-engine-4" target="_blank">UE4</a>. Unfortunally, the UE4 version have not been launched.</p>
-
-  <p><iframe width="560" height="315" src="http://www.indiedb.com/media/iframe/1177853" frameborder="0" allowfullscreen></iframe><br><a href="http://www.indiedb.com/games/urban-legends" target="_blank">Urban Legends Trailer - Indie DB</a></p>
-
-  <h4>External</h4>
-  As the company closed, the game is no more available, but you can find information about the game in the following links:
-  <ul>
-    <li>- IndieDB: <a target="_blank" href="http://www.indiedb.com/games/urban-legends">http://www.indiedb.com/games/urban-legends</a></li>
-    <li>- Steam Greenlight: <a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=252009436">http://steamcommunity.com/sharedfiles/filedetails/?id=252009436</a></li>
-    <li>- Baixaki: <a target="_blank" href="http://www.baixaki.com.br/download/urban-legends-steam.htm">http://www.baixaki.com.br/download/urban-legends-steam.htm</a></li>
-    <li>- Sopradores de Cartucho: <a target="_blank" href="https://sopradoresdecartucho.wordpress.com/2014/04/30/urban-legends/">https://sopradoresdecartucho.wordpress.com/2014/04/30/urban-legends/</a></li>
-    <li>- Nerd Maldito: <a target="_blank" href="http://www.nerdmaldito.com/2015/02/urban-legends-jogo-brasileiro-de-jeff.html">http://www.nerdmaldito.com/2015/02/urban-legends-jogo-brasileiro-de-jeff.html</a></li>
-    <li>- Game Reporter: <a target="_blank" href="http://gamereporter.uol.com.br/urban-legends/">http://gamereporter.uol.com.br/urban-legends/</a></li>
-  </ul>
-  If you have more links, send me it and I update the list :)
-</div>
-
-<div id="cr" class="tabcontent">
-  <h2>Chameleon Runner</h2>
-  <p class="slide">
-    <img class="slide_img" src="/assets/games/cr/chameleon_1.png">
-    <img class="slide_img" src="/assets/games/cr/chameleon_2.png">
-    <img class="slide_img" src="/assets/games/cr/chameleon_3.jpg">
-    <div class="slide_sel">
-      <img class="slide_btn low-opacity" onclick="currentDiv(1)" src="/assets/games/cr/chameleon_1.png">
-      <img class="slide_btn low-opacity" onclick="currentDiv(2)" src="/assets/games/cr/chameleon_2.png">
-      <img class="slide_btn low-opacity" onclick="currentDiv(3)" src="/assets/games/cr/chameleon_3.jpg">
-    </div>
-  </p>
-
-  <p>I worked on <a href="https://play.google.com/store/apps/details?id=com.yourname.camaleaorunner" target="_blank">Chameleon Runner</a> as programmer, at <a href="http://machinebear.com" target="_blank">Machine Bear</a>. </p>
-
-  <h4>The Game</h4>
-  <p>Chameleon Runner is a mobile game, <a href="https://play.google.com/store/apps/details?id=com.yourname.camaleaorunner">available to Android</a>. You play as Leon, the Chameleon, trying to scape from a lab.</p>
-
-  <h4>Development</h4>
-  <p>The game was made with <a href="http://www.stencyl.com/">Stencyl</a>, my job was to develop the procedural map generation.</p>
-  <iframe width="560" height="315" src="http://www.moddb.com/media/iframe/1305626" frameborder="0" allowfullscreen></iframe><br><a href="http://www.moddb.com/games/chameleon-runner">Chameleon Runner Promotional Video - Mod DB</a>
-  <h4>External</h4>
-  <p>
-    You can read more about the game in ModDB:</br>
-    <a href="http://www.moddb.com/games/chameleon-runner" target="_blank">http://www.moddb.com/games/chameleon-runner</a>
-  </p>
-</div>
-
-<div id="ce" class="tabcontent">
-  <h2>Cute Evil</h2>
-  <p class="slide">
-    <img class="slide_img" src="/assets/games/jam/cute1.png">
-    <img class="slide_img" src="/assets/games/jam/cute2.png">
-    <img class="slide_img" src="/assets/games/jam/cute3.png">
-    <div class="slide_sel">
-      <img class="slide_btn low-opacity" onclick="currentDiv(1)" src="/assets/games/jam/cute1.png">
-      <img class="slide_btn low-opacity" onclick="currentDiv(2)" src="/assets/games/jam/cute2.png">
-      <img class="slide_btn low-opacity" onclick="currentDiv(3)" src="/assets/games/jam/cute3.png">
-    </div>
-  </p>
-  <p>I was with the <a href="https://globalgamejam.org/2016/jam-sites/machine-bear-jam" target="_blank">Machine Bear’s team and friends</a> developing <a href="https://globalgamejam.org/2016/games/cute-evil" target="_blank">Cute Evil</a> at <a href="https://globalgamejam.org/news/ggj-2016-one-month-away" target="_blank">Global Game Jam</a>.</p>
-
-  <h4>The Game</h4>
-  <p>It was difficult to think about some thing with <a href="https://globalgamejam.org/news/and-ggj16-theme" target="_blank">theme “Ritual”</a>, but we think about day-by-day routine, indigena costumes, religious rituals, magician’s rituals, and so on. After a great process of brain storming, we decided to do a hardcore game, with a simple history. You play as a girl that suffer some bully and decide to revenge this, by doing a ritual to cast an demon to help her. From this point is just blood and destruction in front of you!</p>
-
-  <h4>Global Game Jam - 2016</h4>
-  <p>The Jam had the theme 'Ritual', and we get the <a href="https://globalgamejam.org/news/ggj16-diversifiers-are" target="_blank">diversifier</a> 'To infinity and beyond!'(and zero on the 'Gandhi’s Game'). We worked on the game within the company building(Machine Bear), we were able to see the work of other professionals and enthusiasts of game development, there was 14 people working on the game, in the 48 hours of development, we could create a complex game, with good game play.</p>
-
-
-  <h4>Development</h4>
-  <p>The game was made with <a href="https://www.unrealengine.com" target="_blank">UE4</a>. As programmer, the greatest chalange to the game was to develop the procedural map generator, and the AI to work in the map. Everything was realy simple becasuse of the time, but we could get a realy satifatory result, due the great coordenation that we was able to create within the group.</p>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/o0F-U-y1b3M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-  <h4>External</h4>
-  <p>Read about and download the game in the GGJ site:</br>
-    <a href="https://globalgamejam.org/2016/games/cute-evil" target="_blank">https://globalgamejam.org/2016/games/cute-evil</a></br>
-    Also, check the souds made by Teo Oliver for the game:</br>
-    <a href="https://soundcloud.com/teo-oliver/sets/cute-evil-global-game-jam" target="_blank">https://soundcloud.com/teo-oliver/sets/cute-evil-global-game-jam</a></br></br>
-    If you have interesting links to the game, tell me and I can update the page :)
-  </p>
-</div>
-
-<div id="lk" class="tabcontent">
-  <h2>Lunar Killer</h2>
-  <p class="slide">
-    <img class="slide_img" src="/assets/games/jam/StartMenu.jpg">
-    <img class="slide_img" src="/assets/games/jam/tumblr_o1xgqjP2qq1tbhz3oo3_500.png">
-    <img class="slide_img" src="/assets/games/jam/tumblr_o1xgqjP2qq1tbhz3oo4_500.png">
-    <div class="slide_sel">
-      <img class="slide_btn low-opacity" onclick="currentDiv(1)" src="/assets/games/jam/StartMenu.jpg">
-      <img class="slide_btn low-opacity" onclick="currentDiv(2)" src="/assets/games/jam/tumblr_o1xgqjP2qq1tbhz3oo3_500.png">
-      <img class="slide_btn low-opacity" onclick="currentDiv(3)" src="/assets/games/jam/tumblr_o1xgqjP2qq1tbhz3oo4_500.png">
-    </div>
-  </p>
-  <p>I was with the TechSchool Team (I must thanks a lot TechSchool to get this team of champions together), that is composed by game development and 3D modeling students from TechSchool.</p>
-
-  <h4>The Game</h4>
-  <p>The Jam’s theme was “Life in Space”. We decided to develop a game about a alien that arise in moon and was trying to destroy the Earth! And you must be the hero, in the more insane way, and kill the monster!</p>
-
-  <h4>libGDX Jam - 2016</h4>
-  <p>The <a href="https://itch.io/jam/libgdxjam" target="_blank">libGDX Jam</a> was a completely different experience. We had one month to develop an entire game from scratch, using <a href="https://libgdx.badlogicgames.com/" target="_blank">libGDX</a>, a framework to develop games in Java.</p>
-
-  <h4>Development</h4>
-  <p>Is not easy to develop a game with Game Engines, but develop a game without a Game Engine is harder. <a href="https://itch.io/jam/libgdxjam/rate/49383" target="_blank">The game</a> was developed using only java and libGDX. I think that developing a game without game engines is something that all game developers should do at least once. The game ended up with some bugs, due the difficulties of developing a 3D game, with a very limited time, but the experience was awesome!</p>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/HcHE9Ra_POw?start=355" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  <br>(Check the entire video to see other games)
-
-  <h4>External</h4>
-  <p>
-    Devblog:<br>
-    <a href="http://lunarkiller.blogspot.com.br/" target="_blank">http://lunarkiller.blogspot.com.br/</a><br>
-    Download the game:<br>
-    <a href="https://lunarkiller.itch.io/lunar-killer" target="_blank">https://lunarkiller.itch.io/lunar-killer</a><br>
-    Source code:<br>
-    <a href="https://github.com/TechSchool-Team/LunarKiller" target="_blank">https://github.com/TechSchool-Team/LunarKiller</a><br><br>
-    If you have interesting links to the game, tell me and I can update the page :)
-  </p>
-</div>
-
-<div id="oe" class="tabcontent">
-  <h2>Other Eyes</h2>
-  <p class="slide">
-    <img class="slide_img" src="/assets/games/jam/OtherEyesMedio.jpg">
-    <img class="slide_img" src="/assets/games/jam/OtherEyes2.png">
-    <img class="slide_img" src="/assets/games/jam/OtherEyes3.png">
-    <div class="slide_sel">
-      <img class="slide_btn low-opacity" onclick="currentDiv(1)" src="/assets/games/jam/OtherEyesMedio.jpg">
-      <img class="slide_btn low-opacity" onclick="currentDiv(2)" src="/assets/games/jam/OtherEyes2.png">
-      <img class="slide_btn low-opacity" onclick="currentDiv(3)" src="/assets/games/jam/OtherEyes3.png">
-    </div>
-  </p>
-  <p>I was with Machine Bear’s Team and some friends developing the Other Eyes.</p>
-
-  <h4><a href="http://www.spjam.com.br/hackathon/othereyes" target="_blank">The Game</a></h4>
-  <p>
-    The Jam’s Theme was “Viagem”(Voyage, travel, trip, …). We decided to develop a game that covers various types of “trips”, that is: Go from point A to B, interdimensional travel, the vacation trip… Other Eyes is about a girl that lost her dog and must go in a interdimensional travel to find the pet! Travelling between a paradisiac world and a crystal made world, you must solve some puzzles to keep going.
-  </p>
-
-  <h4><a href="http://www.spjam.com.br/events/spjam2015" target="_blank">SPJam - 2015</a></h4>
-  <p>
-    It was my first Game Jam. The time was very short, so we can’t work much in the game, but the experience teach us a lot about game development, expecially because we were able to see the work and talk with other developers within the event.
-  </p>
-
-  <h4>Development</h4>
-  <p>
-    We develop the game with Unreal Engine 4, the low poly visual makes the game be very clean and beautiful! As programmer and level Designer, the main chalange was to create the 'two worlds' system, and the interaction between the two.
-  </p>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/BCJjI8Dgz9M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-  <h4>External</h4>
-  <p>
-    Here you can know more about the game, and download it:<br>
-    <a href="http://www.spjam.com.br/hackathon/othereyes" target="_blank">http://www.spjam.com.br/hackathon/othereyes</a><br>
-    Also, check the souds made by Teo Oliver for the game:<br>
-    <a href="https://soundcloud.com/teo-oliver/sets/other-eyes" target="_blank"> https://soundcloud.com/teo-oliver/sets/other-eyes</a><br><br>
-    If you have interesting links to the game, tell me and I can update the page :)
-  </p>
-</div>
-
-<div id="bh" class="tabcontent">
-  <h2>Back to Home</h2>
-  <p class="slide">
-    <img class="slide_img" src="/assets/games/bh/backtohome000.png">
-    <img class="slide_img" src="/assets/games/bh/backtohome001.png">
-    <img class="slide_img" src="/assets/games/bh/backtohome003.png">
-    <div class="slide_sel">
-      <img class="slide_btn low-opacity" onclick="currentDiv(1)" src="/assets/games/bh/backtohome000.png">
-      <img class="slide_btn low-opacity" onclick="currentDiv(2)" src="/assets/games/bh/backtohome001.png">
-      <img class="slide_btn low-opacity" onclick="currentDiv(3)" src="/assets/games/bh/backtohome003.png">
-    </div>
-    (The images are from <a href="https://marvoxbrasil.wordpress.com/2016/09/10/marvoxbrasil-na-bgs-2016/">Marvox Brasil</a>)
-  </p>
-  <p></p>
-
-  <h4>The Game</h4>
-  <p>
-    When I still on Machine Bear, I give the idea to we develop a game with some social impact in mind, there was were <b>Back to Home</b> started. The game is about a blind girl, that lost her guide dog, and she have to discover the world around her, while she searchs for her dog. As the game happens in a "children mind", elements of fantasy merges with the reality, and the game ambientation is defined by the beliefs of the girl.
-  </p>
-
-  <h4>Development</h4>
-  <p>
-    The game was developed with UE4, using only <a href="https://docs.unrealengine.com/latest/INT/Engine/Blueprints/" target="_blank">blue prints</a>. The main chalange as Programmer and Game Designer was to develp a system to allow the world generation, and keep the game running smooth, giving all that visual to the game.
-  </p>
-
-  <h4>Social</h4>
-  <p>
-    The initial idea of the game was to develop systems to allow blind people to play it, yet, making the game fun for everybody that plays the game. Also, donating some part of the revenues to organizations that helps blind people is another topic discussed when we started developing the game.
-  </p>
-
-  <h4><a href="http://www.brasilgameshow.com.br/site-novo-da-bgs-2016-no-ar/" target="_blank">BGS - 2016</a></h4>
-  <p>
-    If you were on the BGS 2016, you may remember the game on the Machine Bear stand, side-by-sude with <a href="https://brenooshiro.itch.io/aron" target="_blank">Aron: On Guardian Trials</a>, from <a href="https://www.facebook.com/FrozenDogSquad/" target="_blank">Frozen Dog Squad</a>. The games received a lot of players, and those who have given the name were able to download and play the game at home. With the tips we received and observation that we are able to peform at the event, we were able to update the game, and correct all the bugs that appeared.
-  </p>
-
-  <h4>Future</h4>
-  <p>
-    When I droped Machine Bear, at November 2016, they had given to me the rights over the game. There still the idea to keep developing the game, but just small advances have been made since them. I'm giving priority to other projects, but as I'm finishing them, the plan is to get back developing this game as soon as possible.
-  </p>
-
-  <h4>External</h4>
-  <p>
-    Marvox Brasil, talking about the BGS 2016:
-    <a href="https://marvoxbrasil.wordpress.com/2016/09/10/marvoxbrasil-na-bgs-2016/" target="_blank">https://marvoxbrasil.wordpress.com/2016/09/10/marvoxbrasil-na-bgs-2016/</a>
-    Vão jogar: Back to Home:
-    <a href="https://vaojogar.com.br/escrito/brasil-game-show-2016-back-to-home" target="_blank">https://vaojogar.com.br/escrito/brasil-game-show-2016-back-to-home</a>
-  </p>
-</div>
-
-<div id="ma" class="tabcontent">
-  <h2>MAP - Modular Assistant Program</h2>
-  <p class="slide">
-    <img class="slide_img" src="">
-    <img class="slide_img" src="">
-    <img class="slide_img" src="">
-    <div class="slide_sel">
-      <img class="slide_btn low-opacity" onclick="currentDiv(1)" src="">
-      <img class="slide_btn low-opacity" onclick="currentDiv(2)" src="">
-      <img class="slide_btn low-opacity" onclick="currentDiv(3)" src="">
-    </div>
-  </p>
-  <p>More about this project soon...</p>
-</div>
-
-<div id="gh" class="tabcontent">
-  <h2>GitHub Projects</h2>
-  <p class="slide">
-    <img class="slide_img" src="/assets/games/git/tt_1.png">
-    <img class="slide_img" src="/assets/games/git/tt_2.png">
-    <img class="slide_img" src="/assets/games/git/tt_3.png">
-    <div class="slide_sel">
-      <img class="slide_btn low-opacity" onclick="currentDiv(1)" src="/assets/games/git/tt_1.png">
-      <img class="slide_btn low-opacity" onclick="currentDiv(2)" src="/assets/games/git/tt_2.png">
-      <img class="slide_btn low-opacity" onclick="currentDiv(3)" src="/assets/games/git/tt_3.png">
-    </div>
-  </p>
-  <p>More about other projects on GitHub soon...</p>
-</div>
+    {{ proj.content }}
+    {% if proj.youtube %}
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ proj.youtube }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    {% endif %}
+  </div>
+{% endfor %}
 
 <div style="clear: left;"></div>
 
@@ -335,12 +94,14 @@ function showDivs(n) {
   if (n>x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+    //x[i].style.visibility = "visible";
+    x[i].style.opacity = 0;
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" normal-opacity", "");
   }
-  x[slideIndex-1].style.display = "block";
+  //x[slideIndex-1].style.visibility = "visible";
+  x[slideIndex-1].style.opacity = 1;
   dots[slideIndex-1].className += " normal-opacity";
 }
 

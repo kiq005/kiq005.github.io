@@ -1,9 +1,7 @@
 <!-- Top Navigation bar -->
-<div class="topbar">
+<nav class="topbar">
 	<a class="nav-item nav-button menu-btn" href="javascript:void(0)" onclick="k_open()"><i class="fa fa-bars"></i></a>
-	<a class="nav-item nav-button" href="/" >Home</a>
-	<a class="nav-item nav-button" href="/games">Projects</a>
-	<a class="nav-item nav-button" href="/about">About</a>
-	<a class="nav-item nav-button" href="/blog">Blog</a>
-	<a class="nav-item nav-button" href="/cv">CV</a>
-</div>
+	{% for item in site.data.navitems %}
+		<a class="nav-item nav-button" href={{ item.addr }} >{{ item.name }}</a>
+	{% endfor %}
+</nav>

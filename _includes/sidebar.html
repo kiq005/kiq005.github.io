@@ -1,5 +1,5 @@
 <!-- Side Navigation bar -->
-<nav class="sidebar collapse" id="mySidebar">
+<aside class="sidebar collapse" id="mySidebar">
   <a href="javascript:void(0)" onclick="k_close()" class="menu-btn" title="Close Menu">
     <b>X</b>
   </a>
@@ -11,7 +11,7 @@
   <a class="nav-item nav-button" href="#">Events</a>
   <a class="nav-item nav-button" href="#">Games Developed</a>
   <p>The site is under development, hold on :)</p>
-</nav>
+</aside>
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="overlay" onclick="k_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
@@ -44,7 +44,7 @@ function k_close() {
   /* Random Image */
 function displayRandomImage(){
     var num = Math.floor(Math.random() * 3);
-    document.profile_image.src = '/assets/profile/kiq' + num + '.jpg';
+    document.profile_image.src = '/assets/profile/kiq' + num + '_116.jpg';
 }
 
   /* Máquina de Escrever */

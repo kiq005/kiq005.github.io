@@ -1,0 +1,10 @@
+- name: Home
+  addr: "/"
+- name: Projects
+  addr: "/games"
+- name: About
+  addr: "/about"
+- name: Blog
+  addr: "/blog"
+- name: CV
+  addr: "/cv"
