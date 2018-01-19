@@ -1,15 +1,92 @@
 ---
 layout: default
 title: Kaique de Queiroz's Blog
+related:
+  - update
+  - projects
+  - games
+  - jams
 ---
 <style type="text/css">
+/* posts */
+.posts{
+  margin: 0;
+  padding: 0;
+}
 
+.posts .post{
+  list-style-type: none;
+  background-color: rgba(35,35,41,0.5);
+  padding: 0.25em 1em 0.25em 1em;
+  margin: 1em 0;
+}
+
+.post_title {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.post_date {
+  opacity: 0.60;
+}
+
+.post_footer {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin: 0em 0em 1em 0em;
+}
+
+.post_footer hr {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1.5em;
+  color: transparent;
+  background-color: rgba(192, 222, 217, 0.60);
+  flex-grow: 1;
+}
+
+.more {
+  margin-top: 1em;
+}
+
+.more a{
+  color:#eaece5;
+  background-color:#2E2E28;
+  padding: 7px 18px;
+  text-decoration: none;
+}
+
+.more a:hover{
+  color: #2E2E28;
+  background-color: #c0ded9;
+}
+
+.tagItem {
+  margin-top: 1em;
+}
+
+.tagItem a{
+  color:#eaece5;
+  background-color:#2E2E28;
+  padding: 7px 18px;
+  text-decoration: none;
+}
+
+.tagItem a:hover{
+  color: #2E2E28;
+  background-color: #c0ded9;
+}
+
+/* pagination */
 .pagination a, .pagination span {
-    color:#eaece5;
-    background-color:#2E2E28;
-    padding: 7px 18px;
-    display: inline-block;
-    text-decoration: none;
+  color:#eaece5;
+  background-color:#2E2E28;
+  padding: 7px 18px;
+  display: inline-block;
+  text-decoration: none;
   }
 
 .pagination a:hover{
@@ -31,18 +108,19 @@ title: Kaique de Queiroz's Blog
 <h2>{{ page.title }}</h2>
 <ul class="posts">
   {% for post in paginator.posts %}
-    <li>
-    	<h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
-    	<span>{{ post.date | date: '%B %d, %Y' }}</span>
+    <li class="post">
+    	<h3><b><a class="post_title" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></b></h3>
+      <h5>{% if post.description %}{{ post.description }}, {% endif %}<span class="post_date">{{ post.date | date: '%B %d, %Y' }}</span></h5>
     	{{ post.content | split:'<!--break-->' | first }}
+    <div class="post_footer">
 		{% if post.content contains '<!--break-->' %}
-			<a href="{{ post.url }}">read more...</a>
+			<div class="more"><a href="{{ post.url }}">READ MORE »</a></div>
 		{% endif %}
-    	<p class="tags">
+    <hr>
     	{% for cat in post.categories %}
-    		<span class="tagItem"><a href="{{ site.url }}/category/{{ cat }}.html" title="{{ cat }}">{{ cat }}</a></span>
+    		<div class="tagItem"><a href="{{ site.url }}/category/{{ cat }}.html" title="{{ cat }}">{{ cat }}</a></div>
     	{% endfor %}
-    	</p>
+    </div>
     </li>
   {% endfor %}
 </ul>

@@ -1,0 +1,21 @@
+- name: games
+  title: "Games"
+  addr: "/"
+- name: ue4
+  title: "Unreal Engine 4"
+  addr: "/"
+- name: jams
+  title: "Game Jams"
+  addr: "/"
+- name: game_development
+  title: "Game Development"
+  addr: "/"
+- name: cv
+  title: "Curriculum"
+  addr: "/"
+- name: projects
+  title: "Game Development"
+  addr: "/"
+- name: update
+  title: "Updates"
+  addr: "/"

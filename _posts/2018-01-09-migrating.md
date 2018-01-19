@@ -1,6 +1,7 @@
 ---
 layout: posts
 title: "Finishing migrating posts"
+description: "Here we go again"
 date: 2018-01-19
 categories: update
 css: blog_post.css

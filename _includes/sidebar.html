@@ -1,3 +1,5 @@
+---
+---
 <!-- Side Navigation bar -->
 <aside class="sidebar collapse" id="mySidebar">
   <a href="javascript:void(0)" onclick="k_close()" class="menu-btn" title="Close Menu">
@@ -6,10 +8,21 @@
   {% include card.html %}
   <hr>
   <b>You may like:</b>
+  {% if page.related %}
+    {% for item in page.related %}
+      {% for c in site.data.related %}
+        {% if c.name == item %}
+          <a class="nav-item nav-button" href="{{ c.addr }}">{{ c.title }}</a>
+        {% endif %}
+      {% endfor %}
+      </a>
+    {% endfor %}
+  {% else %}
   <a class="nav-item nav-button" href="#">Artificial Inteligence</a>
   <a class="nav-item nav-button" href="#">Unreal Engine</a>
   <a class="nav-item nav-button" href="#">Events</a>
   <a class="nav-item nav-button" href="#">Games Developed</a>
+  {% endif %}
   <p>The site is under development, hold on :)</p>
 </aside>
 <!-- Overlay effect when opening sidebar on small screens -->
