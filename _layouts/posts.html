@@ -13,3 +13,21 @@ layout: default
 
 	<a href="{{ page.url | relative_url }}">Permanent link</a>
 </article>
+
+{% if page.youtube %}
+	{% include youtube_support.html %}
+{% endif %}
+
+<script type="text/javascript">
+	var i, j;
+	var codes = document.getElementsByTagName("code");
+
+	for(i=0; i<codes.length; i++){
+		var lines = codes[i].innerHTML.split("\n");
+		codes[i].innerHTML = "";
+		for(j=0; j<lines.length - 1; j++){
+			codes[i].innerHTML += (j+1) + ".   " + lines[j] + "\n";
+		}
+	}
+</script>
+

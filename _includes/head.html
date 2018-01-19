@@ -110,6 +110,11 @@
 		/* MEDIA */
 		@media (min-width:993px){.sidebar.collapse{display:block!important}.menu-btn{display:none}.overlay{display:none!important}}
 		@media (max-width:992px){.sidebar.collapse{display:none}.main{margin-left:0;margin-right:0}}
+
+		{% if page.css %}
+			{% include {{ page.css }} %}
+		{% endif %}
 	</style>
-	<link rel="stylesheet" href="{{ site.url }}/css/{{ page.css | default:'main.css' }}">
+	
+	}
 </head>

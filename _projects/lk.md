@@ -5,7 +5,7 @@ category: jams
 img1: /assets/games/jam/StartMenu.jpg
 img2: /assets/games/jam/tumblr_o1xgqjP2qq1tbhz3oo3_500.png
 img3: /assets/games/jam/tumblr_o1xgqjP2qq1tbhz3oo4_500.png
-youtube: HcHE9Ra_POw?start=355
+youtube: HcHE9Ra_POw
 ---
 
 I was with the TechSchool Team (I must thanks a lot TechSchool to get this team of champions together), that is composed by game development and 3D modeling students from TechSchool.
