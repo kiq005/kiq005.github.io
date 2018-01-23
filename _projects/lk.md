@@ -5,6 +5,9 @@ category: jams
 img1: /assets/games/jam/StartMenu.jpg
 img2: /assets/games/jam/tumblr_o1xgqjP2qq1tbhz3oo3_500.png
 img3: /assets/games/jam/tumblr_o1xgqjP2qq1tbhz3oo4_500.png
+low1: /assets/optm/slide_btn/lk1.jpg
+low2: /assets/optm/slide_btn/lk2.jpg
+low3: /assets/optm/slide_btn/lk3.jpg
 youtube: HcHE9Ra_POw
 ---
 

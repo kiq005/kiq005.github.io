@@ -7,7 +7,7 @@ youtube: true
 css: blog_post.css
 ---
 
-This is a problem that I had, and searching for solutions, I see that some people had the problem too, they made solutions, but that solutions don’t work very well for me. First I had published this solution in my portuguese website, http://wwwkaiquedequeiroz.com.<!--break--> Here is a video to show the problem:
+This is a problem that I had, and searching for solutions, I see that some people had the problem too, they made solutions, but that solutions don’t work very well for me. First I had published this solution in my Portuguese website, http://wwwkaiquedequeiroz.com.<!--break--> Here is a video to show the problem:
 
 <div class="youtube" data-embed="u31d7UCRn1c">
     <div class="play-button"></div>
@@ -15,7 +15,7 @@ This is a problem that I had, and searching for solutions, I see that some peopl
 
 Here we can see two problems: First, the animTree play the front or back animation when you move alternately to left and right. Second, the animTree play the wrong animation when you move to back and side simultaneously.
 
-I’ve found two solutions searching the internet:
+I’ve found two solutions searching the Internet:
 
 <http://focus.gscept.com/2012ip12/2012/03/13/animnodeblenddirectional-short-pause-in-looping-animation/>
 
@@ -41,12 +41,12 @@ simulated event Tick(float DeltaTime)
 }
 ```
 
-Now, in animTree, in your `blendByDirectional`, we had to add two `animBlendByProperty` (one in left output of `animNodeBlendDirectional`, and other to right output) with the `Property Name` equals to `ditection`, and `FloatPropMin/Max` values that on [-1, 1] range (-1 and 0 works for me). Then, its will be looking like this:
+Now, in animTree, in your `blendByDirectional`, we had to add two `animBlendByProperty` (one in left output of `animNodeBlendDirectional`, and other to right output) with the `Property Name` equals to `direction`, and `FloatPropMin/Max` values that on [-1, 1] range (-1 and 0 works for me). Then, its will be looking like this:
 
 ![Anim Node Blend By Property]({{ "/assets/posts_old/tumblr_inline_ncknzl4eQn1sg03xy.png"}})
 ![AnimTree]({{ "/assets/posts_old/tumblr_inline_ncknzpOTMD1sg03xy.png"}})
 
-I’ve made this some time ago and in portuguese, but thats look like the explanation.
+I’ve made this some time ago and in Portuguese, but thats look like the explanation.
 
 I hope it helps, and any question, send me an email. Thanks.
 

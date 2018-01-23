@@ -5,6 +5,9 @@ category: jams
 img1: /assets/games/jam/cute1.png
 img2: /assets/games/jam/cute2.png
 img3: /assets/games/jam/cute3.png
+low1: /assets/optm/slide_btn/cute1.jpg
+low2: /assets/optm/slide_btn/cute2.jpg
+low3: /assets/optm/slide_btn/cute3.jpg
 youtube: o0F-U-y1b3M
 ---
 

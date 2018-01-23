@@ -1,7 +1,10 @@
 ---
 ---
+
 /* Games tab */
-.filter-btn {
+.filter-tab button {}
+
+.filter-btn{
   background-color: #2E2E28;
   color: #eaece5;
   border-radius: 1em;
@@ -12,11 +15,17 @@
 .filter-btn:hover {
   background-color: #c0ded9;
   color: #2E2E28;
+  border-radius: 1em;
+  padding: 6px;
+  margin: 6px 0px;
 }
 
 .filter-btn.active {
   background-color: #eaece5;
   color: #2E2E28;
+  border-radius: 1em;
+  padding: 6px;
+  margin: 6px 0px;
 }
 
 .games-tab {
@@ -81,7 +90,6 @@
 
 .slide_img + .slide_img{
   position: absolute;
-  margin: auto;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -89,7 +97,9 @@
 .slide_btn {
   cursor:pointer;
   max-width: 30%;
-  max-height: 256px;
+  max-height: 128px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .slide_btn:hover {

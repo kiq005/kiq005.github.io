@@ -25,7 +25,7 @@ First of all, we have to consider that is there a lot of programming languages, 
 > Computer science education cannot make anybody an expert programmer any more than studying brushes and pigment can make somebody an expert painter.”
 (Eric Raymond)
 
-Ok, so why is good studying computer science?
+OK, so why is good studying computer science?
 
 There is no programming language that is equal to another. But, when you learn some language, you will be more prepared to learn another. The first step to learn programming, is learn logic. All language works with logical arguments, creating a flow on the program. Other important point is to learn the structure of some languages. Python and Ruby have a similar structure, C# and Java also. But every language have your own singularity, like commands, structure and paradigms. ["Hello world" examples](https://en.wikibooks.org/wiki/Computer_Programming/Hello_world) are good to see that.
 

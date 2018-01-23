@@ -5,6 +5,9 @@ category: machine
 img1: /assets/img/wallpaper-urban-legends-jeff-escuro.jpg
 img2: /assets/games/ub/ub5.jpg
 img3: /assets/games/ub/ub1.jpg
+low1: /assets/optm/slide_btn/ub1.jpg
+low2: /assets/optm/slide_btn/ub2.jpg
+low3: /assets/optm/slide_btn/ub3.jpg
 ---
 
 I worked on [Urban Legends](http://machinebear.com.br/urban-legends.html) as game and level designer and programmer, at [Machine Bear](http://machinebear.com)

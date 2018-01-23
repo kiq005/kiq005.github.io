@@ -20,7 +20,7 @@ Python, is an very high-level language, you program like if you were talking wit
 
 C, is a great language, because it can interact with the machine and the OS. C++ is an evolution of C, but is object oriented and can prevent some common errors that are usually done in C. So, why do not C++ disappeared with C? That is the point that will define our conversation.
 
-C is easier to implement in a machine, and there is a lot of softwares writen in C. C++ is Object Oriented Programming, and have a lot of things that you don’t need to an purpose.
+C is easier to implement in a machine, and there is a lot of softwares written in C. C++ is Object Oriented Programming, and have a lot of things that you don’t need to an purpose.
 
 Ruby is quite close to Python. But it says that is more object oriented, and is, because “everything” in Ruby is an object. It’s fantastic and is easy to create apps in Ruby. But it is inefficient, for example, to create a complex game, because it will eat all your memory.
 

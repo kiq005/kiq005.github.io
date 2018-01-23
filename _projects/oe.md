@@ -5,6 +5,9 @@ category: jams
 img1: /assets/games/jam/OtherEyesMedio.jpg
 img2: /assets/games/jam/OtherEyes2.png
 img3: /assets/games/jam/OtherEyes3.png
+low1: /assets/optm/slide_btn/OtherEyes1.jpg
+low2: /assets/optm/slide_btn/OtherEyes2.jpg
+low3: /assets/optm/slide_btn/OtherEyes3.jpg
 youtube: BCJjI8Dgz9M
 ---
 

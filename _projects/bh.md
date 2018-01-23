@@ -5,6 +5,9 @@ category: personal
 img1: /assets/games/bh/backtohome000.png
 img2: /assets/games/bh/backtohome001.png
 img3: /assets/games/bh/backtohome003.png
+low1: /assets/optm/slide_btn/backtohome000.jpg
+low2: /assets/optm/slide_btn/backtohome001.jpg
+low3: /assets/optm/slide_btn/backtohome003.jpg
 ---
 
 (The images are from [Marvox Brasil](https://marvoxbrasil.wordpress.com/2016/09/10/marvoxbrasil-na-bgs-2016/))

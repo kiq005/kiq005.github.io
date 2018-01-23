@@ -8,7 +8,7 @@ css: blog_post.css
 
 Since December that I don’t posted anything here. Motive: Producing Games!
 
-From August to now, I has envolved in three game Jams: SPJam(August), Libdxg Jam(December-January) and Global Game Jam (January).<!--break-->
+From August to now, I has involved in three game Jams: SPJam(August), Libdxg Jam(December-January) and Global Game Jam (January).<!--break-->
 
 ![Other Eyes]({{ "/assets/posts_old/tumblr_o1xfs1omuU1tbhz3oo2_500.png"}})
 

@@ -18,7 +18,7 @@ The Jam’s Theme was “Viagem”(Voyage, travel, trip, …).
 
 We decided to develop a game that covers various types of “trips”, that is: Go from point A to B, interdimensional travel, the vacation trip…
 
-Other Eyes is about a girl that lost her dog and must go in a interdimensional travel to find the pet! Travelling between a paradisiac world and a crystal made world, you must solve some puzzles to keep going.
+Other Eyes is about a girl that lost her dog and must go in a interdimensional travel to find the pet! Traveling between a paradisaic world and a crystal made world, you must solve some puzzles to keep going.
 
 The Jam time was very short, so we can’t work much in the game, so it is very short, but we are thinking of get some days to finish the game. We develop the game with Unreal Engine 4, the low poly visual makes the game be very clean and beautiful!
 

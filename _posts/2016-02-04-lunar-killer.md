@@ -24,7 +24,7 @@ The Jam’s theme was “Life in Space”.
 
 We decided to develop a game about a alien that arise in moon and was trying to destroy the Earth! And you must be the hero, in the more insane way, and kill the monster!
 
-The game finish with some bugs, and I forgot to post it before and ask for votes (I has rushing with every thing). But the experience was awesome! I must pratice more libgdx development, I will try to do it and post more content about it here!
+The game finish with some bugs, and I forgot to post it before and ask for votes (I has rushing with every thing). But the experience was awesome! I must practice more LibGDX development, I will try to do it and post more content about it here!
 
 You can find more information of the Jam here! And more information about the game and the development process here: http://lunarkiller.blogspot.com.br/
 

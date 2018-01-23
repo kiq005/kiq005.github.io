@@ -2,13 +2,13 @@
 layout: posts
 title: "UDK AI Programming"
 date: 2014-10-23
-categories: unrealscript udk programming ai
+categories: unrealscript udk programming AI
 css: blog_post.css
 ---
 
 UDK AI programming
 
-Some of most important functions and events of UnrealScript to program Artificial Intelligence. This is another post that I’m translating of my portuguese site(Portuguese postage).<!--break-->
+Some of most important functions and events of UnrealScript to program Artificial Intelligence. This is another post that I’m translating of my Portuguese site(Portuguese postage).<!--break-->
 
 Functions -
 
@@ -16,7 +16,7 @@ Functions -
 - PointReachable(vector) - Return a bool, if the path to the point is free [true].
 - ActorReachable(actor) - Same as above, but check a path to “actor”.
 - LineOfSightTo(actor) - Return a bool, if the actor is on eye range[true].
-- CanSee(pawn) - Same as above, but consider primary and periferic field of vision.
+- CanSee(pawn) - Same as above, but consider primary and peripheral field of vision.
 - MoveTo(vector, actor, bool) - Move to “vector”, looking at “actor”, if “bool” is true.
 - MoveToward(actor, actor, float, bool, bool) - Same as above, but move to an “actor”, for “float” time.
 
