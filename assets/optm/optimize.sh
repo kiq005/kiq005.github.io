@@ -7,3 +7,7 @@ for filename in ./slide_btn/*; do
 	mv "${filename%.*}_new.jpg" "${filename%.*}.jpg"
 	echo "Saved as ${filename%.*}.jpg"
 done
+
+echo "Compressing with jpegoptim..."
+
+jpegoptim --max=90 ./slide_btn/*
