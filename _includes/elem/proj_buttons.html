@@ -1,0 +1,12 @@
+<div class="filter-tab">
+	{{ site.data.locales[page.lang].filter }}:
+	<button class="filter-btn active" onclick="filterSelection('all')">{{ site.data.locales[page.lang].show_all }}</button>
+	{% for cat in site.data.proj_filter %}
+	<button class="filter-btn" onclick="filterSelection('{{ cat.name }}')">{{ cat[page.lang] }}</button>
+	{% endfor %}
+</div>
+<div class="games-tab">
+	{% for proj in site.projects %}
+		<div class="filterDiv {{ proj.category }}"><button class="tablinks" onclick="openGame(event, '{{ proj.short }}', {{ forloop.index0 }})" {% if forloop.index0 == 0 %} id="defaultOpen" {% endif %} >{{ proj.title }}</button></div>
+    {% endfor %}
+</div>

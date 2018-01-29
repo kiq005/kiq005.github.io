@@ -1,7 +1,25 @@
+{% if page.lang == "br" %}
 <!-- Top Navigation bar -->
 <nav class="topbar">
-	<a class="nav-item nav-button menu-btn" href="javascript:void(0)" onclick="k_open()"><i class="fa fa-bars"></i></a>
+	<!-- SIDEBAR BUTTON -->
+	<a class="nav-item nav-button menu-btn right" href="javascript:void(0)" onclick="k_open()"><img src="/assets/svg/bars.svg" width="12" height="12"></a>
+	<!-- LANGUAGES -->
+	<a class="nav-item nav-button right" href="/"">EN</a>
+	<!-- NAVIGATION -->
 	{% for item in site.data.navitems %}
-		<a class="nav-item nav-button" href={{ item.addr }} >{{ item.name }}</a>
+	<a class="nav-item nav-button" href="/br/{{ item.addr }}" >{{ item.name_br }}</a>
 	{% endfor %}
 </nav>
+{% else %}
+<!-- Top Navigation bar -->
+<nav class="topbar">
+	<!-- SIDEBAR BUTTON -->
+	<a class="nav-item nav-button menu-btn right" href="javascript:void(0)" onclick="k_open()"><img src="/assets/svg/bars.svg" width="12" height="12"></a>
+	<!-- LANGUAGES -->
+	<a class="nav-item nav-button right" href="/br"">PT-BR</a>
+	<!-- NAVIGATION -->
+	{% for item in site.data.navitems %}
+	<a class="nav-item nav-button" href="/{{ item.addr }}" >{{ item.name }}</a>
+	{% endfor %}
+</nav>
+{% endif %}

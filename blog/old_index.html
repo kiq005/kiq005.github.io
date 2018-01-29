@@ -1,0 +1,53 @@
+---
+layout: default
+title: Blog
+related:
+  - update
+  - projects
+  - games
+  - jams
+css: pag.css
+lang: en
+---
+
+<ul class="posts">
+  {% for post in paginator.posts %}
+    <li class="post">
+    	<h3><b><a class="post_title" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></b></h3>
+      <h5>{% if post.description %}{{ post.description }}, {% endif %}<span class="post_date">{{ post.date | date: '%B %d, %Y' }}</span></h5>
+    	{{ post.content | split:'<!--break-->' | first }}
+      <div class="post_footer">
+        {% if post.content contains '<!--break-->' %}
+        <div class="more"><a href="{{ post.url }}">READ MORE »</a></div>
+        {% endif %}
+        <hr>
+        {% for cat in post.categories %}
+        <div class="tagItem"><a href="{{ site.url }}/category/{{ cat }}.html" title="{{ cat }}">{{ cat }}</a></div>
+        {% endfor %}
+      </div>
+    </li>
+  {% endfor %}
+</ul>
+
+<!-- pagination -->
+{% if paginator.total_pages > 1 %}
+<div class="pagination"> 
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <span class="active">{{ page }}</span>
+    {% elsif page == 1 %}
+      <a href="/blog/">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+  {% endif %}
+</div>
+{% endif %}

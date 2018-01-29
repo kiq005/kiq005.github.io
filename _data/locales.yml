@@ -1,0 +1,14 @@
+en:
+  filter: "Filter"
+  show_all: "Show all"
+  try_kanji: "Wanna try some Kanjis?"
+  cat: "Categories"
+  more_tools: "More tools"
+  back_tools: "Back to tools"
+br:
+  filter: "Filtro"
+  show_all: "Mostrar todos"
+  try_kanji: "Quer tentar alguns Kanjis?"
+  cat: "Categorias"
+  more_tools: "Mais ferramentas"
+  back_tools: "Voltar"

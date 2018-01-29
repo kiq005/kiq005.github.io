@@ -1,0 +1,55 @@
+{% assign arr = site.posts | where:"lang",page.lang %}
+{% assign ofs = page.num | times:5 %}
+{% assign total_pages = arr | size %}
+{% if total_pages | module: 5 > 0%}
+  {% assign total_pages = total_pages | plus:5 %}
+{% endif %}
+{% assign total_pages = total_pages | divided_by:5 %}
+{% assign previous_page = page.num %}
+{% assign next_page = page.num | plus: 2 %}
+
+<ul class="posts">
+  {% for post in arr limit:5 offset:ofs %}
+    <li class="post">
+      <h3><b><a class="post_title" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></b></h3>
+      <h5>{% if post.description %}{{ post.description }}, {% endif %}<span class="post_date">{{ post.date | date: '%B %d, %Y' }}</span></h5>
+      {{ post.content | split:'<!--break-->' | first }}
+      <div class="post_footer">
+        {% if post.content contains '<!--break-->' %}
+        <div class="more"><a href="{{ post.url }}">READ MORE »</a></div>
+        {% endif %}
+        <hr>
+        {% for cat in post.categories %}
+        <div class="tagItem"><a href="{{ site.url }}/category/{{ cat }}.html" title="{{ cat }}">{{ cat }}</a></div>
+        {% endfor %}
+      </div>
+    </li>
+  {% endfor %}
+</ul>
+
+<!-- pagination -->
+{% if total_pages > 1 %}
+<div class="pagination"> 
+  {% unless previous_page < 0 %}
+    {% if previous_page == 1 %}
+    <a href="{% unless page.lang == 'en' %}{{ page.lang }}{% endunless %}/blog/">&laquo; Prev</a>
+    {% else %}
+    <a href="{% unless page.lang == 'en' %}{{ page.lang }}{% endunless %}/blog/page{{ previous_page }}">&laquo; Prev</a>
+    {% endif %}
+  {% endunless %}
+
+  {% for page in (1..total_pages) %}
+    {% if page == page.pnum %}
+      <span class="active">{{ page }}</span>
+    {% elsif page == 1 %}
+      <a href="{% unless page.lang == 'en' %}{{ page.lang }}{% endunless %}/blog/">{{ page }}</a>
+    {% else %}
+      <a href="{% unless page.lang == 'en' %}{{ page.lang }}{% endunless %}/blog/page{{ page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% unless next_page > total_pages %}
+    <a href="{% unless page.lang == 'en' %}{{ page.lang }}{% endunless %}/blog/page{{ next_page }}">Next &raquo;</a>
+  {% endunless %}
+</div>
+{% endif %}

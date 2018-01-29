@@ -2,7 +2,6 @@
 layout: default
 ---
 <article class="article">
-	<h2>{{ page.title | escape}}</h2>
 	<p class="post-meta">
 		<time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublised">{% assign date_format = site.minima.date_format | default: "%b %d, %Y" %}{{ page.date | date: date_format }}
 		</time>
@@ -15,7 +14,7 @@ layout: default
 </article>
 
 {% if page.youtube %}
-	{% include youtube_support.html %}
+	{% include scripts/youtube_support.html %}
 {% endif %}
 
 <script type="text/javascript">

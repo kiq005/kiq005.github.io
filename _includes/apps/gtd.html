@@ -1,0 +1,164 @@
+<div class="block right">
+	<!-- Steps -->
+	<div class="gtd">Lets Get Things Done?<!-- 0 -->
+		<button onclick="showGtd(1);">New Stuff!</button>
+	</div>
+
+	<div class="gtd">What is it?<!-- 1 -->
+		<input placeholder="Thing..." oninput="this.className = ''">
+		<button onclick="setActName(0);showGtd(2);">Ok!</button>
+	</div>
+
+	<div class="gtd">Is it actionable?<!-- 2 -->
+		<button onclick="showGtd(3);">Yes!</button>
+		<button onclick="showGtd(4);">No...</button>
+	</div>
+
+	<div class="gtd">Does it need more than one step?<!-- 3 -->
+		<button onclick="showGtd(9);">Yes, it does...</button>
+		<button onclick="showGtd(12);">No, is only one directly step!</button>
+	</div>
+
+	<div class="gtd">You will need it in the future?<!-- 4 -->
+		<button onclick="showGtd(6);">Of course!</button>
+		<button onclick="showGtd(5);">No...</button>
+	</div>
+
+	<div class="gtd"><span class="end">Trash it!</span><!-- 5 : END -->
+		<button onclick="showGtd(0);">Oh, well...</button>
+	</div>
+
+	<div class="gtd">Is it refecence material?<!-- 6 -->
+		<button onclick="showGtd(7);">Yes, it is!</button>
+		<button onclick="showGtd(8);">No, it is not...</button>
+	</div>
+
+	<div class="gtd"><span class="end">Place it in the refecence container!</span><!-- 7 : END -->
+		<p>(Keep it out of sight)</p>
+		<button onclick="showGtd(0);">Ok, thanks!</button>
+	</div>
+
+	<div class="gtd"><span class="end">Place it in the 'maybe someday'!</span><!-- 8 : END -->
+		<button onclick="showGtd(0);">Ok, thanks!</button>
+	</div>
+
+	<div class="gtd">What is the successfull outcome?<!-- 9 -->
+		<p>Ok, we have a project!</p>
+		<input placeholder="What happen when we are done..." oninput="this.className = ''">
+		<button onclick="showGtd(10);">Let's plan it!</button>
+	</div>
+
+	<div class="gtd">Give me some ideas!<!-- 10 -->
+		<p>Brainstorm!</p>
+		<input placeholder="What have to be done..." oninput="this.className = ''">
+		<button onclick="showGtd(10);">More!</button>
+		<button onclick="showGtd(11);">I'm done!</button>
+	</div>
+
+	<div class="gtd">Select the first step!<!-- 11 -->
+		<p><span class="end">Take note of the rest!</span></p>
+		<select id="step_selection">
+		</select>
+		<button onclick="showGtd(10);">I don't have a step...</button>
+		<button onclick="setActName(1);showGtd(12);">I'm ready!</button>
+	</div>
+
+	<div class="gtd">Can it be done in less than 2 minutes?<!-- 12 -->
+		<p>We are going to "<span id="act"></span>"</p>
+		<button onclick="showGtd(13);">Yes!</button>
+		<button onclick="showGtd(14);">No...</button>
+	</div>
+
+	<div class="gtd"><span class="end">JUST DO IT!</span><!-- 13 : END -->
+		<p>Seriously, do it...</p>
+		<button onclick="showGtd(0);">I'll do it right now!</button>
+	</div>
+
+	<div class="gtd">Can it be delegated?<!-- 14 -->
+		<button onclick="showGtd(15);">Yes!</button>
+		<button onclick="showGtd(16);">No, for sure...</button>
+	</div>
+
+	<div class="gtd"><span class="end">Delegate!</span><!-- 15 : END -->
+		<p>Communicate and Track it!</p>
+		<button onclick="showGtd(0);">Ok, thanks!</button>
+	</div>
+
+	<div class="gtd">It have to be done today, or in some specific date?<!-- 16 -->
+		<button onclick="showGtd(17);">Yes!</button>
+		<button onclick="showGtd(18);">Not really...</button>
+	</div>
+
+	<div class="gtd"><span class="end">Place it on the calendar!</span><!-- 17 : END -->
+		<button onclick="showGtd(0);">Ok, thanks!</button>
+	</div>
+
+	<div class="gtd"><span class="end">Defer it!</span><!-- 18 : END -->
+		<p>Repeat after me: For me to do, as soon as I can.</p>
+		<button onclick="showGtd(0);">Ok, I will do it as soon as I can!</button>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+	var actName, projName;
+	var currentTab = 0;
+	var options = 0;
+	showGtd(currentTab);
+
+	function showGtd(n) {
+		if(n == 0){
+			options = 0;
+			actName = "";
+			projName = "";
+			var sel = document.getElementById("step_selection");
+			while(sel.length > 0){
+				sel.remove(0);
+			}
+		}
+		else if (!validateGtd()) return false;
+		var x = document.getElementsByClassName("gtd");
+		var y = x[currentTab].getElementsByTagName("input");
+		x[currentTab].style.display = "none";
+		currentTab = n;
+		x[currentTab].style.display = "block";
+
+		for(var i=0; i<y.length; y++){
+			y[i].value = y[i].defaultValue;
+		}
+	}
+
+	function validateGtd() {
+		var x, y, i, valid = true;
+		x = document.getElementsByClassName("gtd");
+		y = x[currentTab].getElementsByTagName("input");
+
+		for(i = 0; i<y.length; i++) {
+			if(y[i].value =="") {
+				y[i].className += " invalid";
+				valid = false;
+			}
+			else if(currentTab == 10){
+				var opt = document.createElement('option');
+				opt.value = options++;
+				opt.innerHTML = y[i].value;
+				document.getElementById('step_selection').appendChild(opt);
+			}
+		}
+		return valid;
+	}
+
+	function setActName( n ) {
+
+		if(n == 0){
+			var x = document.getElementsByClassName("gtd");
+			var y = x[currentTab].getElementsByTagName("input");
+			actName = y[0].value;
+		}
+		else{
+			var sel = document.getElementById("step_selection");
+			actName = sel[sel.selectedIndex].text;
+		}
+		document.getElementById('act').textContent = actName;
+	}
+</script>

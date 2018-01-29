@@ -1,0 +1,62 @@
+rss {
+  background-color: #cecece;
+}
+
+channel {
+
+}
+
+title {
+  font-size: 32px;
+  font-weight: 14;
+  display: block;
+  margin-bottom: 6px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+description {
+  display: block;
+}
+
+item {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  margin: 12px 12px 12px 12px;
+  padding: 6px 6px 12px 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+item title {
+  flex-grow: 1;
+  color: black;
+  font-size: 18px;
+  text-shadow: 2px 2px 4px #999;
+}
+
+item description {
+  flex-grow: 2;
+  width: 100%;
+}
+
+pubDate {
+  flex-grow: 1;
+  text-align: right;
+  color: #999;
+  display: block;
+}
+
+link {
+  display: block;
+  color: rgb(3, 102, 214);
+  flex-grow: 2;
+  width: 100%;
+}
+
+guid {
+  display: block;
+  color: rgb(3, 102, 214);
+  flex-grow: 2;
+  width: 100%;
+}

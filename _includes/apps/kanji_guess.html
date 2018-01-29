@@ -1,0 +1,122 @@
+<div class="block right">
+	<div class="line_title">
+        Wanna try some Kanjis?
+		<div class="mbt" onclick="mbtChange(this);showOptions();">
+  			<div class="bar1"></div>
+  			<div class="bar2"></div>
+  			<div class="bar3"></div>
+		</div>
+	</div>
+	<div class="options" id="options1">
+		Single answer:
+		<label class="switch">
+  			<input id="s_ans" type="checkbox" onchange="clearAndNext()">
+  			<span class="slider round"></span>
+		</label>
+	</div>
+	<div id="kanji"></div>
+	<button id="opt0" onclick="verify(0)"></button>
+	<button id="opt1" onclick="verify(1)"></button>
+	<button id="opt2" onclick="verify(2)"></button>
+	<button id="opt3" onclick="verify(3)"></button>
+</div>
+
+<script>
+var doc;
+$(document).ready(function() {
+    $.ajax({
+        type: "GET",
+        url: "kanji_6656.csv",
+        dataType: "text",
+        success: function(data) {
+        	doc = data;
+        	processData();
+        }
+     });
+});
+
+function Shuffle(o) {
+	for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+	return o;
+};
+
+var meanings = [];
+var kanji;
+
+function processData() {
+    var allTextLines = doc.split(/\r\n|\n/);
+    var lines = [];
+    var i, j;
+    // Obtem linhas
+    for (i=0; i<allTextLines.length; i++) {
+        lines.push(allTextLines[i].split(','));
+    }
+    // Seleciona 4 kanjis
+    meanings = [];
+    for(i=0; i<4; i++){
+    	// Obtem linha aleatoria
+    	kanji = lines[Math.floor(Math.random()*lines.length)];
+    	// Garante que pegou diferentes
+    	for(j=0; j<i; j++){
+    		while(meanings[j] == kanji[2].split(';')){
+    			kanji = lines[Math.floor(Math.random()*lines.length)];
+    			j=0;
+    		}
+    	}
+    	// Obtem os significados
+    	meanings.push(kanji[2].split(';'));
+    	// Randomiza os elementos
+    	meanings[i] = Shuffle(meanings[i]);
+    }
+    // Shuffle the meanings
+    meanings = Shuffle(meanings);
+    /* Exibe */
+    $("#kanji").text(kanji[1]);
+    for(i=0; i<4; i++){
+    	if(document.getElementById("s_ans").checked){
+    		$("#opt"+i).text(meanings[i][0]);
+    	}
+    	else{
+            var t = meanings[i][0];
+            for(j=1; j<meanings[i]; j++){
+                t += ", " + meanings[i];
+            }
+    		$("#opt"+i).text(t);
+    	}
+    }
+}
+
+function verify( num ){
+	if(kanji[2].indexOf(meanings[num][0]) >= 0){
+		clearAndNext();
+	}
+	else{
+		document.getElementById("opt" + num).className = "wrong";
+	}
+}
+
+function clearAndNext(){
+	for(var i=0; i<4; i++){
+		document.getElementById("opt" + i).className = "";
+	}
+	processData(doc);
+}
+
+/* Options */
+var opt_hidden = true;
+function showOptions(){
+	if(opt_hidden){
+		opt_hidden = false;
+		document.getElementById("options1").style.display = "block";
+	}
+	else{
+		opt_hidden = true;
+		document.getElementById("options1").style.display = "none";
+	}
+}
+
+/* Menu Button */
+function mbtChange(x){
+	x.classList.toggle("change");
+}
+</script>

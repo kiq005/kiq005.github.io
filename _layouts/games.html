@@ -1,0 +1,96 @@
+---
+layout: default
+---
+
+{% include elem/proj_buttons.html %}
+
+{{ content }}
+
+<!-- Games Table -->
+<script type="text/javascript">
+/* Filtro de botoes */
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Display elements
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+    if (x[i].className.indexOf(c) > -1) x[i].style.display = "block";
+  }
+}
+/* Mostra Conteudo */
+var contentIndex = 0;
+
+function openGame(evt, cityName, idx) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+    contentIndex = idx;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the link that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+
+    currentDiv(1);
+}
+
+/* Controle SlideShow */
+var slideIndex = 1;
+
+function currentDiv(n) {
+  showDivs(slideIndex = n + (3*contentIndex));
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("slide_img");
+  var dots = document.getElementsByClassName("slide_btn");
+  if (n>x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.opacity = 0;
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" normal-opacity", "");
+  }
+  
+  x[slideIndex-1].style.opacity = 1;
+  dots[slideIndex-1].className += " normal-opacity";
+  // Carrega imagem se for preciso
+  if(x[slideIndex-1].getAttribute('data-src').localeCompare(x[slideIndex-1].src ==0) ){
+    x[slideIndex-1].setAttribute('src', x[slideIndex-1].getAttribute('data-src'));
+  }
+}
+
+/* Carrega imagens dos botoes */
+function loadSlideImages(){
+  var slideButtons= document.getElementsByClassName('slide_btn');
+  for (var i=0; i<slideButtons.length; i++) {
+    slideButtons[i].setAttribute('src', slideButtons[i].getAttribute('data-src'));
+  }
+}
+
+/* Chamadas */
+
+window.addEventListener('load', function(){
+  filterSelection("all");
+  document.getElementById("defaultOpen").click();
+  loadSlideImages();
+  showDivs(slideIndex);
+}, false)
+
+</script>
+
+{% include scripts/youtube_support.html %}

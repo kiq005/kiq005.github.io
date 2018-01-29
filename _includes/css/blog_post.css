@@ -1,0 +1,40 @@
+---
+---
+
+/* Code Style */
+code, samp, kbd {
+	font-family: "Courier New", Courier, monospace, sans-serif;
+	text-align: left;
+	color: #555;
+	}
+
+pre code {
+	line-height: 1.6em;
+	font-size: 11px;
+	}
+
+pre {
+	display:block;
+	padding: 0.1em 0.5em 0.3em 0.7em;
+	border: 2px solid #ccc;
+	border-left: 11px solid #ccc;
+	color:#CFDBEC;
+  	background-color:#2f2f2f;
+  	background-image: -webkit-linear-gradient(#2f2f2f 50%, #383838 50%);
+	background-image:    -moz-linear-gradient(#2f2f2f 50%, #383838 50%);
+	background-image:     -ms-linear-gradient(#2f2f2f 50%, #383838 50%);
+	background-image:      -o-linear-gradient(#2f2f2f 50%, #383838 50%);
+	background-image:         linear-gradient(#2f2f2f 50%, #383838 50%);
+  	background-image:         linear-gradient(#2f2f2f 50%, #383838 50%);
+  	background-position: 0 2px;
+	background-repeat: repeat;
+	background-size: 100% 44px;
+	overflow: auto;
+	width: 93%;
+	white-space: pre-wrap;
+  	word-wrap: break-word;
+  	line-height: 22px;
+  }
+
+/* Extras */
+{% include css/youtube.css %}

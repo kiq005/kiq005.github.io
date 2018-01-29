@@ -1,0 +1,8 @@
+- cat: 
+    en: "Japanese"
+    br: "Japonês"
+  url: /tools/japanese
+- cat: 
+    en: "Management"
+    br: "Gerenciamento"
+  url: /tools/management

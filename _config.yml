@@ -2,9 +2,9 @@ name: Kaique de Queiroz
 author: Kaique de Queiroz
 email: kaique_q@live.com
 markdown: kramdown
-paginate: 5
-paginate_path: "/blog/page:num/"
+lang: en
 permalink: /blog/:year/:month/:day/:title
 url:
 collections:
   projects:
+  projectsBR:

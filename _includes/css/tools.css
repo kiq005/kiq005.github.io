@@ -1,0 +1,203 @@
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.block {
+	position: relative;
+	display: inline-block;
+	background-color: rgba(0, 0 ,0, .25);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+	width: 33%;
+	padding: 12px 0 0 0;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  list-style: none;
+}
+
+.block div {
+	display: block;
+}
+
+.block .options {
+	background-color: rgba(0, 0 ,0, .50);
+	line-height: 18px;
+	display: none;
+	padding: 4px 8px 4px 8px;
+}
+
+.block a{
+  text-decoration: none;
+}
+
+.block button {
+	display: block;
+	text-align: center;
+	width: 100%;
+	font-size: 14px;
+	border: 0;
+	border-radius: 0;
+	box-shadow: 0;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	background-color: rgba(0, 0 ,0, .50);
+	color: #eaece5;
+	text-transform: uppercase;
+}
+
+.block button:hover {
+	background-color: rgba(0, 0 ,0, .80);
+}
+
+/* Kanji */
+#kanji {
+	color: white;
+	font-size: 128px;
+	font-weight: 48px;
+}
+
+button.wrong {
+	background-color: rgba(255, 0 ,0, .50);
+}
+
+/* Steps */
+
+.block .gtd {
+  display: none;
+}
+
+.block .gtd p{
+  color: #ccc;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.block .gtd .end{
+  color: #f00;
+  font-size: 32px;
+  font-style: bold;
+}
+
+.block .gtd select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  /*border: 1px solid #ddd;*/
+  padding: 5px;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+  height: 34px;
+  background-color: #fff;
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    radial-gradient(#ddd 70%, transparent 72%);
+  background-position:
+    calc(100% - 20px) 50%,
+    calc(100% - 12px) 50%,
+    calc(100% - 5px) 50%;
+  background-size:
+    8px 8px,
+    8px 8px,
+    30px 30px;
+  background-repeat: no-repeat;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Menu Button */
+.block .mbt {
+	position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+    padding-right: 4px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Generics */
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 18px;
+  margin: 0;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}

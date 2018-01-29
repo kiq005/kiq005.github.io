@@ -1,0 +1,9 @@
+- name: machine
+  en: "Machine Bear"
+  br: "Machine Bear"
+- name: jams
+  en: "Jams"
+  br: "Game Jams"
+- name: personal
+  en: "Personal"
+  br: "Pessoal"

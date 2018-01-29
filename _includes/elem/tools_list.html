@@ -1,0 +1,11 @@
+<p><ul class="block left">
+	{% if page.tools %}
+		{{ site.data.locales[page.lang].cat }}:
+	{% else %}
+		{{ site.data.locales[page.lang].more_tools }}:
+		<li><a href="{% unless page.lang == 'en' %}/{{ page.lang }}{% endunless %}/tools"><button>{{ site.data.locales[page.lang].back_tools }}</button></a></li>
+	{% endif %}
+	{% for item in site.data.tools %}
+		<li><a href="{% unless page.lang == 'en' %}/{{ page.lang }}{% endunless %}{{ item.url }}"><button>{{ item.cat[page.lang] }}</button></a></li>
+	{% endfor %}
+</ul></p>
