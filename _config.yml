@@ -5,6 +5,13 @@ markdown: kramdown
 lang: en
 permalink: /blog/:year/:month/:day/:title
 url:
+
+# Markdown
+markdown:    kramdown
+kramdown:
+  auto_ids: false
+
+# Colections
 collections:
   projects:
   projectsBR:

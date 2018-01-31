@@ -2,7 +2,9 @@
 ---
 
 /* Games tab */
-.filter-tab button {}
+.filter-tab button {
+  display: block;
+}
 
 .filter-btn{
   background-color: #2E2E28;
