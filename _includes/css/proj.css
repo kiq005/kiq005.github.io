@@ -1,12 +1,4 @@
----
----
-
-/* Games tab */
-.filter-tab button {
-  display: block;
-}
-
-.filter-btn{
+.filter-btn {
   background-color: #2E2E28;
   color: #eaece5;
   border-radius: 1em;
