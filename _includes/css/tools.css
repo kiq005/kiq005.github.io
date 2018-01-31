@@ -36,14 +36,13 @@
   text-decoration: none;
 }
 
-.block button {
+.block button, .block a {
 	display: block;
 	text-align: center;
 	width: 100%;
 	font-size: 14px;
 	border: 0;
 	border-radius: 0;
-	box-shadow: 0;
 	padding-top: 6px;
 	padding-bottom: 6px;
 	background-color: rgba(0, 0 ,0, .50);
@@ -51,7 +50,7 @@
 	text-transform: uppercase;
 }
 
-.block button:hover {
+.block button:hover, .block a:hover {
 	background-color: rgba(0, 0 ,0, .80);
 }
 
@@ -59,10 +58,9 @@
 #kanji {
 	color: white;
 	font-size: 128px;
-	font-weight: 48px;
 }
 
-button.wrong {
+button.wrong, a.wrong {
 	background-color: rgba(255, 0 ,0, .50);
 }
 
@@ -83,7 +81,6 @@ button.wrong {
 .block .gtd .end{
   color: #f00;
   font-size: 32px;
-  font-style: bold;
 }
 
 .block .gtd select{
