@@ -1,0 +1,13 @@
+<div class="block left">
+	<script type="text/html" class="lazyload">
+		<iframe src="https://open.spotify.com/embed/user/kiq005/playlist/7hSZXVB8OII1WXck9BEFlk" width="100%" height="380" frameborder="0" allowtransparency="true"></iframe>
+	</script>
+	<p><button onclick="loadWidget();">Load Playlist!</button></p>
+</div>
+<script>
+var lazyloaded_iframe = $('.lazyload');
+	
+function loadWidget(){
+	$( lazyloaded_iframe.html() ).insertAfter( lazyloaded_iframe );
+}
+</script>
