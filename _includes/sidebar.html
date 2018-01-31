@@ -8,15 +8,7 @@
   {% include elem/card.html %}
   <hr>
   <b>You may like:</b>
-  {% if page.related %}
-    {% for item in page.related %}
-      {% for c in site.data.related %}
-        {% if c.name == item %}
-          <a class="nav-item nav-button" href="{{ c.addr }}">{{ c.title }}</a>
-        {% endif %}
-      {% endfor %}
-      </a>
-    {% endfor %}
+  {% if page.related %}{% for item in page.related %}{% for c in site.data.related %}{% if c.name == item %}<a class="nav-item nav-button" href="{{ c.addr }}">{{ c.title }}</a>{% endif %}{% endfor %}{% endfor %}
   {% else %}
   <a class="nav-item nav-button" href="#">Artificial Inteligence</a>
   <a class="nav-item nav-button" href="#">Unreal Engine</a>
