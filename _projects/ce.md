@@ -15,15 +15,15 @@ I was with the [Machine Bear’s team and friends](https://globalgamejam.org/201
 
 #### The Game
 
-It was difficult to think about some thing with [theme “Ritual”](https://globalgamejam.org/news/and-ggj16-theme), but we think about day-by-day routine, indigena costumes, religious rituals, magician’s rituals, and so on. After a great process of brain storming, we decided to do a hardcore game, with a simple history. You play as a girl that suffer some bully and decide to revenge this, by doing a ritual to cast an demon to help her. From this point is just blood and destruction in front of you!
+It was difficult to have an idea related to the [theme “Ritual”](https://globalgamejam.org/news/and-ggj16-theme). The brainstorming phase has given us the idea of working on a hardcore game, with a simple history and focus on gameplay. In the game, you play as a girl that suffers bully in school, and decide to take revenge, doing a ritual to invoke a demon that will help her to show all her strength. From now on is just blood and destruction in front of you!
 
 #### Global Game Jam - 2016
 
-The Jam had the theme 'Ritual', and we get the [diversifier](https://globalgamejam.org/news/ggj16-diversifiers-are) 'To infinity and beyond!'(and zero on the "Gandhi’s Game"). We worked on the game within the company building(Machine Bear), we were able to see the work of other professionals and enthusiasts of game development, there was 14 people working on the game, in the 48 hours of development, we could create a complex game, with good game play.
+In addition to the theme, the Game Jam had [diversifiers](https://globalgamejam.org/news/ggj16-diversifiers-are). We were able to achieve the "To infinity and beyond!", that was related to the procedural map generation (and a zero on the "Gandhi's Game"). A total of fourteen people worked on the game, within the 48 hours.
 
 #### Development
 
-The game was made with [UE4](https://www.unrealengine.com). As programmer, the greatest chalange to the game was to develop the procedural map generator, and the AI to work in the map. Everything was realy simple becasuse of the time, but we could get a realy satifatory result, due the great coordenation that we was able to create within the group.
+The game was made with [UE4](https://www.unrealengine.com). The challenge on the game programming was to develop the procedural map generator and make the artificial intelligence work on it. Even having a short time, the game got a really satisfactory result, due to the coordination that the team created.
 
 #### External
 

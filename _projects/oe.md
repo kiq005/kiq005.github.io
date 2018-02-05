@@ -11,19 +11,19 @@ low3: /assets/optm/slide_btn/OtherEyes3.jpg
 youtube: BCJjI8Dgz9M
 ---
 
-I was with Machine Bear’s Team and some friends developing the Other Eyes.
+I was with Machine Bear's team and some friends developing Other Eyes.
 
 #### [The Game](http://www.spjam.com.br/hackathon/othereyes)
 
-The Jam’s Theme was “Viagem”(Voyage, travel, trip, …). We decided to develop a game that covers various types of “trips”, that is: Go from point A to B, interdimensional travel, the vacation trip… Other Eyes is about a girl that lost her dog and must go in a interdimensional travel to find the pet! Travelling between a paradisiac world and a crystal made world, you must solve some puzzles to keep going.
+The Jam's theme was "Viagem"(Portuguese world for voyage/travel/trip). Other Eyes is a game that covers different types of "trips". It is about a girl that loses her dog have to go traveling to different dimensions looking for her pet, solving a lot of puzzles to keep advancing in the game.
 
 #### [SPJam - 2015](http://www.spjam.com.br/events/spjam2015)
 
-It was my first Game Jam. The time was very short, so we can’t work much in the game, but the experience teach us a lot about game development, expecially because we were able to see the work and talk with other developers within the event.
+It was my first Game Jam. The time was short, but the experience teaches us a lot about game development, especially because we were able to see the work and talk to other developers within the event.
 
 #### Development
 
-We develop the game with Unreal Engine 4, the low poly visual makes the game be very clean and beautiful! As programmer and level Designer, the main chalange was to create the 'two worlds' system, and the interaction between the two.
+The low poly visual makes the game very clean and beautiful. As programmer and Level Designer, the main challenge was to create the two worlds system, and the interactions between the two worlds.
 
 #### External
 

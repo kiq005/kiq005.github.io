@@ -15,15 +15,15 @@ I was with the TechSchool Team (I must thanks a lot TechSchool to get this team 
 
 #### The Game
 
-The Jam’s theme was “Life in Space”. We decided to develop a game about a alien that arise in moon and was trying to destroy the Earth! And you must be the hero, in the more insane way, and kill the monster!
+The Jam's theme was "Life in Space". The game is about an alien that arises on the moon and was trying to destroy the Earth. You play as the insane hero that goes to the moon to kill the monster and save our planet.
 
 #### libGDX Jam - 2016
 
-The [libGDX Jam](https://itch.io/jam/libgdxjam) was a completely different experience. We had one month to develop an entire game from scratch, using [libGDX](https://libgdx.badlogicgames.com/), a framework to develop games in Java.
+The [LibGDX Jam](https://itch.io/jam/libgdxjam) was a completely different experience. We had one month to develop an entire game from scratch, using [LibGDX](https://libgdx.badlogicgames.com/), a framework to develop games in Java.
 
 #### Development
 
-Is not easy to develop a game with Game Engines, but develop a game without a Game Engine is harder. [The game](https://itch.io/jam/libgdxjam/rate/49383) was developed using only java and libGDX. I think that developing a game without game engines is something that all game developers should do at least once. The game ended up with some bugs, due the difficulties of developing a 3D game, with a very limited time, but the experience was awesome!
+It is not easy to develop a game with Game Engines, but developing a game using only a programming language and a framework is even harder. [This game](https://itch.io/jam/libgdxjam/rate/49383) proves me that the experience of developing a game without a Game Engine should be mandatory for all game developers to do it at least once.
 
 #### External
 

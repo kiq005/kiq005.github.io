@@ -14,11 +14,11 @@ I worked on [Chameleon Runner](https://play.google.com/store/apps/details?id=com
 
 #### The Game
 
-Chameleon Runner is a mobile game, [available to Android](https://play.google.com/store/apps/details?id=com.yourname.camaleaorunner). You play as Leon, the Chameleon, trying to scape from a lab.
+Chameleon Runner is a mobile game, [available for Android](https://play.google.com/store/apps/details?id=com.yourname.camaleaorunner). You play as Leon, the Chameleon, trying to escape from a lab.
 
 #### Development
 
-The game was made with [Stencyl](http://www.stencyl.com/), my job was to develop the procedural map generation.
+The game was made with [Stencyl](http://www.stencyl.com/). My job was to develop the procedural map generation.
 
 #### External
 

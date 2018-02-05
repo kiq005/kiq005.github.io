@@ -14,25 +14,24 @@ low3: /assets/optm/slide_btn/backtohome003.jpg
 
 #### The Game
 
-When I still on Machine Bear, I give the idea to we develop a game with some social impact in mind, there was were **Back to Home** started. The game is about a blind girl, that lost her guide dog, and she have to discover the world around her, while she searchs for her dog. As the game happens in a "children mind", elements of fantasy merges with the reality, and the game ambientation is defined by the beliefs of the girl.
+
+When I worked on Machine Bear, I was able to start a project that kept in mind the social impact, that is how **Back to Home** began. The game is about a blind girl, that list her guide dog, and start a journey to find him, while discovering an entirely new world, using her senses and mind to perceive the environment. As the game occurs in a children mind, elements of fantasy merge with the real world, and we see as the girl believes that the world is, based on her senses and life experience, that evolves, while she advances on her adventure.
 
 #### Development
 
-The game was developed with UE4, using only [blue prints](https://docs.unrealengine.com/latest/INT/Engine/Blueprints/). The main chalange as Programmer and Game Designer was to develp a system to allow the world generation, and keep the game running smooth, giving all that visual to the game.
+The game was developed with UE4, using only [blueprints](https://docs.unrealengine.com/latest/INT/Engine/Blueprints/). The Game Design focus on mechanics that give the player some experience of a blind person while keeping the game fun and playable; there was a big challenge to have an equilibrium of the experience versus fun. From the programming front, the trial was to develop the world generation system, with effects that give the game some childish feelings while keeping the game running smoothly even on slow computers.
 
 #### Social
 
-The initial idea of the game was to develop systems to allow blind people to play it, yet, making the game fun for everybody that plays the game. Also, donating some part of the revenues to organizations that helps blind people is another topic discussed when we started developing the game.
+The starting idea of the project was to allow blind people to play the game, yet, keeping the game fun for people that are and those who aren't blind. There was also the idea of donating some part of the revenues to organizations that help blind people.
 
 #### [BGS - 2016](http://www.brasilgameshow.com.br/site-novo-da-bgs-2016-no-ar/)
 
-If you were on the BGS 2016, you may remember the game on the Machine Bear stand, side-by-sude with [Aron: On Guardian Trials](https://brenooshiro.itch.io/aron), from [Frozen Dog Squad](https://www.facebook.com/FrozenDogSquad/). The games received a lot of players, and those who have given the name were able to download and play the game at home. With the tips we received and observation that we are able to peform at the event, we were able to update the game, and correct all the bugs that appeared.
+If you have been on the BGS 2016, you may remember the game on the Machine Bear's stand, side-by-side with [Frozen Dog Squad's](https://www.facebook.com/FrozenDogSquad/) [Aron: On Guardian Trials](https://brenooshiro.itch.io/aron). Both games have received a lot of players, and those who signed up the list were able to download and play the game at home. We were able to improve the game, with all the tips we received and the observations that we performed during the event. 
 
 #### Future
 
-When I droped Machine Bear, at November 2016, they had given to me the rights over the game. There still the idea to keep developing the game, but just small advances have been made since them. I'm giving priority to other projects, but as I'm finishing them, the plan is to get back developing this game as soon as possible.
-
-#### External
+When I quit Machine Bear, in November 2016, they have given to me the rights over the game. I wish to get back developing the game, but first I am reworking some ideas of the game, and looking for a team of game developers to help on the project.
 
 - Marvox Brasil, talking about the BGS 2016:
 	- <https://marvoxbrasil.wordpress.com/2016/09/10/marvoxbrasil-na-bgs-2016/>
