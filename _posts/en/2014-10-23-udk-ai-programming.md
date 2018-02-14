@@ -2,7 +2,7 @@
 layout: posts
 title: "UDK AI Programming"
 date: 2014-10-23
-categories: unrealscript udk programming AI
+categories: udk programming ai
 css: blog_post.css
 lang: en
 ---

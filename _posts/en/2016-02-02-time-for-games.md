@@ -2,14 +2,15 @@
 layout: posts
 title: "Three game Jams!"
 date: 2016-02-02
-categories: jam game
+categories: jam games
 css: blog_post.css
 lang: en
+image: /assets/posts_old/tumblr_o1xfs1omuU1tbhz3oo2_500.png
 ---
 
-Since December that I don’t posted anything here. Motive: Producing Games!
+Since December that I don’t posted anything here. Motive: Producing Games!<!--break-->
 
-From August to now, I has involved in three game Jams: SPJam(August), Libdxg Jam(December-January) and Global Game Jam (January).<!--break-->
+From August to now, I has involved in three game Jams: SPJam(August), Libdxg Jam(December-January) and Global Game Jam (January).
 
 ![Other Eyes]({{ "/assets/posts_old/tumblr_o1xfs1omuU1tbhz3oo2_500.png"}})
 

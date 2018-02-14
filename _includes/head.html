@@ -5,7 +5,9 @@
 	<title>{{ page.title }} | Kaique de Queiroz | Game Developer. </title>
 	<!-- includes -->
 	{% if page.jquery %}<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>{% endif %}
+	<script>{% include /scripts/pre_load.js %}</script>
 	<!-- styles -->
+	{% if page.hascode %}<link href="/css/syntax.css" rel="stylesheet">{% endif %}
 	<style>
 		/* Generic */
 		{% include css/main.css %}

@@ -6,9 +6,10 @@ categories: udk animation game_development
 youtube: true
 css: blog_post.css
 lang: en
+image: "/assets/posts_old/tumblr_inline_ncknzpOTMD1sg03xy.png"
 ---
 
-This is a problem that I had, and searching for solutions, I see that some people had the problem too, they made solutions, but that solutions don’t work very well for me. First I had published this solution in my Portuguese website, http://wwwkaiquedequeiroz.com.<!--break--> Here is a video to show the problem:
+This is a problem that I had, and searching for solutions, I see that some people had the problem too, they made solutions, but that solutions don’t work very well for me.<!--break--> First I had published this solution in my Portuguese website, http://wwwkaiquedequeiroz.com. Here is a video to show the problem:
 
 <div class="youtube" data-embed="u31d7UCRn1c">
     <div class="play-button"></div>

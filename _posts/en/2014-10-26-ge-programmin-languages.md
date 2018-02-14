@@ -7,7 +7,7 @@ css: blog_post.css
 lang: en
 ---
 
-Usually, and most often between **indie developers**, to develop a game some game engine is used. It make the development time shorter, and also help advancing tech because a lot of people are using the same platform and need to make it better. Here is some popular game engines and yours programming language.<!--break-->
+Usually, and most often between **indie developers**, to develop a game some game engine is used. It make the development time shorter, and also help advancing tech because a lot of people are using the same platform and need to make it better.<!--break--> Here is some popular game engines and yours programming language.
 
 **Unreal Engine**(UE) and **Unreal Development Kit**(UDK) uses a own language, that is the UnrealScript that is very similar to Java and C++(UE 4 abandoned the UnrealScript and now use the C++) . It also have and visual programming platform, the kismet (and Blueprint now in UE 4), and also support flash with ActionScript.
 

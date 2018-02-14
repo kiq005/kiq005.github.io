@@ -1,9 +1,5 @@
 /* posts */
-.posts{
-  margin: 0;
-  padding: 0;
-}
-
+/*
 .posts .post{
   list-style-type: none;
   background-color: rgba(35,35,41,0.5);
@@ -69,8 +65,9 @@
   color: #2E2E28;
   background-color: #c0ded9;
 }
-
+*/
 /* pagination */
+/*
 .pagination a, .pagination span {
   color:#eaece5;
   background-color:#2E2E28;
@@ -93,3 +90,4 @@
     background-color: #eaece5;
     cursor: pointer;
 }
+*/

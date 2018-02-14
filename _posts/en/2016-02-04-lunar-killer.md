@@ -2,9 +2,10 @@
 layout: posts
 title: "Lunar Killer"
 date: 2016-02-04
-categories: jam game libgdx game_development
+categories: jam games libgdx game_development
 css: blog_post.css
 lang: en
+image: /assets/posts_old/tumblr_o1xgqjP2qq1tbhz3oo1_500.png
 ---
 
 The LibGDX Jam ran from December 18th 2015 at 9:00 PM to January 18th 2016 at 10:00 AM.<!--break-->

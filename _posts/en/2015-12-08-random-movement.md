@@ -5,11 +5,13 @@ date: 2015-12-08
 categories: math physics
 css: blog_post.css
 lang: en
+image: /assets/posts_old/tumblr_nyx7sxNz3R1tbhz3oo1_400.gif
 ---
+<!--break-->
 
 ![Position]({{ "/assets/posts_old/tumblr_nyx7h2Y0np1tbhz3oo1_400.gif"}})
 
-Random Movement - Here I just set the ball to add some random value between -1 and 1 to position, and this is the result. There is nothing much expressive, but I must compare it to Brownian Motion, tomorrow we talk about the difference.<!--break-->
+Random Movement - Here I just set the ball to add some random value between -1 and 1 to position, and this is the result. There is nothing much expressive, but I must compare it to Brownian Motion, tomorrow we talk about the difference.
 
 ![Velocity]({{ "/assets/posts_old/tumblr_nyx7sxNz3R1tbhz3oo1_400.gif"}})
 

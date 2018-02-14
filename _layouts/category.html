@@ -1,26 +1,34 @@
 ---
 layout: default
-paginate: 2
 ---
-<style type="text/css">
-{% include css/pag.css %}
-</style>
+<div class="container card bg2">
+  <h2 class="text-c2 padding-16">{{ page.title }}</h2>
+</div>
 
-<ul class="posts">
+<div class="row-padding">
   {% for post in site.categories[page.category] %}
-    <li class="post">
-        <h3><b><a class="post_title" href="{{ post.url | absolute_url }}" title="{{ post.title }}">{{ post.title }}</a></b></h3>
-      <h5>{% if post.description %}{{ post.description }}, {% endif %}<span class="post_date">{{ post.date | date: '%B %d, %Y' }}</span></h5>
+    <div class="half"><!-- Image and Title -->
+      <div class="bg2 card">
+      <div class="display-container">
+        {% if post.image %}<img src="{{post.image}}" width="100%" alt="Post image">{% endif %}
+        <div class="text-c1 container {% if post.image %}disp-bottom disp-left{% endif %}">
+          <h3><b><a class="shadow text-c4 no-dec" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></b></h3>
+        </div><!-- END Image and Title -->
+      </div>
+      <div class="container">
+        <h5 class="text-c2">{% if post.description %}{{ post.description }}, {% endif %}<span class="text-c3">{{ post.date | date: '%B %d, %Y' }}</span></h5>
         {{ post.content | split:'<!--break-->' | first }}
+      </div>
       <div class="post_footer">
         {% if post.content contains '<!--break-->' %}
-            <div class="more"><a href="{{ post.url }}">READ MORE »</a></div>
+        <a class="link-button border no-dec bg5 hover2" href="{{ post.url }}">READ MORE »</a>
         {% endif %}
         <hr>
         {% for cat in post.categories %}
-            <div class="tagItem"><a href="{{ site.url }}/category/{{ cat }}.html" title="{{ cat }}">{{ cat }}</a></div>
+        <a class="text-c4 tag bg4 hover1 no-dec margin-tiny" href="{{ site.url }}/category/{{ cat }}.html" title="{{ cat }}">{{ cat }}</a>
         {% endfor %}
       </div>
-    </li>
+      </div>
+    </div>
   {% endfor %}
-</ul>
+</div>

@@ -2,7 +2,7 @@
 layout: posts
 title: "Flash Quick Tip: Debugging"
 date: 2014-11-20
-categories: flash AS3 quicktip debuggin
+categories: flash actionscript
 css: blog_post.css
 lang: en
 ---

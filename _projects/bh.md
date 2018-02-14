@@ -1,7 +1,7 @@
 ---
 title: Back to Home
 short: bh
-category: personal
+category: machine personal
 img1: /assets/games/bh/backtohome000.png
 img2: /assets/games/bh/backtohome001.png
 img3: /assets/games/bh/backtohome003.png

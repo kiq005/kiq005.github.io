@@ -7,11 +7,26 @@ permalink: /blog/:year/:month/:day/:title
 url:
 
 # Markdown
-markdown:    kramdown
+markdown: kramdown
 kramdown:
   auto_ids: false
+highlighter: rouge
 
 # Colections
 collections:
   projects:
   projectsBR:
+  toollist:
+
+# Includes
+include: .nojekyll
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jemoji
+  - jekyll-mentions
+
+# Turns @ into twitter links
+jekyll-mentions:
+  base_url: https://twitter.com

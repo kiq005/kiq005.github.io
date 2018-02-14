@@ -2,9 +2,10 @@
 layout: posts
 title: "Scilab Projectile"
 date: 2014-11-30
-categories: scilab physics math animations programming
+categories: scilab physics math programming gifs
 css: blog_post.css
 lang: en
+image: /assets/posts_old/tumblr_necb12W7wv1tbhz3oo2_500.gif
 ---
 
 Here is the function:<!--break-->

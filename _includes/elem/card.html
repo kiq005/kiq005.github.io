@@ -1,14 +1,14 @@
 <div>
-  <div style="float: left;">
+  <div class="display-container">
       <a href="/{% unless page.lang == 'en' %}{{ page.lang }}{% endunless %}">
-  		  <img src="/assets/profile/kiq0_16.jpg" width="116" height="116" id="profile_image" alt="Kaique de Queiroz">
+  		  <img src="/assets/profile/kiq0_16.jpg" width="100%" id="profile_image" alt="Kaique de Queiroz">
       </a>
+      <div class="text-c1 container disp-bottom disp-left">
+        <h2><a href="/about" class="text-c4 shadow no-dec">Kaique de Queiroz</a></h2>
+      </div>
   </div>
-  <div class="profile">
-    <div class="profile-item"><h3><b><a href="/about" style="text-decoration: none;">Kaique de Queiroz</a></b></h3></div>
-    <div class="profile-item"><p class="typewrite" data-period="2000" data-type='[ "Game Developer", "C++ Java Python", "Game Designer", "Coding HTML, CSS and JS", "Games from scratch", ":)" ]'>
-    <span class="wrap"></span></p></div>
-    <div class="profile-item">{% include elem/social.html %}</div>
+  <div class="container">
+    <p class="typewrite" data-period="2000" data-type='[ "Game Developer", "C++ Java Python", "Game Designer", "Coding HTML, CSS and JS", "Games from scratch", ":)" ]'>
+    <span class="wrap"></span></p>
   </div>
-  <div style="clear: left;"></div>
 </div>

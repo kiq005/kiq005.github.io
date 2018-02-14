@@ -1,7 +1,7 @@
 ---
 title: Other Eyes
 short: oe
-category: jams
+category: jams machine
 img1: /assets/games/jam/OtherEyesMedio.jpg
 img2: /assets/games/jam/OtherEyes2.png
 img3: /assets/games/jam/OtherEyes3.png

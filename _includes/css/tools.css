@@ -1,12 +1,4 @@
 
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-
 .block {
 	position: relative;
 	display: inline-block;
@@ -123,11 +115,15 @@ input.invalid {
 
 /* Menu Button */
 .block .mbt {
-	position: absolute;
-    top: 0px;
-    right: 0px;
-    cursor: pointer;
-    padding-right: 4px;
+	position: relative;
+  display: inline-block;
+  float: right;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+  padding-right: 4px;
+  margin: 0 0;
+  padding: 0 0;
 }
 
 .bar1, .bar2, .bar3 {

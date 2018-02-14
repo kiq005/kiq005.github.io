@@ -2,9 +2,10 @@
 layout: posts
 title: "Ubuntu: IF & Strings; And let it talk!"
 date: 2015-08-22
-categories: linux ubuntu bash programming
+categories: linux bash programming
 css: blog_post.css
 lang: en
+hascode: true
 ---
 
 Some of these days, I’m testing the Espeak, a text-to-speech program for Linux. It’s funny and it works! Then I find a program(here you can see the original, the site is in Portuguese), a bash file, that I decide to improve a little bit.<!--break-->

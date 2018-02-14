@@ -1,0 +1,14 @@
+---
+layout: default
+lang: en
+---
+
+<div class="container card bg2">
+	<h2 class="text-c2 padding-16">
+		{{ page.title }}
+		{% if page.num > 0 %}
+			- Pag. {{ page.num | plus: 1 }}
+		{% endif %}
+	</h2>
+</div>
+{% include elem/kpaginator.html %}

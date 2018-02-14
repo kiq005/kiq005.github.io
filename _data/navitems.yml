@@ -16,3 +16,6 @@
 - name: CV
   name_br: CV
   addr: cv
+- name: Contact
+  name_br: Contato
+  addr: msg

@@ -1,0 +1,18 @@
+---
+layout: default
+---
+{% assign arr = site.toollist | sort: 'priority' |where:"cat",page.cat %}
+
+<div class="container card bg2">
+	<h2 class="text-c2 padding-16">{{ page.title }}</h2>	
+	<p>{{ page.intro }}</p>
+	{% include elem/tools_list.html %}
+	{{ content }}
+</div>
+
+{% for item in arr %}
+<div class="container card bg2">
+  <h2 class="text-c2 padding-16">{{ item.name }}</h2>
+  {{ item.content }}
+</div>
+{% endfor %}

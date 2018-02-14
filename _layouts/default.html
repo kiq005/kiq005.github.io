@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 	{% include head.html %}
-	<body>
-	<div id="wrapper">
-		{% include navigation.html %}
-		{% include sidebar.html %}
-		<div class="main">
-			<div class="content">
-				<h2>{{ page.title }}</h2>
-				{{ content }}
-			</div>
-			{% include footer.html %}
+	<body class="bg1">{% include navigation.html %}
+	<div class="content"><!-- Page Container -->
+		<div class="row-padding"><!-- Grid -->
+			{% include sidebar.html %}
+			<div class="two-third">{{ content }}</div>
 		</div>
 	</div>
-	{% include scripts.html %}
+	{% include footer.html %}
 	</body>
+	{% include scripts.html %}
 </html>

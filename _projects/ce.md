@@ -1,7 +1,7 @@
 ---
 title: Cute Evil
 short: ce
-category: jams
+category: jams machine
 img1: /assets/games/jam/cute1.png
 img2: /assets/games/jam/cute2.png
 img3: /assets/games/jam/cute3.png

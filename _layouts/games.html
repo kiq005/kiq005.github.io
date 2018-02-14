@@ -1,8 +1,10 @@
 ---
 layout: default
 ---
-
-{% include elem/proj_buttons.html %}
+<div class="card bg2">
+  <h2 class="text-c2 padding-16">{{ page.title }}</h2>
+  {% include elem/proj_buttons.html %}
+</div>
 
 {{ content }}
 
@@ -12,7 +14,18 @@ layout: default
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
+  // Define button as active
+  var btns = document.getElementsByClassName("cat_btn");
+  for (i = 0; i < btns.length; i++) {
+    btns[i].className = btns[i].className.replace(" active", "");
+  }
+  if (c == "all"){
+    c = "";
+    document.getElementById('defaultClass').className += " active";
+  }
+  else{
+    document.getElementById(c).className += " active";
+  }
   // Display elements
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
@@ -86,6 +99,7 @@ function loadSlideImages(){
 
 window.addEventListener('load', function(){
   filterSelection("all");
+  document.getElementById("defaultClass").click();
   document.getElementById("defaultOpen").click();
   loadSlideImages();
   showDivs(slideIndex);

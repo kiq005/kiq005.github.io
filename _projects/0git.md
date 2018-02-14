@@ -10,7 +10,7 @@ low2: /assets/optm/slide_btn/tt_2.jpg
 low3: /assets/optm/slide_btn/tt_3.jpg
 ---
 
-Here you can find all my GitHub projects.
+Here you can find my GitHub projects.
 
 <ol class="git">
 {% for repository in site.github.public_repositories %}
@@ -21,11 +21,11 @@ Here you can find all my GitHub projects.
 	<div class="size" id="{{ repository.size }}"></div>
 	<div class="update">Last Update: {{ repository.updated_at | date: '%B %d, %Y'}}</div>
 	{% if repository.description %}<div class="description">
-	<div><b>Description:</b></div>
+	<div><b>Description</b>:</div>
 	<div>
 		{{ repository.description }}
 	</div></div>{% endif %}
-	<div class="rep_language"><b>Language: </b> {{ repository.language }} </div>
+	<div class="rep_language"><b>Language</b>: {{ repository.language }} </div>
 </li>
 {% endfor %}
 </ol>

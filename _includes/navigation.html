@@ -1,25 +1,19 @@
-{% if page.lang == "br" %}
 <!-- Top Navigation bar -->
-<nav class="topbar">
-	<!-- SIDEBAR BUTTON -->
-	<a class="nav-item nav-button menu-btn right" href="javascript:void(0)" onclick="k_open()"><img src="/assets/svg/bars.svg" alt="M" width="12" height="12"></a>
-	<!-- LANGUAGES -->
-	<a class="nav-item nav-button right" href="/">EN</a>
-	<!-- NAVIGATION -->
-	{% for item in site.data.navitems %}
-	<a class="nav-item nav-button" href="/br/{{ item.addr }}" >{{ item.name_br }}</a>
-	{% endfor %}
+<nav class="bar bg3">
+  <!-- SIDEBAR BUTTON -->
+  {% if page.lang == "br" %}
+	 <!-- LANGUAGES -->
+	 <a class="link-button right hover1" href="/">EN</a>
+	 <!-- NAVIGATION -->
+	 {% for item in site.data.navitems %}
+	 <a class="link-button hover1" href="/br/{{ item.addr }}" >{{ item.name_br }}</a>
+	 {% endfor %}
+  {% else %}
+	 <!-- LANGUAGES -->
+	 <a class="link-button right hover1" href="/br">PT-BR</a>
+	 <!-- NAVIGATION -->
+	 {% for item in site.data.navitems %}
+	 <a class="link-button hover1" href="/{{ item.addr }}" >{{ item.name }}</a>
+	 {% endfor %}
+  {% endif %}
 </nav>
-{% else %}
-<!-- Top Navigation bar -->
-<nav class="topbar">
-	<!-- SIDEBAR BUTTON -->
-	<a class="nav-item nav-button menu-btn right" href="javascript:void(0)" onclick="k_open()"><img src="/assets/svg/bars.svg" alt="M" width="12" height="12"></a>
-	<!-- LANGUAGES -->
-	<a class="nav-item nav-button right" href="/br">PT-BR</a>
-	<!-- NAVIGATION -->
-	{% for item in site.data.navitems %}
-	<a class="nav-item nav-button" href="/{{ item.addr }}" >{{ item.name }}</a>
-	{% endfor %}
-</nav>
-{% endif %}

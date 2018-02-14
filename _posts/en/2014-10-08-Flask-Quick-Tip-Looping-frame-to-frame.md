@@ -2,14 +2,15 @@
 layout: posts
 title: "Flash Quick Tip - Looping frame-to-frame"
 date: 2014-10-08
-categories: flash actionscript quicktip
+categories: flash actionscript
 css: blog_post.css
 lang: en
+hascode: true
 ---
 
 This a quick tip to use in ActionScript. To create a frame-by-frame loop to Movie Clip, use these functions:<!--break-->
 
-```ActionScript
+```actionscript
 function next(mc:MovieClip)
 {
      if (mc.totalFrames == mc.currentFrame){

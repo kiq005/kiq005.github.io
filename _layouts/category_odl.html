@@ -1,0 +1,25 @@
+---
+layout: simple
+---
+<style type="text/css">
+{% include css/pag.css %}
+</style>
+
+<ul class="posts">
+  {% for post in site.categories[page.category] %}
+    <li class="post">
+        <h3><b><a class="post_title" href="{{ post.url | absolute_url }}" title="{{ post.title }}">{{ post.title }}</a></b></h3>
+      <h5>{% if post.description %}{{ post.description }}, {% endif %}<span class="post_date">{{ post.date | date: '%B %d, %Y' }}</span></h5>
+        {{ post.content | split:'<!--break-->' | first }}
+      <div class="post_footer">
+        {% if post.content contains '<!--break-->' %}
+            <div class="more"><a href="{{ post.url }}">READ MORE »</a></div>
+        {% endif %}
+        <hr>
+        {% for cat in post.categories %}
+            <div class="tagItem"><a href="{{ site.url }}/category/{{ cat }}.html" title="{{ cat }}">{{ cat }}</a></div>
+        {% endfor %}
+      </div>
+    </li>
+  {% endfor %}
+</ul>

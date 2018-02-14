@@ -11,11 +11,11 @@ Let's begin with a quote:
 
 >  Is studying computer science the best way to prepare to be a programmer? 
 
-Asked a journalist.
+Asked a journalist.<!--break-->
 
 > No. the best way to prepare is to write programs, and to study great programs that other people have written. In my case, I went to the garbage cans at the Computer Science Center and I fished out listings of their operating system. You got to be willing to read other people's code, then write your own, then have other people review your code. You've got to want to be in this incredible feedback loop where you get the world-class people to tell you what you're doing wrong. 
 
-Answered Bill Gates.<!--break-->
+Answered Bill Gates.
 
 I’ve posted this Bill Gates’ quote about preparing to be a good programmer some time ago. He says that studying computer science is not the best way, but programming is.
 

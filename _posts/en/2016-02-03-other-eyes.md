@@ -2,14 +2,15 @@
 layout: posts
 title: "Other Eyes"
 date: 2016-02-03
-categories: jam game ue4 game_development
+categories: jam games ue4 game_development
 css: blog_post.css
 lang: en
+image: /assets/posts_old/tumblr_o1xfs1omuU1tbhz3oo1_500.jpg
 ---
 
-From 28 to 30/08/2015 was happening the SPJam, a Game Jam at São Paulo, Brazil.
+From 28 to 30/08/2015 was happening the SPJam, a Game Jam at São Paulo, Brazil.<!--break-->
 
-I was with Machine Bear’s Team and some friends developing the Other Eyes.<!--break-->
+I was with Machine Bear’s Team and some friends developing the Other Eyes.
 
 ![SPJam]({{ "/assets/posts_old/tumblr_o1xfs1omuU1tbhz3oo1_500.jpg"}})
 

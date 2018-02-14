@@ -1,5 +1,32 @@
 ---
-title: Contact
-layout: default
+ title: Contact
+ layout: simple
 ---
-We can get in touch soon!
+<div>
+    <p>Leave me a message, I'll answer soon:
+</div>
+<form action="https://formspree.io/kaique_q@live.com" method="POST">
+
+    <div class="left half">
+		<label for="fname">Name:</label>
+    	<input id="fname" type="text" name="name" placeholder="Your name...">
+	</div>
+
+    <div class="right half">
+    	<label for="femail">Email:</label>
+    	<input id="femail" type="email" name="_replyto" placeholder="Your email...">
+    </div>
+
+    <div>
+    	<label for="fsub">Subject:</label>
+    	<input id="fsub" type="subject" name="_subject" value="Hello!">
+	</div>
+
+	<div>
+    	<label for="fmsg">Message:</label>
+    	<textarea id="fmsg" name="message" placeholder="Write something..."></textarea>
+    </div>
+
+    <input type="submit" class="btn-general bg5 hover2" value="Confirm">
+    <input type="hidden" name="_next" value="{{ site.url }}/msg/thanks.html" />
+</form>

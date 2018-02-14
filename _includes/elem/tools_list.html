@@ -1,4 +1,4 @@
-<ul class="block left">
+<ul class="card block left">
 	{% if page.tools %}<li>{{ site.data.locales[page.lang].cat }}:</li>
 	{% else %}<li>{{ site.data.locales[page.lang].more_tools }}:</li>
 		<li><a href="{% unless page.lang == 'en' %}/{{ page.lang }}{% endunless %}/tools">{{ site.data.locales[page.lang].back_tools }}</a></li>

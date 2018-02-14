@@ -1,12 +1,12 @@
-<div class="filter-tab">
+<div class="bar">
 	{{ site.data.locales[page.lang].filter }}:
-	<button class="filter-btn active" onclick="filterSelection('all')">{{ site.data.locales[page.lang].show_all }}</button>
+	<button id="defaultClass" class="link-button padding-small bg4 hover2 active cat_btn" onclick="filterSelection('all')">{{ site.data.locales[page.lang].show_all }}</button>
 	{% for cat in site.data.proj_filter %}
-	<button class="filter-btn" onclick="filterSelection('{{ cat.name }}')">{{ cat[page.lang] }}</button>
+	<button id="{{ cat.name }}" class="link-button padding-small bg4 hover2 cat_btn" onclick="filterSelection('{{ cat.name }}')">{{ cat[page.lang] }}</button>
 	{% endfor %}
 </div>
-<div class="games-tab">
+<div class="games-tab flex">
 	{% for proj in site.projects %}
-		<div class="filterDiv {{ proj.category }}"><button class="tablinks" onclick="openGame(event, '{{ proj.short }}', {{ forloop.index0 }})" {% if forloop.index0 == 0 %} id="defaultOpen" {% endif %} >{{ proj.title }}</button></div>
-    {% endfor %}
+		<div class="left flex-grow filterDiv {{ proj.category }}"><button class="link-button bg4 hover2 min-192 full tablinks" onclick="openGame(event, '{{ proj.short }}', {{ forloop.index0 }})" {% if forloop.index0 == 0 %} id="defaultOpen" {% endif %} >{{ proj.title }}</button></div>
+    {% endfor %}<div style="clear:both;"></div>
 </div>
