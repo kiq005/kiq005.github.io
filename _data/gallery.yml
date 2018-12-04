@@ -1,0 +1,178 @@
+- path: /assets/gallery/shader_original.png
+  title: "UE4: Shaders - Original"
+- path: /assets/gallery/shader_burn.png
+  title: "UE4: Shaders - Burned"
+- path: /assets/gallery/shader_pen.png
+  title: "UE4: Shaders - Pen"
+- path: /assets/gallery/shader_plast.png
+  title: "UE4: Shaders - Plastic"
+- path: /assets/gallery/shader_sat.png
+  title: "UE4: Shaders - Saturation"
+- path: /assets/gallery/shader02_original.png
+  title: "UE4: Shaders 02 - Original"
+- path: /assets/gallery/shader02_s1.png
+  title: "UE4: Shaders 02 - BW 1"
+- path: /assets/gallery/shader02_s2.png
+  title: "UE4: Shaders 02 - BW 2"
+- path: /assets/gallery/anim_jeff.gif
+  title: "Urban Legends: UDK Jeff Jeff Animation"
+- path: /assets/gallery/anim_node.png
+  title: "UDK Custom Anim Node"
+- path: /assets/gallery/anim_pj.gif
+  title: "Urban Legends: UDK PJ Physics"
+- path: /assets/gallery/backtohome000.png
+  title: "Back to Home: Begin"
+- path: /assets/gallery/backtohome001.png
+  title: "Back to Home: shadow"
+- path: /assets/gallery/backtohome003.png
+  title: "Back to Home: Bird"
+- path: /assets/gallery/bg.jpg
+  title: "Old Site Back ground"
+- path: /assets/gallery/bullet_plot01.gif
+  title: "Projectile Physics 01"
+- path: /assets/gallery/bullet_plot02.gif
+  title: "Projectile Physics 02"
+- path: /assets/gallery/bullet_plot03.gif
+  title: "Projectile Physics 03"
+- path: /assets/gallery/chameleon_1.png
+  title: "Chameleon Runner: Menu"
+- path: /assets/gallery/chameleon_2.png
+  title: "Chameleon Runner: Lazer"
+- path: /assets/gallery/chameleon_3.jpg
+  title: "Chameleon Runner: Colors"
+- path: /assets/gallery/chameleon_4.png
+  title: "Chameleon Runner: Credits"
+- path: /assets/gallery/Circle.png
+  title: "Processing: Colored Circle"
+- path: /assets/gallery/Circles.png
+  title: "Processing: Random Circle"
+- path: /assets/gallery/Clock1.png
+  title: "Processing: Clock"
+- path: /assets/gallery/Colors1.png
+  title: "Processing: Colors"
+- path: /assets/gallery/Colors2.png
+  title: "Processing: Mirrored Movement"
+- path: /assets/gallery/cute1.png
+  title: "Cute Evil: Menu"
+- path: /assets/gallery/cute_ingame01.png
+  title: "Cute Evil: Game Start"
+- path: /assets/gallery/cute_ingame02.png
+  title: "Cute Evil: Cute mode"
+- path: /assets/gallery/cute_ingame03.png
+  title: "Cute Evil: Evil mode"
+- path: /assets/gallery/cute_ingame04.png
+  title: "Cute Evil: Blood"
+- path: /assets/gallery/CuteLogo.png
+  title: "Cute Evil: Logo"
+- path: /assets/gallery/cute_credits.png
+  title: "Cute Evil: Credits"
+- path: /assets/gallery/d01.jpg
+  title: "Classic cup and apple"
+- path: /assets/gallery/d02.jpg
+  title: "Tree"
+- path: /assets/gallery/d03.jpg
+  title: "Coffee"
+- path: /assets/gallery/d04.jpg
+  title: "Drawing Set"
+- path: /assets/gallery/d05.jpg
+  title: "NO"
+- path: /assets/gallery/d06.jpg
+  title: "Desert"
+- path: /assets/gallery/ex4.png
+  title: "Processing: Mirror"
+- path: /assets/gallery/Flower.png
+  title: "Processing: Flower"
+- path: /assets/gallery/last_native01.bmp
+  title: "Last Native: First Room"
+- path: /assets/gallery/last_native02.bmp
+  title: "Last Native: Fire Room"
+- path: /assets/gallery/lunar_menu.png
+  title: "Lunar Killer: Menu"
+- path: /assets/gallery/lunar_fight.png
+  title: "Lunar Killer: Fight"
+- path: /assets/gallery/lunar_creditos.png
+  title: "Lunar Killer: Credits"
+- path: /assets/gallery/rolling.gif
+  title: "Ball and Bars"
+- path: /assets/gallery/move_r1.gif
+  title: "Rotation Compatison: Translation without rotation"
+- path: /assets/gallery/move_r2.gif
+  title: "Rotation Compatison: Clockwise rotation and translation"
+- path: /assets/gallery/move_r3.gif
+  title: "Rotation Compatison: Counter-clockwise rotation and clockwise translation"
+- path: /assets/gallery/ball_angular_speed.gif
+  title: "Balls with same angular speed."
+- path: /assets/gallery/ball_linear_speed.gif
+  title: "Balls with same linear speed."
+- path: /assets/gallery/arc_1.gif
+  title: "Arc - One"
+- path: /assets/gallery/arc_2.gif
+  title: "Arc - Two"
+- path: /assets/gallery/arc_3.gif
+  title: "Arc - Three"
+- path: /assets/gallery/arc_4.gif
+  title: "Arc - Four"
+- path: /assets/gallery/coaster.gif
+  title: "Coaster."
+- path:  /assets/gallery/colors_solid.gif
+  title: "Colors: Solid"
+- path:  /assets/gallery/colors_add.gif
+  title: "Colors: Add"
+- path:  /assets/gallery/colors_multiply.gif
+  title: "Colors: Multiply"
+- path: /assets/gallery/OtherEyes1.jpg
+  title: "Other Eyes: Logo"
+- path: /assets/gallery/OtherEyes2.png
+  title: "Other Eyes: Menu"
+- path: /assets/gallery/OtherEyes4.png
+  title: "Other Eyes: Game"
+- path: /assets/gallery/OtherEyes3.png
+  title: "Other Eyes: Puzzle"
+- path: /assets/gallery/processing01.png
+  title: "Processing: Encounter"
+- path: /assets/gallery/T1-processing.png
+  title: "Processing: Distance"
+- path: /assets/gallery/processing02.png
+  title: "Processing: Helix"
+- path: /assets/gallery/processing03.png
+  title: "Processing: 8"
+- path: /assets/gallery/processing04.png
+  title: "Processing: X"
+- path: /assets/gallery/processing05.png
+  title: "Processing: Bubbles"
+- path: /assets/gallery/processing_boat.gif
+  title: "Processing: Boat"
+- path: /assets/gallery/RadialExplosion.png
+  title: "Processing: Radial Explosion"
+- path: /assets/gallery/random_move01.gif
+  title: "Processing: Randomic position increasing"
+- path: /assets/gallery/random_move02.gif
+  title: "Processing: Randomic velocity increasing"
+- path: /assets/gallery/ScreenShot00011.bmp
+  title: "Awaking: Mountains"
+- path: /assets/gallery/ScreenShot00001.bmp
+  title: "Awaking: Great Wall"
+- path: /assets/gallery/ScreenShot00000.bmp
+  title: "Awaking: Map"
+- path: /assets/gallery/Size2.png
+  title: "Processing: Size"
+- path: /assets/gallery/SizeFloating1.png
+  title: "Processing: Float"
+- path: /assets/gallery/ub1.jpg
+  title: "Urban Legends: Red Alert"
+- path: /assets/gallery/ub2.jpg
+  title: "Urban Legends: Lift"
+- path: /assets/gallery/ub3.jpg
+  title: "Urban Legends: The Killer"
+- path: /assets/gallery/ub4.jpg
+  title: "Urban Legends: Door"
+- path: /assets/gallery/ub5.jpg
+  title: "Urban Legends: Jeff"
+- path: /assets/gallery/ub6.jpg
+  title: "Urban Legends: Hospital"
+- path: /assets/gallery/ub7.jpg
+  title: "Urban Legends: Screen"
+- path: /assets/gallery/ub_wallpaper.jpg
+  title: "Urban Legends: Wallpaper"
+- path: /assets/gallery/WavePlotter.png
+  title: "Processing: Wave Plotter"

@@ -1,0 +1,22 @@
+- name: Machine Bear Softwares e Games LTDA
+  work: Game and Level Designer & Programmer
+  date: "Agosto de 2013 - Novembro de 2016"
+  text: "Minha experiência na Machine Bear iniciou-se na fundação da empresa, onde atuei no desenvolvimento de jogos e protótipos, desde a idealização até o desenvolvimento do produto final, mantendo sempre constante comunicação com os programadores e designers dos jogos."
+  func:
+    - name: Programador
+      desc: "Programação de jogos eletrônicos utilizando as Game Engines UDK(UnrealScript / Kismet), Stencyl (Programação Visual), Unreal Engine 4(C++ / Blue Prints)."
+      details:
+        - name: Jogabilidade
+          desc: Programação dos controles de personagens, físicas e interações.
+        - name: I.A.
+          desc: Desenvolvimento de inteligência artificial, incluindo com busca de caminhos, controle de comportamento, interação com personagens e cenário.
+        - name: I.U.
+          desc: Desenvolvimento de interface de usuário, incluindo menus, HUD e efeitos.
+        - name: Programação das Animações
+          desc: Definição das lógicas de controle das animações de personagens.
+        - name: Materials
+          desc: Aplicação de técnicas de computação gráfica para tratamento de texturas e pós-processamento.
+    - name: Designer de Jogos
+      desc: "Participação na criação de roteiros, backstory, mecânicas e regras de jogos."
+    - name: Level Designer
+      desc: "Construção dos cenários dos jogos, através de lógica procedural ou interface gráfica, definindo ambientação de forma condizente com a backstory, trabalhando ainda na iluminação, configuração de desafios, iterações, cinematics, e definições visuais, como pós-processamento."

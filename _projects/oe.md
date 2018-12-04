@@ -32,4 +32,4 @@ The low poly visual makes the game very clean and beautiful. As programmer and L
 - Also, check out the souds made by Teo Oliver for the game:
 	- <https://soundcloud.com/teo-oliver/sets/other-eyes>
 
-If you have interesting links to the game, tell me and I can update the page :)
+If you have interesting links to the game, <a href="/msg">tell me</a> and I can update the page :)

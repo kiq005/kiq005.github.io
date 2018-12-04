@@ -10,23 +10,23 @@ low2: /assets/optm/slide_btn/ub2.jpg
 low3: /assets/optm/slide_btn/ub3.jpg
 ---
 
-I worked on [Urban Legends](http://machinebear.com.br/urban-legends.html) as game and level designer and programmer, at [Machine Bear](http://machinebear.com)
+Trabalhei no projeto [Urban Legends](http://machinebear.com.br/urban-legends.html) como designer de jogo e níveis, e como programador, na [Machine Bear](http://machinebear.com).
 
-#### The Game
+#### O Jogo
 
-You play as P.J., a journalist, trapped in an abandoned hospital, looking for answers to the events of his past. To do so, he have to face [Jeff, the Killer](https://en.wikipedia.org/wiki/Creepypasta#Jeff_the_Killer). Hide in armchairs, bellow beds, run in the hospital, understand the methods of Jeff, plan ahead, and get ready to face endless mysteries.
+Você joga como P.J., um jornalista, preso num hospital abandonado, procurando por respostas aos eventos de seu passado. Para isso, ele deve se esconder, correr, resolver quebra-cabeças, e encarar [Jeff, the Killer](https://en.wikipedia.org/wiki/Creepypasta#Jeff_the_Killer).
 
-#### Reception
+#### Recepção
 
-The game reception was really good, it was in the [Steam Greenlight](http://steamcommunity.com/sharedfiles/filedetails/?id=252009436) and get [accepted in 19 days](http://steamcommunity.com/sharedfiles/filedetails/updates/252009436/1400113588). The game received support, and were able to be translated to English, French, German, Norwegian, Portuguese(Brazil), Romanian and Spanish.
+O jogo foi bem recebido, conseguindo ser aceito na [Steam Greenlight](http://steamcommunity.com/sharedfiles/filedetails/?id=252009436) em [apenas 19 dias](http://steamcommunity.com/sharedfiles/filedetails/updates/252009436/1400113588). O jogo recebeu grande suporte de vários fãs de creepypastas, o que permitiu traduzi-lo para Inglês, Frances, Alemão, Norueguês, Português, Romeno e Espanhol.
 
-#### Development
+#### Desenvolvimento
 
-The greatest challenge developing this game, was to create a complex and permissive scenario, and to create an artificial intelligence that was capable to explore the minimum spaces of the scenario. The game was made originally with [UDK 3](https://docs.unrealengine.com/udk/Three/WebHome.html), and then updated to [UE4(https://www.unrealengine.com/en-US/what-is-unreal-engine-4). Unfortunate, the UE4 version have not been launched.
+Foi um grande desafio desenvolver um ambiente de terror que permitisse que o tanto o jogador quando a IA explorasse todas as possibilidades do ambiente. Foi preciso reformular inteiramente o modelo de IA fornecido pela UDK 3, para obter uma IA precisa, capaz de dar ao jogador uma sensação de contínua vigilância, e atuar de forma precisa nas perseguições e busca pelo jogador. O jogo foi desenvolvido originalmente utilizando a [UDK 3](https://docs.unrealengine.com/udk/Three/WebHome.html) e então foi atualizado para a [UE4](https://www.unrealengine.com/en-US/what-is-unreal-engine-4).
 
-#### External
+#### Externo
 
-As the company closed, the game is no more available, but you can find information about the game in the following links:
+Como a companhia fechou, o jogo não está mais disponível, mas você pode encontrar informações sobre o game nos seguintes links:
 
 - IndieDB:
 	- <http://www.indiedb.com/games/urban-legends>
@@ -38,3 +38,5 @@ As the company closed, the game is no more available, but you can find informati
 	- <http://www.nerdmaldito.com/2015/02/urban-legends-jogo-brasileiro-de-jeff.html>
 - Game Reporter:
 	- <http://gamereporter.uol.com.br/urban-legends/>
+
+Se você têm outros links interessantes, <a href="/br/msg">me envie uma mensagem</a>, e eu poderei atualizar a página. 

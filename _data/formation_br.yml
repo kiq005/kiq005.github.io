@@ -1,0 +1,16 @@
+- name: UFABC - Universidade Federal do ABC
+  date: "2014-Atual"
+  course: "Bacharelado em Ciência e Tecnologia"
+  details: "Desenvolvimento de aptidões interdiciplinares, que visam a pesquisa e produção ciêntífica."
+- name: SAGA - Escola de Artes, Jogos e Animação
+  date: "2011-2013"
+  course: PlayGame
+  details: "Desenho, Escultura Tradicional, Modelagem 3D, Engine 3D, Maya Basic, Maya Low Poly, Character Low Poly Modelling, Subsurface Scattering Skin, Retopologia, Body Rigging, Skinning, Character Animation Basics, Character Animation Advanced, Facial Riggin and Controllers, Facial Animation."
+- name: Easycomp
+  date: "2010-2011"
+  course: Profissional em Web Design
+  details: "Fireworks MX, Flash MX, HTML, Dreamweaver MX, Web Design."
+- name: InfoTech
+  date: "2008-2010"
+  course: Profissional em Informática
+  details: "Sistema Operacional, Word, Planilha Eletrônica, Edição de Imagens, Ilustração Vetorial, Edição Web, Apresentação Multimídia, Montagem e Manutenção de Computadores."

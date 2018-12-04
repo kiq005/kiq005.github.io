@@ -1,8 +1,10 @@
 ---
 layout: default
 ---
-<div class="card bg2">
-  <h2 class="text-c2 padding-16">{{ page.title }}</h2>
+<div class="card mb-2">
+  <div class="card-header">
+    <h2>{{ page.title }}</h2>
+  </div>
   {% include elem/proj_buttons.html %}
 </div>
 
@@ -15,7 +17,8 @@ function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("filterDiv");
   // Define button as active
-  var btns = document.getElementsByClassName("cat_btn");
+  var btns = document.getElementsByClassName("nav-link");
+
   for (i = 0; i < btns.length; i++) {
     btns[i].className = btns[i].className.replace(" active", "");
   }
@@ -78,7 +81,7 @@ function showDivs(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" normal-opacity", "");
   }
-  
+
   x[slideIndex-1].style.opacity = 1;
   dots[slideIndex-1].className += " normal-opacity";
   // Carrega imagem se for preciso

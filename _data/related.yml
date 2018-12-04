@@ -1,21 +1,21 @@
 - name: games
   title: "Games"
-  addr: "/"
+  addr: "/games"
 - name: ue4
   title: "Unreal Engine 4"
-  addr: "/"
+  addr: "/category/ue4"
 - name: jams
   title: "Game Jams"
-  addr: "/"
+  addr: "/category/jam"
 - name: game_development
   title: "Game Development"
-  addr: "/"
+  addr: "/category/games"
 - name: cv
   title: "Curriculum"
-  addr: "/"
+  addr: "/cv"
 - name: projects
   title: "Game Development"
-  addr: "/"
+  addr: "/games"
 - name: update
   title: "Updates"
-  addr: "/"
+  addr: "/blog"

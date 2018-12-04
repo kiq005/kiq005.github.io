@@ -1,4 +1,11 @@
 ---
 layout: default
 ---
-<!--CONTENT --><div class="container card bg2"><h2 class="text-c2 padding-16">{{ page.title }}</h2>{{ content }}</div><!--END -->
+<div class="card {% if page.maximize %}maximize{% endif %}">
+	<div class="card-header">
+		<h2 class="card-title">{{ page.title }}</h2>
+	</div>
+	<div class="card-body">
+		{{ content }}
+	</div>
+</div>

@@ -1,0 +1,18 @@
+- name: BGS (Brazil Game Show)
+  date: Outubro de 2016
+  text: 'Apresentação dos protótipos de jogos: "Back to Home"(Machine Bear) e "Arron"(Frozen Dog).'
+- name: Global Game Jam
+  date: Janeiro de 2016
+  text: 'Participação como Programador e Game Designer do jogo "Cute Evil", desenvolvido com UE4 (Unreal Engine 4) durante maratona de 48 horas.'
+- name: LibGDX Jam
+  date: Dezembro de 2015
+  text: 'Participação como Programador do jogo "Lunar Killer", desenvolvido em Java utilizando LibGDX, durante maratona de 1 mês.'
+- name: Game Engine Fundamentals
+  date: Novembro de 2015
+  text: 'Curso de 16 horas, ministrado pelo Instituto TechSchool, de desenvolvimento de jogos utilizando Java e LibGDX.'
+- name: SPJam
+  date: Agosto de 2015
+  text: 'Participação como Programador e Game Designer do jogo "Other Eyes", desenvolvido com UE4 (Unreal Engine 4) durante maratona de 48 horas.'
+- name: Anime Friends
+  date: Julho de 2012
+  text: 'Apresentação do protótipo de jogo "The Last Native", desenvolvido com UDK (Unreal Development Kit 3) durante o curso de PlayGame na SAGA.'

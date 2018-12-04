@@ -1,5 +1,34 @@
 ---
-title: Contact
-layout: default
+title: Contato
+layout: simple
+lang: br
+maximize: false
 ---
-We can get in touch soon!
+<div>
+    <p>Me deixe uma mensagem, responderei assim que possível!
+</div>
+<form action="https://formspree.io/kaique_q@live.com" method="POST">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="fname">Nome</label>
+      <input type="text" class="form-control" name="name" id="fname" placeholder="Seu nome...">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="femail">E-mail</label>
+      <input type="email" class="form-control" name="_replyto" id="input-email" placeholder="Seu e-mail...">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="input-subj">Assunto</label>
+    <input type="subject" class="form-control" name="_subject" id="fsub" value="Olá!">
+  </div>
+  <div class="form-group">
+    <label for="fmsg">Mensagem</label>
+    <textarea class="form-control" id="fmsg" name="message" placeholder="Escreva algo..."></textarea>
+  </div>
+  <p>
+    Ao confirmar, você será enviado ao <a target="_blank" href="https://formspree.io/">FORMSPREE</a> onde deverá confirmar que não é um robô, antes de sua mensagem ser enviada.
+  </p>
+  <input type="submit" class="btn btn-primary" value="Enviar">
+  <input type="hidden" name="_next" value="{{ site.url }}/br/msg/thanks.html" />
+</form>

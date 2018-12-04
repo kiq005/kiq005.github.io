@@ -15,7 +15,7 @@ low3: /assets/optm/slide_btn/backtohome003.jpg
 #### The Game
 
 
-When I worked on Machine Bear, I was able to start a project that kept in mind the social impact, that is how **Back to Home** began. The game is about a blind girl, that list her guide dog, and start a journey to find him, while discovering an entirely new world, using her senses and mind to perceive the environment. As the game occurs in a children mind, elements of fantasy merge with the real world, and we see as the girl believes that the world is, based on her senses and life experience, that evolves, while she advances on her adventure.
+When I worked on Machine Bear, I was able to start a project that kept in mind the social impact, that is how **Back to Home** began. The game is about a blind girl, that lose her guide dog, and start a journey to find him, while discovering an entirely new world, using her senses and mind to perceive the environment. As the game occurs in a children mind, elements of fantasy merge with the real world, and we see as the girl believes that the world is, based on her senses and life experience, that evolves, while she advances on her adventure.
 
 #### Development
 
@@ -33,9 +33,11 @@ If you have been on the BGS 2016, you may remember the game on the Machine Bear'
 
 When I quit Machine Bear, in November 2016, they have given to me the rights over the game. I wish to get back developing the game, but first I am reworking some ideas of the game, and looking for a team of game developers to help on the project.
 
+#### External
+
 - Marvox Brasil, talking about the BGS 2016:
 	- <https://marvoxbrasil.wordpress.com/2016/09/10/marvoxbrasil-na-bgs-2016/>
 - Vão jogar: Back to Home:
 	- <https://vaojogar.com.br/escrito/brasil-game-show-2016-back-to-home>
 
-If you have interesting links to the game, tell me and I can update the page :)
+If you have interesting links to the game, <a href="/msg">tell me</a> and I can update the page :)

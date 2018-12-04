@@ -1,7 +1,7 @@
 ---
 title: Other Eyes
 short: oe
-category: jams
+category: jams machine
 img1: /assets/games/jam/OtherEyesMedio.jpg
 img2: /assets/games/jam/OtherEyes2.png
 img3: /assets/games/jam/OtherEyes3.png
@@ -11,25 +11,25 @@ low3: /assets/optm/slide_btn/OtherEyes3.jpg
 youtube: BCJjI8Dgz9M
 ---
 
-I was with Machine Bear’s Team and some friends developing the Other Eyes.
+Eu estive com o time da Machine Bear e alguns amigos desenvolvendo o jogo Other Eyes.
 
-#### [The Game](http://www.spjam.com.br/hackathon/othereyes)
+#### [O jogo](http://www.spjam.com.br/hackathon/othereyes)
 
-The Jam’s Theme was “Viagem”(Voyage, travel, trip, …). We decided to develop a game that covers various types of “trips”, that is: Go from point A to B, interdimensional travel, the vacation trip… Other Eyes is about a girl that lost her dog and must go in a interdimensional travel to find the pet! Travelling between a paradisiac world and a crystal made world, you must solve some puzzles to keep going.
+O tema da Jam foi "Viagem". Other Eyes cobre diferentes tipos de "viagens". O jogo é sobre uma garota, que perde seu cachorro, e deve viajar por diferentes dimensões, procurando por seu animal, enquanto resolve quebra-cabeças para continuar avançando no jogo.
 
 #### [SPJam - 2015](http://www.spjam.com.br/events/spjam2015)
 
-It was my first Game Jam. The time was very short, so we can’t work much in the game, but the experience teach us a lot about game development, expecially because we were able to see the work and talk with other developers within the event.
+Foi a minha primeira Game Jam. O tempo era curto, mas a experiência nos ensinou muito sobre desenvolvimento de jogos, especialmente por nos possibilitar de ver o trabalho e poder conversar com outros desenvolvedores dentro do evento.
 
-#### Development
+#### Desenvolvimento
 
-We develop the game with Unreal Engine 4, the low poly visual makes the game be very clean and beautiful! As programmer and level Designer, the main chalange was to create the 'two worlds' system, and the interaction between the two.
+O visual low poly deixa o jogo com um visual muito limpo e bonito. Como programador e designer de níveis, o principal desafio foi o de criar o sistema de dois mundos, e as interações entre eles.
 
-#### External
+#### Externo
 
-- Here you can know more about the game, and download it:
+- Neste link você pode saber mais sobre o jogo e baixá-lo:
 	- <http://www.spjam.com.br/hackathon/othereyes>
-- Also, check out the souds made by Teo Oliver for the game:
+- Você também pode chegar os sons feitos por Teo Oliver para o game:
 	- <https://soundcloud.com/teo-oliver/sets/other-eyes>
 
-If you have interesting links to the game, tell me and I can update the page :)
+Se você tem qualquer link interessante sobre o jogo, [me envie uma mensagem](/br/msg)</a>, e eu posso atualizar a página :)

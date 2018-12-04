@@ -1,6 +1,91 @@
 ---
-layout: simple
+layout: default
 title: CV
+lang: en
 ---
+<div class="card mb-2 maximize">
+	<div class="card-header">
+		<h2>Professional Experiences</h2>
+	</div>
+	<div class="card-body">
+		{%- for job in site.data.jobs -%}
+		<div class="padding-small">
+			<h4>{{ job.name }}</h4>
+			<p>
+				&#128197; <i class="text-c2">{{ job.date }}</i><br>
+				{{ job.text }}
+				<br><b>Responsibilities:</b>
+				<ul>
+				{%- for func in job.func -%}
+					<li>
+						<b>{{ func.name }}: </b>{{ func.desc }}
+						{%- if func.details -%}
+							<ul>
+								{%- for item in func.details -%}
+									<li>
+										<b>{{ item.name }}:</b>{{ item.desc }}
+									</li>
+								{%- endfor -%}
+							</ul>
+						{%- endif -%}
+					</li>
+				{%- endfor -%}
+				</ul>
+			</p>
+		</div>
+		{%- endfor -%}
+	</div>
+</div>
 
-<p>This page is under construction, hold on :)</p>
+<div class="card mb-2 maximize">
+	<div class="card-header">
+		<h2>Competences</h2>
+	</div>
+	<div class="card-body">
+		<ul>
+		{%- for cat in site.data.skills -%}
+			<li><b>{{ cat.name }}: </b>
+				{%- assign skills = cat.skills | map: "skill" -%}
+				{{ skills | join: ", " }}.
+			</li>
+		{%- endfor -%}
+		</ul>
+	</div>
+	<div class="card-footer">
+		For details, please check my <a href="/skills">skills</a> page.
+	</div>
+</div>
+
+<div class="card mb-2 maximize">
+	<div class="card-header">
+		<h2>Education</h2>
+	</div>
+		<div class="card-body">
+	{%- for course in site.data.formation -%}
+		<div class="padding-small">
+			<h4>{{ course.name }}</h4>
+			<p>
+				&#128197; <i class="text-c2">{{ course.date }}</i><br>
+				<b>{{ course.course }}</b> - {{ course.details }}
+			</p>
+		</div>
+	{%- endfor -%}
+	</div>
+</div>
+
+<div class="card mb-2 maximize">
+	<div class="card-header">
+		<h2>Events and Experiences</h2>
+	</div>
+	<div class="card-body">
+	{%- for event in site.data.events -%}
+		<div class="padding-small">
+			<h4>{{ event.name }}</h4>
+			<p>
+				&#128197; <i class="text-c2">{{ event.date }}</i><br>
+				{{ event.text }}
+			</p>
+		</div>
+	{%- endfor -%}
+	</div>
+</div>

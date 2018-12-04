@@ -1,21 +1,40 @@
 - name: Home
   name_br: Home
-  addr: 
+  addr:
+- name: Blog
+  name_br: Blog
+  addr: blog
+- startdropdown: true
 - name: Projects
   name_br: Projetos
+  addr: _
+  menu: proj
+- dropdowncontent: proj
+- name: Games & Programs
+  name_br: Jogos e Programas
   addr: games
 - name: Tools
   name_br: Ferramentas
   addr: tools
+- name: Gallery
+  name_br: Galeria
+  addr: gallery
+- enddropdown: true
+- startdropdown: true
 - name: About
   name_br: Sobre
+  menu: about
+- dropdowncontent: about
+- name: Objetives
+  name_br: Objetivos
   addr: about
-- name: Blog
-  name_br: Blog
-  addr: blog
+- name: Skills
+  name_br: Habilidades
+  addr: skills
 - name: CV
   name_br: CV
   addr: cv
+- enddropdown: true
 - name: Contact
   name_br: Contato
   addr: msg

@@ -1,7 +1,7 @@
 ---
 title: Back to Home
 short: bh
-category: personal
+category: machine personal
 img1: /assets/games/bh/backtohome000.png
 img2: /assets/games/bh/backtohome001.png
 img3: /assets/games/bh/backtohome003.png
@@ -10,33 +10,37 @@ low2: /assets/optm/slide_btn/backtohome001.jpg
 low3: /assets/optm/slide_btn/backtohome003.jpg
 ---
 
-(The images are from [Marvox Brasil](https://marvoxbrasil.wordpress.com/2016/09/10/marvoxbrasil-na-bgs-2016/))
+(As imagens são do site [Marvox Brasil](https://marvoxbrasil.wordpress.com/2016/09/10/marvoxbrasil-na-bgs-2016/))
 
-#### The Game
+#### O jogo
 
-When I still on Machine Bear, I give the idea to we develop a game with some social impact in mind, there was were **Back to Home** started. The game is about a blind girl, that lost her guide dog, and she have to discover the world around her, while she searchs for her dog. As the game happens in a "children mind", elements of fantasy merges with the reality, and the game ambientation is defined by the beliefs of the girl.
+Quando trabalhei na Machine Bear, tive a oportunidade de iniciar um projeto mantendo em mente o impacto social, foi assim que **Back to home** surgiu. O jogo é sobre uma garota cega, que perde seu cão-guia, e inicia uma jornada para encontrá-lo, enquanto descobre um mundo completamente novo para ela, usando seus sentidos e mente para perceber e criar o mundo ao seu redor. 
 
-#### Development
+Como o jogo acontece na mente de uma criança, elementos de fantasia se misturam com o mundo real, e nós vemos o mundo como a garota acredita que ele é, baseado em seus sentidos e experiência de vida, que evolui conforme ela avança em sua aventura.
 
-The game was developed with UE4, using only [blue prints](https://docs.unrealengine.com/latest/INT/Engine/Blueprints/). The main chalange as Programmer and Game Designer was to develp a system to allow the world generation, and keep the game running smooth, giving all that visual to the game.
+#### Desenvolvimento
+
+O jogo foi desenvolvido com a UE4, inteiramente com [blueprints](https://docs.unrealengine.com/latest/INT/Engine/Blueprints/). O design do jogo foca principalmente em mecânicas para dar ao jogador uma experiência de uma pessoa cega, ao mesmo tempo que mantém o jogo divertido e jogável; houve um grande desafio para conseguir equilibrar a experiência com a diversão.
+
+Do ponto de vista de programação, o maior desafio foi o de desenvolver o sistema de geração de mundo, com os efeitos para dar ao jogo um sentimento infantil, mas ao mesmo tempo manter tudo rodando suavemente, mesmo em computadores lentos.
 
 #### Social
 
-The initial idea of the game was to develop systems to allow blind people to play it, yet, making the game fun for everybody that plays the game. Also, donating some part of the revenues to organizations that helps blind people is another topic discussed when we started developing the game.
+A ideia inicial do projeto era a de permitir que pessoas cegas jogassem o jogo, através de um sistema de localização sonora, ainda sem modificar a experiência que um não-cego teria ao jogar o jogo. Ainda houve a ideia de reverter parte dos lucros para instituições que ajudam pessoas cegas.
 
 #### [BGS - 2016](http://www.brasilgameshow.com.br/site-novo-da-bgs-2016-no-ar/)
 
-If you were on the BGS 2016, you may remember the game on the Machine Bear stand, side-by-sude with [Aron: On Guardian Trials](https://brenooshiro.itch.io/aron), from [Frozen Dog Squad](https://www.facebook.com/FrozenDogSquad/). The games received a lot of players, and those who have given the name were able to download and play the game at home. With the tips we received and observation that we are able to peform at the event, we were able to update the game, and correct all the bugs that appeared.
+Se você esteve na BGS 2016, você deve lembrar do jogo na área indie, no stand da Machine Bear, ao lado do [Aron: On Guardian Trials](https://brenooshiro.itch.io/aron), jogo desenvolvido pelos parceiros da [Frozen Dog Squad's](https://www.facebook.com/FrozenDogSquad/). Ambos os jogos receberam diversos jogadores, e aqueles que deixaram o email na nossa lista tiveram a oportunidade de baixar e jogar o jogo em casa. O evento nos permitiu aprimorar muito o jogo, com todas as dicas que recebemos e observações que pudemos realizar.
 
-#### Future
+#### Futuro
 
-When I droped Machine Bear, at November 2016, they had given to me the rights over the game. There still the idea to keep developing the game, but just small advances have been made since them. I'm giving priority to other projects, but as I'm finishing them, the plan is to get back developing this game as soon as possible.
+Quando sai da Machine Bear, em Novembro de 2016, eles me deram os direitos sobre o jogo. Eu desejo voltar a desenvolver o jogo, mas primeiro estou reformulando algumas ideias, e buscando um time de desenvolvedores para ajudar no projeto.
 
-#### External
+#### Externo
 
-- Marvox Brasil, talking about the BGS 2016:
+- Marvox Brasil, falando sobre a BGS 2016:
 	- <https://marvoxbrasil.wordpress.com/2016/09/10/marvoxbrasil-na-bgs-2016/>
 - Vão jogar: Back to Home:
 	- <https://vaojogar.com.br/escrito/brasil-game-show-2016-back-to-home>
 
-If you have interesting links to the game, tell me and I can update the page :)
+Se você tem qualquer link interessante sobre o jogo, [me envie uma mensagem](/br/msg)</a>, e eu posso atualizar a página :)

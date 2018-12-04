@@ -1,0 +1,52 @@
+- name: "Linguagens de programação"
+  skills:
+  - skill: C/C++
+  - skill: Java
+  - skill: Python
+  - skill: HTML5
+  - skill: CSS3
+  - skill: JavaScript
+  - skill: NodeJS
+- name: "Design de jogos"
+  skills:
+  - skill: Roteiro
+  - skill: Mecânicas
+  - skill: Ludificação
+- name: "Frameworks de jogos"
+  skills:
+  - skill: LibGDX(Java)
+  - skill: PyGame(Python)
+- name: "Game Engines"
+  skills:
+  - skill: UDK
+  - skill: Unreal Engine 4
+- name: "Idiomas"
+  skills:
+  - skill:  Português
+    level: Nativo
+  - skill:  Inglês
+    level: Intermediário
+- name: "Outros:"
+  skills:
+  - skill: Android
+  - skill: Allegro
+  - skill: Unity3D
+  - skill: Godot Game Engine
+  - skill: Stencyl
+  - skill: Processing
+  - skill: Design Patterns
+  - skill: XML
+  - skill: JSON
+  - skill: YAML
+  - skill: Git
+  - skill: Windows
+  - skill: Linux
+  - skill: Ruby
+  - skill: ActionScript
+  - skill: MySQL
+  - skill: PostgreSQL
+  - skill: Autodesk Maya
+  - skill: Autodesk MotionBuilder
+  - skill: Blender
+  - skill: TopoGun
+  - skill: ZBrush

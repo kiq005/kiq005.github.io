@@ -8,12 +8,10 @@ related:
   - ue4
   - jams
   - game_development
-jquery: true
 proj: site.projects
 ---
 
 {% for proj in site.projects %}
   {% include elem/proj_page.html %}
 {% endfor %}
-
-<div style="clear: left;"></div>
+{%- include clear -%}

@@ -3,4 +3,89 @@ layout: default
 title: CV
 lang: br
 ---
-<p>Esta página está em construção :)</p>
+<div class="card mb-2 maximize">
+	<div class="card-header">
+		<h2>Experiência Profissional</h2>
+	</div>
+	<div class="card-body">
+		{%- for job in site.data.jobs_br -%}
+		<div class="padding-small">
+			<h4>{{ job.name }}</h4>
+			<p>
+				&#128197; <i class="text-c2">{{ job.date }}</i><br>
+				{{ job.text }}
+				<br><b>Responsabilidades:</b>
+				<ul>
+				{%- for func in job.func -%}
+					<li>
+						<b>{{ func.name }}: </b>{{ func.desc }}
+						{%- if func.details -%}
+							<ul>
+								{%- for item in func.details -%}
+									<li>
+										<b>{{ item.name }}:</b>{{ item.desc }}
+									</li>
+								{%- endfor -%}
+							</ul>
+						{%- endif -%}
+					</li>
+				{%- endfor -%}
+				</ul>
+			</p>
+		</div>
+		{%- endfor -%}
+	</div>
+</div>
+
+<div class="card mb-2 maximize">
+	<div class="card-header">
+		<h2>Habilidades e Competências</h2>
+	</div>
+	<div class="card-body">
+		<ul>
+		{%- for cat in site.data.skills_br -%}
+			<li><b>{{ cat.name }}: </b>
+				{%- assign skills = cat.skills | map: "skill" -%}
+				{{ skills | join: ", " }}.
+			</li>
+		{%- endfor -%}
+		</ul>
+	</div>
+	<div class="card-footer">
+		Para detalhes, consulte minha página de <a href="/br/skills">habilidades</a>.
+	</div>
+</div>
+
+<div class="card mb-2 maximize">
+	<div class="card-header">
+		<h2>Formação</h2>
+	</div>
+		<div class="card-body">
+	{%- for course in site.data.formation_br -%}
+		<div class="padding-small">
+			<h4>{{ course.name }}</h4>
+			<p>
+				&#128197; <i class="text-c2">{{ course.date }}</i><br>
+				<b>{{ course.course }}</b> - {{ course.details }}
+			</p>
+		</div>
+	{%- endfor -%}
+	</div>
+</div>
+
+<div class="card mb-2 maximize">
+	<div class="card-header">
+		<h2>Eventos e Experiências</h2>
+	</div>
+	<div class="card-body">
+	{%- for event in site.data.events_br -%}
+		<div class="padding-small">
+			<h4>{{ event.name }}</h4>
+			<p>
+				&#128197; <i class="text-c2">{{ event.date }}</i><br>
+				{{ event.text }}
+			</p>
+		</div>
+	{%- endfor -%}
+	</div>
+</div>

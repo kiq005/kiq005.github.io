@@ -32,4 +32,4 @@ The game was made with [UE4](https://www.unrealengine.com). The challenge on the
 - Also, check out the sounds made by Teo Oliver for the game:
 	- <https://soundcloud.com/teo-oliver/sets/cute-evil-global-game-jam>
 
-If you have interesting links to the game, tell me and I can update the page :)
+If you have interesting links to the game, <a href="/msg">tell me</a> and I can update the page :)

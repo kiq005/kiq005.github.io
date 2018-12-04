@@ -1,16 +1,22 @@
 ---
-layout: simple
+layout: default
+maximize: true
 ---
-<article>
-	<p class="text-c3">
-		<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublised">{% assign date_format = site.minima.date_format | default: "%b %d, %Y" %}{{ page.date | date: date_format }}
+<article class="card maximize">
+	<div class="card-header">
+		<h2 class="card-title">{{ page.title }}</h2>
+		<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublised" class="text-muted">{% assign date_format = site.minima.date_format | default: "%b %d, %Y" %}{{ page.date | date: date_format }}
 		</time>
-	</p>
-	<div class="content">
+	</div>
+	<div class="card-body">
 		{{ content }}
 	</div>
-	<hr>
-	<div class="container"><a href="{{ page.url | relative_url }}">Permanent link</a></div>
+	<div class="card-footer text-right">
+		{%- for cat in page.categories -%}
+    <a class="badge badge-pill badge-info mr-2" href="{{ site.url }}/category/{{ cat }}.html" title="{{ cat }}">{{ cat }}</a>
+    {%- endfor -%}
+		<a href="{{ page.url | relative_url }}" class="btn btn-primary btn-sm">Permanent link</a>
+	</div>
 </article>
 
 {% if page.youtube %}
@@ -29,4 +35,3 @@ layout: simple
 		}
 	}
 </script>
-

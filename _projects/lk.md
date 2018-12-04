@@ -34,4 +34,4 @@ It is not easy to develop a game with Game Engines, but developing a game using 
 - Source Code:
 	- <https://github.com/TechSchool-Team/LunarKiller>
 
-If you have interesting links to the game, tell me and I can update the page :)
+If you have interesting links to the game, <a href="/msg">tell me</a> and I can update the page :)

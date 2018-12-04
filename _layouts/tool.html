@@ -1,18 +1,46 @@
 ---
 layout: default
 ---
-{% assign arr = site.toollist | sort: 'priority' |where:"cat",page.cat %}
+{%- assign arr = site.toollist | sort: 'priority' |where:"cat",page.cat -%}
+{%- if page.lang == 'br' -%}
+	{%- assign text_content = "Índice:" -%}
+{%- else -%}
+	{%- assign text_content = "Content:" -%}
+{%- endif -%}
 
-<div class="container card bg2">
-	<h2 class="text-c2 padding-16">{{ page.title }}</h2>	
-	<p>{{ page.intro }}</p>
-	{% include elem/tools_list.html %}
-	{{ content }}
+<div class="card maximize mb-2">
+	<div class="card-header">
+		<h2 class="text-c2 padding-16">{{ page.title }}</h2>
+		<p class="card-text"><small class="text-muted">{{ page.intro }}</small></p>
+	</div>
+	<div class="card-body">
+		{% include elem/tools_list.html %}
+		{{ content }}
+	</div>
+</div>
+
+<div class="card mb-2">
+	<div class="card-header">
+		<h4 class="text-c2 padding-16">{{ text_content }}</h4>
+	</div>
+	<ul class="list-group list-group-flush">
+		{% for item in arr %}
+			{% if item.lang == page.lang %}
+			<a class="list-group-item btn btn-secondary text-dark" href="#{{ item.name }}" role="button">{{ item.name }}</a>
+			{% endif %}
+		{% endfor %}
+	</ul>
 </div>
 
 {% for item in arr %}
-<div class="container card bg2">
-  <h2 class="text-c2 padding-16">{{ item.name }}</h2>
-  {{ item.content }}
+{% if item.lang == page.lang %}
+<div class="card maximize mb-2">
+	<div class="card-header">
+		<h4 id="{{ item.name }}">{{ item.name }}</h4>
+	</div>
+	<div class="card-body">
+  	{{ item.content }}
+	</div>
 </div>
+{% endif %}
 {% endfor %}

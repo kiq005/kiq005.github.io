@@ -1,0 +1,16 @@
+- name: UFABC - Universidade Federal do ABC (Federal University of ABC)
+  date: "2014-current"
+  course: "<a href='http://ufabc.edu.br/en/bachelor-in-science-and-technology/'>Bachelor in Science and Technology (BC&T)</a>"
+  details: "Developing interdisciplinary skills, aiming scientific research and production."
+- name: SAGA - School of Arts, Games and Animations
+  date: "2011-2013"
+  course: PlayGame
+  details: "Draw, Traditional Sculpting, 3D Modelling, Engine 3D, Maya Basic, Maya Low Poly, Character Low Poly Modelling, Subsurface Scattering Skin, Retopology, Body Rigging, Skinning, Character Animation Basics, Character Animation Advanced, Facial Riggin and Controllers, Facial Animation."
+- name: Easycomp
+  date: "2010-2011"
+  course: Web Designer Professional
+  details: "Fireworks MX, Flash MX, HTML, Dreamweaver MX, Web Design."
+- name: InfoTech
+  date: "2008-2010"
+  course: Informatics Professional
+  details: "Operational Systems, Word, Excel, Image Editing, Vectorial Illustration, Web Editing, Power Point, Computer Maintenance."

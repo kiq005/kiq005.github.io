@@ -1,7 +1,7 @@
 ---
 title: Cute Evil
 short: ce
-category: jams
+category: jams machine
 img1: /assets/games/jam/cute1.png
 img2: /assets/games/jam/cute2.png
 img3: /assets/games/jam/cute3.png
@@ -11,25 +11,25 @@ low3: /assets/optm/slide_btn/cute3.jpg
 youtube: o0F-U-y1b3M
 ---
 
-I was with the [Machine Bear’s team and friends](https://globalgamejam.org/2016/jam-sites/machine-bear-jam) developing [Cute Evil](https://globalgamejam.org/2016/games/cute-evil) at [Global Game Jam](https://globalgamejam.org/news/ggj-2016-one-month-away).
+Eu estive com a [Equipe Machine Bear e amigos](https://globalgamejam.org/2016/jam-sites/machine-bear-jam) desenvolvendo o jogo [Cute Evil](https://globalgamejam.org/2016/games/cute-evil) na [Global Game Jam](https://globalgamejam.org/news/ggj-2016-one-month-away).
 
-#### The Game
+#### O Jogo
 
-It was difficult to think about some thing with [theme “Ritual”](https://globalgamejam.org/news/and-ggj16-theme), but we think about day-by-day routine, indigena costumes, religious rituals, magician’s rituals, and so on. After a great process of brain storming, we decided to do a hardcore game, with a simple history. You play as a girl that suffer some bully and decide to revenge this, by doing a ritual to cast an demon to help her. From this point is just blood and destruction in front of you!
+Foi difícil estabelecer uma ideia relacionada ao [tema “Ritual”](https://globalgamejam.org/news/and-ggj16-theme). O processo de brainstorming nos deu a ideia de trabalhar num jogo hardcore, com uma história simples e foco no gameplay. No jogo, você joga como uma garota que sofre bully na escola, e decide por se vingar, realizando um ritual e invocando um demônio para ajudá-la a mostrar toda sua força. Daquele momento em diante, é só sangue e destruição na sua frente.
 
 #### Global Game Jam - 2016
 
-The Jam had the theme 'Ritual', and we get the [diversifier](https://globalgamejam.org/news/ggj16-diversifiers-are) 'To infinity and beyond!'(and zero on the "Gandhi’s Game"). We worked on the game within the company building(Machine Bear), we were able to see the work of other professionals and enthusiasts of game development, there was 14 people working on the game, in the 48 hours of development, we could create a complex game, with good game play.
+Juntamente com o tema, a Jam possuía [diversificadores](https://globalgamejam.org/news/ggj16-diversifiers-are). Nós fomos classificados no diversificador "To infinity and beyond!"(Para o infinito e além), relacionado a geração procedural do mapa (e levamos um zero no quesito "Gandhi's Game"). No total, 14 pessoas trabalharam no jogo, num período de 48 horas.
 
-#### Development
+#### Desenvolvimento
 
-The game was made with [UE4](https://www.unrealengine.com). As programmer, the greatest chalange to the game was to develop the procedural map generator, and the AI to work in the map. Everything was realy simple becasuse of the time, but we could get a realy satifatory result, due the great coordenation that we was able to create within the group.
+O jogo foi feito com a [UE4](https://www.unrealengine.com). O desafio na programação do jogo foi desenvolver a geração procedural do game, e a inteligência artificial capaz de lidar com ele. Mesmo com o tempo curto, o jogo teve um resultado muito satisfatório, devido a grande coordenação que o time foi capaz de estabelecer.
 
-#### External
+#### Externo
 
-- Read about and download the game on the GGJ site:
+- Leia sobre e baixe o jogo no site da GGJ:
 	- <https://globalgamejam.org/2016/games/cute-evil>
-- Also, check out the sounds made by Teo Oliver for the game:
+- Não deixe de checar os sons que Teo Oliver fez para o jogo:
 	- <https://soundcloud.com/teo-oliver/sets/cute-evil-global-game-jam>
 
-If you have interesting links to the game, tell me and I can update the page :)
+Se você tem qualquer link interessante sobre o jogo, [me envie uma mensagem](/br/msg)</a>, e eu posso atualizar a página :)

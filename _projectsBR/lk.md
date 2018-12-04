@@ -11,27 +11,27 @@ low3: /assets/optm/slide_btn/lk3.jpg
 youtube: HcHE9Ra_POw
 ---
 
-I was with the TechSchool Team (I must thanks a lot TechSchool to get this team of champions together), that is composed by game development and 3D modeling students from TechSchool.
+Eu estive com o time da TechSchool (eu agradeço de mais a TechSchool por juntar esta equipe de campeões), que foi composta por programadores e modeladores 3D, alunos da escola.
 
-#### The Game
+#### O jogo
 
-The Jam’s theme was “Life in Space”. We decided to develop a game about a alien that arise in moon and was trying to destroy the Earth! And you must be the hero, in the more insane way, and kill the monster!
+O tema da Jam foi "Life in Space"(vida no espaço). O jogo é sobre um alien que aparece na lua, e que está tentando destruir a Terra. Você joga como o herói insano que vai para a lua matar o monstro e salvar nosso planeta.
 
 #### libGDX Jam - 2016
 
-The [libGDX Jam](https://itch.io/jam/libgdxjam) was a completely different experience. We had one month to develop an entire game from scratch, using [libGDX](https://libgdx.badlogicgames.com/), a framework to develop games in Java.
+A [LibGDX Jam](https://itch.io/jam/libgdxjam) foi uma experiência completamente diferente. Nós tivemos um mês para desenvolver um jogo completo a partir do zero, usando a [LibGDX](https://libgdx.badlogicgames.com/), um framework para desenvolver jogos em Java.
 
-#### Development
+#### Desenvolvimento
 
-Is not easy to develop a game with Game Engines, but develop a game without a Game Engine is harder. [The game](https://itch.io/jam/libgdxjam/rate/49383) was developed using only java and libGDX. I think that developing a game without game engines is something that all game developers should do at least once. The game ended up with some bugs, due the difficulties of developing a 3D game, with a very limited time, but the experience was awesome!
+Não é fácil desenvolver jogos com Game Engines, mas desenvolver um jogo utilizando somente uma linguagem de programação e um framework é ainda mais difícil. [Este jogo](https://itch.io/jam/libgdxjam/rate/49383) me mostrou que a experiência de desenvolver um jogo sem uma Game Engine deveria ser obrigatória para todos os desenvolvedores de jogos fazerem pelo menos uma vez.
 
-#### External
+#### Externo
 
 - Devblog:
 	- <http://lunarkiller.blogspot.com.br/>
-- Download the game:
+- Baixe o jogo:
 	- <https://lunarkiller.itch.io/lunar-killer>
-- Source Code:
+- Código fonte:
 	- <https://github.com/TechSchool-Team/LunarKiller>
 
-If you have interesting links to the game, tell me and I can update the page :)
+Se você tem qualquer link interessante sobre o jogo, [me envie uma mensagem](/br/msg)</a>, e eu posso atualizar a página :)

@@ -1,0 +1,57 @@
+---
+layout: default
+---
+<!--CONTENT -->
+<div class="card bg4 maximize">
+	<div class="container">
+		<h2 class="text-c4 padding-16">{{ page.title }}</h2>
+		{{ content }}
+	</div>
+	<div>
+		<div class="third">
+			{%- for idx in (0..site.data.gallery.size) -%}
+				{%- assign m = idx | modulo:3 -%}
+				{%- if m==0 -%}
+					{%- assign image = site.data.gallery[idx] -%}
+					<img class="left lazy" data-src="{{ image.path }}" data-alt="{{ image.title }}" style="width:100%" onclick="modal_image(this)">
+				{%- endif -%}
+			{%- endfor -%}
+		</div>
+		<div class="third">
+			{%- for idx in (0..site.data.gallery.size) -%}
+				{%- assign m = idx | modulo:3 -%}
+				{%- if m==1 -%}
+					{%- assign image = site.data.gallery[idx] -%}
+					<img class="left lazy" data-src="{{ image.path }}" data-alt="{{ image.title }}" style="width:100%" onclick="modal_image(this)">
+				{%- endif -%}
+			{%- endfor -%}
+		</div>
+		<div class="third">
+			{%- for idx in (0..site.data.gallery.size) -%}
+				{%- assign m = idx | modulo:3 -%}
+				{%- if m==2 -%}
+					{%- assign image = site.data.gallery[idx] -%}
+					<img class="left lazy" data-src="{{ image.path }}" data-alt="{{ image.title }}" style="width:100%" onclick="modal_image(this)">
+				{%- endif -%}
+			{%- endfor -%}
+		</div>
+		{%- include clear -%}
+	</div>
+</div>
+<!-- Modal for full size images on click-->
+  <div id="modal01" class="modal" onclick="this.style.display='none'">
+    <div class="modal-content center bg4 padding-32">
+      <img id="img01" >
+      <div class="container"><p id="caption"></p></div>
+    </div>
+  </div>
+<!--END -->
+<script>
+// Modal Image Gallery
+function modal_image(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>

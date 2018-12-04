@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<!--CONTENT -->
+<div class="card maximize">
+	<div class="card-header">
+		<h2>{{ page.title }}</h2>
+	</div>
+	<div class="card-body">
+		{{ content }}
+		{%- for idx in (0..site.data.gallery.size) -%}
+			{%- assign image = site.data.gallery[idx] -%}
+			<img class="w-25 lazy flex-no-grow" data-src="{{ image.path }}" data-alt="{{ image.title }}" onclick="modal_image(this)">
+		{%- endfor -%}
+	</div>
+	{%- include clear -%}
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="modal fade" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title" id="modal-label">Image preview</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+			</div>
+			<div class="modal-body d-flex justify-content-center">
+				<img id="img01" >
+			</div>
+			<div class="modal-footer">
+				<p id="caption"></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!--END -->
+<script>
+// Modal Image Gallery
+function modal_image(element) {
+  document.getElementById("img01").src = element.src;
+  //document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+	//$('#imagepreview').attr('src', element.src);
+	$('#modal01').modal('show');
+}
+</script>

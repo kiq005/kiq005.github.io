@@ -10,7 +10,7 @@ low2: /assets/optm/slide_btn/ub2.jpg
 low3: /assets/optm/slide_btn/ub3.jpg
 ---
 
-I worked on the [Urban Legends](http://machinebear.com.br/urban-legends.html) project as Game and Level Designer and Programmer, at Machine Bear](http://machinebear.com).
+I worked on the [Urban Legends](http://machinebear.com.br/urban-legends.html) project as Game and Level Designer and Programmer, at [Machine Bear](http://machinebear.com).
 
 #### The Game
 
@@ -39,3 +39,5 @@ As the company has closed, the game is no more available, but you can find infor
 	- <http://www.nerdmaldito.com/2015/02/urban-legends-jogo-brasileiro-de-jeff.html>
 - Game Reporter:
 	- <http://gamereporter.uol.com.br/urban-legends/>
+
+If you have interesting links to the game, <a href="/msg">tell me</a> and I can update the page :)

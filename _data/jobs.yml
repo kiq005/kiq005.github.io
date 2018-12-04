@@ -1,0 +1,22 @@
+- name: Machine Bear Softwares e Games LTDA
+  work: Game and Level Designer & Programmer
+  date: "August, 2013 - November, 2016"
+  text: "My working experience in Machine Bear begun at the company foundation. I worked on the development of games and prototypes, from the brainstorm to the end product, always keeping constant communication with all team members."
+  func:
+    - name: Programmer
+      desc: "Game programming with UDK(UnrealScript / Kismet), Stencyl (Programação Visual), Unreal Engine 4(C++ / Blue Prints)."
+      details:
+        - name: Gameplay
+          desc: Programming characters, physics and interactions.
+        - name: A.I.
+          desc: Development of artificial intelligence, including path search, behavior trees, interaction with user and ambient.
+        - name: U.I.
+          desc: User Interface development, including menus, HUD and FX.
+        - name: Animation Programming
+          desc: Programming the animation logics.
+        - name: Materials
+          desc: Using graphics computing techniques to treat textures and post-processing.
+    - name: Game Designer
+      desc: "Working with game scripting, backstory, game mechanics and rules."
+    - name: Level Designer
+      desc: "Scenario building, using a procedural content generation or graphical interfaces, creating the environment based on the game backstory, and also working with lighting, challenges creation, user interactions, cinematics and visual definitions."

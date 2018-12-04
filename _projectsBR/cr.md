@@ -10,19 +10,19 @@ low2: /assets/optm/slide_btn/chameleon_2.jpg
 low3: /assets/optm/slide_btn/chameleon_3.jpg
 ---
 
-I worked on [Chameleon Runner](https://play.google.com/store/apps/details?id=com.yourname.camaleaorunner) as programmer, at [Machine Bear](http://machinebear.com).
+Trabalhei no [Chameleon Runner](https://play.google.com/store/apps/details?id=com.yourname.camaleaorunner) como programador, na [Machine Bear](http://machinebear.com).
 
-#### The Game
+#### O Jogo
 
-Chameleon Runner is a mobile game, [available to Android](https://play.google.com/store/apps/details?id=com.yourname.camaleaorunner). You play as Leon, the Chameleon, trying to scape from a lab.
+Chameleon Runner é um jogo mobile, [disponível para Android](https://play.google.com/store/apps/details?id=com.yourname.camaleaorunner). Você joga como Leon, o Camaleão, tentando escapar de um laboratório.
 
-#### Development
+#### Desenvolvimento
 
-The game was made with [Stencyl](http://www.stencyl.com/), my job was to develop the procedural map generation.
+O jogo foi feito com a [Stencyl](http://www.stencyl.com/). Meu trabalho foi o de desenvolver a geração procedural do mapa.
 
-#### External
+#### Externo
 
-You can read more about the game in ModDB:
+Você pode ler mais sobre o jogo no ModDB:
 
 - ModDB:
 	- <http://www.moddb.com/games/chameleon-runner>
