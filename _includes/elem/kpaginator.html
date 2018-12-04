@@ -1,63 +1,73 @@
-{% assign posts_per_page = 6 %}
-{% assign arr = site.posts | where:"lang",page.lang %}
-{% assign ofs = page.num | times:posts_per_page %}
-{% assign total_pages = arr | size %}
-{% assign total_pages = total_pages | divided_by:posts_per_page %}
-{% assign previous_page = page.num %}
-{% assign next_page = page.num | plus: 2 %}
+{%- assign posts_per_page = 6 -%}
+{%- assign arr = site.posts | where:"lang",page.lang -%}
+{%- assign ofs = page.num | times:posts_per_page -%}
+{%- assign total_pages = arr | size -%}
+{%- assign total_pages = total_pages | divided_by:posts_per_page -%}
+{%- assign previous_page = page.num -%}
+{%- assign cur_page = page.num | plus: 1 -%}
+{%- assign next_page = page.num | plus: 2 -%}
 
-<div class="row-padding">
-  {% for post in arr limit:posts_per_page offset:ofs %}
-    <div class="full"><!-- Image and Title -->
-      <div class="bg2 card">
-      <div class="display-container">
-        {% if post.image %}<img src="{{post.image}}" width="100%" alt="Post image">{% endif %}
-        <div class="text-c1 container {% if post.image %}disp-bottom disp-left{% endif %}">
-          <h3><b><a class="shadow text-c4 no-dec" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></b></h3>
-        </div><!-- END Image and Title -->
-      </div>
-      <div class="container">
-        <h5 class="text-c2">{% if post.description %}{{ post.description }}, {% endif %}<span class="text-c3">{{ post.date | date: '%B %d, %Y' }}</span></h5>
-        {{ post.content | split:'<!--break-->' | first }}
-      </div>
-      <div class="post_footer">
-        {% if post.content contains '<!--break-->' %}
-        <a class="link-button border no-dec bg5 hover2" href="{{ post.url }}">READ MORE »</a>
-        {% endif %}
-        <hr>
-        {% for cat in post.categories %}
-        <a class="text-c4 tag bg4 hover1 no-dec margin-tiny" href="{{ site.url }}/category/{{ cat }}.html" title="{{ cat }}">{{ cat }}</a>
-        {% endfor %}
-      </div>
-      </div>
-    </div>
-  {% endfor %}
+{%- for post in arr limit:posts_per_page offset:ofs -%}
+<div class="card mb-2">
+  {%- if post.image -%}
+  <img class="card-img-top" src="{{post.image}}" alt="Post image">
+  {%- endif -%}
+  <div class="card-body">
+    <h3 class="card-title">
+      <a href="{{ post.url }}" title="{{ post.title }}">
+        {{ post.title }}
+      </a>
+    </h3>
+    <p class="card-text text-muted">
+      {% if post.description %}{{ post.description }}, {% endif %}{{ post.date | date: '%B %d, %Y' }}
+    </p>
+    <p class="card-text">
+      {{ post.content | split:'<!--break-->' | first }}
+    </p>
+  </div>
+  <div class="card-footer text-right">
+    {%- for cat in post.categories -%}
+    <a class="badge badge-pill badge-info mr-2" href="{{ site.url }}/category/{{ cat }}.html" title="{{ cat }}">{{ cat }}</a>
+    {%- endfor -%}
+    {%- if post.content contains '<!--break-->' -%}
+    <a class="btn btn-primary btn-sm" href="{{ post.url }}">READ MORE</a>
+    {%- endif -%}
+  </div>
 </div>
+{%- endfor -%}
 
 <!-- pagination -->
-{% if total_pages > 1 %}
-<div class="center bar padding-32"> 
-  <!-- Prev -->
-  {% unless previous_page <= 0 %}
-    {% if previous_page == 1 %}
-    <a class="link-button hover3" href="{% unless page.lang == 'en' %}{{ page.lang }}{% endunless %}/blog/">&laquo; Prev</a>
-    {% else %}
-    <a class="link-button hover3" href="{% unless page.lang == 'en' %}{{ page.lang }}{% endunless %}/blog/page{{ previous_page }}">&laquo; Prev</a>
-    {% endif %}
-  {% endunless %}
-  <!-- Numb -->
-  {% for page in (1..total_pages) %}
-    {% if page == page.pnum %}
-      <span class="link-button active bg4">{{ page }}</span>
-    {% elsif page == 1 %}
-      <a class="link-button hover3" href="{% unless page.lang == 'en' %}{{ page.lang }}{% endunless %}/blog/">{{ page }}</a>
-    {% else %}
-      <a class="link-button hover3" href="{% unless page.lang == 'en' %}{{ page.lang }}{% endunless %}/blog/page{{ page }}">{{ page }}</a>
-    {% endif %}
-  {% endfor %}
-  <!-- Next -->
-  {% unless next_page > total_pages %}
-    <a class="link-button hover3" href="{% unless page.lang == 'en' %}{{ page.lang }}{% endunless %}/blog/page{{ next_page }}">Next &raquo;</a>
-  {% endunless %}
-</div>
-{% endif %}
+{%- if total_pages > 1 -%}
+<nav aria-label="Page navigation">
+  <ul class="pagination justify-content-center">
+    {%- unless previous_page <= 0 -%}<!-- Prev -->
+      <li class="page-item">
+        {%- if previous_page == 1 -%}
+        <a class="page-link" href="{% unless page.lang == 'en' %}{{ page.lang }}{% endunless %}/blog/">
+        {%- else -%}
+        <a class="page-link" href="{% unless page.lang == 'en' %}{{ page.lang }}{% endunless %}/blog/page{{ previous_page }}">
+        {%- endif -%}
+          Previous
+        </a>
+      </li>
+    {%- endunless -%}
+    <!-- Numb -->
+    {%- for pg in (1..total_pages) -%}
+    <li class="page-item {% if pg == cur_page %}active{% endif %}">
+      {%- if pg == 1 -%}
+        <a class="page-link" href="{% unless page.lang == 'en' %}{{ page.lang }}{% endunless %}/blog/">{{ pg }}</a>
+      {%- else -%}
+        <a class="page-link" href="{% unless page.lang == 'en' %}{{ page.lang }}{% endunless %}/blog/page{{ pg }}">{{ pg }}</a>
+      {%- endif -%}
+    </li>
+    {%- endfor -%}
+    {%- unless next_page > total_pages -%}<!-- Next -->
+      <li class="page-item">
+        <a class="page-link" href="{% unless page.lang == 'en' %}{{ page.lang }}{% endunless %}/blog/page{{ next_page }}">
+          Next
+        </a>
+      </li>
+    {%- endunless -%}
+  </ul>
+</nav>
+{%- endif -%}

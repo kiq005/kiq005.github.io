@@ -1,1 +1,7 @@
-<div class="socialMedia center">{% for media in site.data.social %}<a href="{{ media.url }}" alt="{{ media.name }}" class="fa padding-small">{% include liquid/fa.html name=media.fa%}</a>{% endfor %}</div>
+<div class="socialMedia center">
+  {%- for media in site.data.social -%}
+    <a href="{{ media.url }}" alt="{{ media.name }}" class="fa btn btn-outline-primary p-1 m-1" role="button">
+      {% include liquid/fa.html name=media.fa %}
+    </a>
+  {%- endfor -%}
+</div>

@@ -146,6 +146,24 @@ input.invalid {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
+/* Tables */
+.jtable {
+  font-size: 18px;
+}
+.jtable th {
+  color: #222222;
+  background-color: #f1f1f1;
+}
+.jtable th:hover {
+  background-color: #222222;
+  color: #f1f1f1;
+}
+
+.jtable .nohover:hover {
+  color: #222222;
+  background-color: #f1f1f1;
+}
+
 /* Generics */
 .switch {
   position: absolute;

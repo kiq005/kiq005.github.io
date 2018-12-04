@@ -1,0 +1,26 @@
+{%- if page.lang == 'br' -%}
+	{%- assign text_category = "Categoria:" -%}
+	{%- assign text_more = "Mais ferramentas:" -%}
+	{%- assign text_back = "Voltar ás ferramentas" -%}
+{%- else -%}
+	{%- assign text_category = "Category:" -%}
+	{%- assign text_more = "More tools:" -%}
+	{%- assign text_back = "Back to Tools" -%}
+{%- endif -%}
+<ul class="card block left">
+	{%- if page.tools -%}
+	<li>{{ text_category }}</li>
+	{%- else -%}
+	<li>{{ text_more }}</li>
+	<li>
+		<a href="{% unless page.lang == 'en' %}/{{ page.lang }}{% endunless %}/tools">{{text_back}}</a>
+	</li>
+	{%- endif -%}
+	{%- for item in site.data.tools -%}
+		{%- unless page.cat == item.cat.name -%}
+		<li>
+			<a href="{% unless page.lang == 'en' %}/{{ page.lang }}{% endunless %}{{ item.url }}">{{ item.cat[page.lang] }}</a>
+		</li>
+		{%- endunless -%}
+	{%- endfor -%}
+</ul>

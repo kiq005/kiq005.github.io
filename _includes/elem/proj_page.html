@@ -1,22 +1,25 @@
 <div id="{{ proj.short }}" class="tabcontent">
-    <div class="card bg2">
-        <h2 class="padding-16">{{ proj.title }}</h2>
-        <div class="slide">
-            <img class="slide_img" src="/assets/img/ajax-loader.gif" data-src="{{ proj.img1 }}" alt="{{ proj.title }}">
-            <img class="slide_img" src="/assets/img/ajax-loader.gif" data-src="{{ proj.img2 }}" alt="{{ proj.title }}">
-            <img class="slide_img" src="/assets/img/ajax-loader.gif" data-src="{{ proj.img3 }}" alt="{{ proj.title }}">
-            <div class="slide_sel">
-                <img class="slide_btn low-opacity" onclick="currentDiv(1)" src="/assets/img/ajax-loader.gif" data-src="{{ proj.low1 }}" alt="{{ proj.title }} 1">
-                <img class="slide_btn low-opacity" onclick="currentDiv(2)" src="/assets/img/ajax-loader.gif" data-src="{{ proj.low2 }}" alt="{{ proj.title }} 2">
-                <img class="slide_btn low-opacity" onclick="currentDiv(3)" src="/assets/img/ajax-loader.gif" data-src="{{ proj.low3 }}" alt="{{ proj.title }} 3">
-            </div>
-        </div>
-        <div class="container">
-            {{ proj.content }} {% if proj.youtube %}
-            <div class="youtube" data-embed="{{ proj.youtube }}">
-                <div class="play-button"></div>
-            </div>
-            {% endif %}
-        </div>
+  <div class="card maximize">
+    <div class="card-header">
+      <h2>{{ proj.title }}</h2>
     </div>
+    <div class="slide">
+      <img class="slide_img" src="/assets/img/ajax-loader.gif" data-src="{{ proj.img1 }}" alt="{{ proj.title }}">
+      <img class="slide_img" src="/assets/img/ajax-loader.gif" data-src="{{ proj.img2 }}" alt="{{ proj.title }}">
+      <img class="slide_img" src="/assets/img/ajax-loader.gif" data-src="{{ proj.img3 }}" alt="{{ proj.title }}">
+      <div class="slide_sel">
+        <img class="slide_btn low-opacity" onclick="currentDiv(1)" src="/assets/img/ajax-loader.gif" data-src="{{ proj.low1 }}" alt="{{ proj.title }} 1">
+        <img class="slide_btn low-opacity" onclick="currentDiv(2)" src="/assets/img/ajax-loader.gif" data-src="{{ proj.low2 }}" alt="{{ proj.title }} 2">
+        <img class="slide_btn low-opacity" onclick="currentDiv(3)" src="/assets/img/ajax-loader.gif" data-src="{{ proj.low3 }}" alt="{{ proj.title }} 3">
+      </div>
+    </div>
+    <div class="card-body">
+      {{ proj.content }}
+      {%- if proj.youtube -%}
+      <div class="youtube" data-embed="{{ proj.youtube }}">
+        <div class="play-button"></div>
+      </div>
+      {%- endif -%}
+    </div>
+  </div>
 </div>

@@ -1,14 +1,9 @@
-<div>
-  <div class="display-container">
-      <a href="/{% unless page.lang == 'en' %}{{ page.lang }}{% endunless %}">
-  		  <img src="/assets/profile/kiq0_16.jpg" width="100%" id="profile_image" alt="Kaique de Queiroz">
-      </a>
-      <div class="text-c1 container disp-bottom disp-left">
-        <h2><a href="/about" class="text-c4 shadow no-dec">Kaique de Queiroz</a></h2>
-      </div>
-  </div>
-  <div class="container">
-    <p class="typewrite" data-period="2000" data-type='[ "Game Developer", "C++ Java Python", "Game Designer", "Coding HTML, CSS and JS", "Games from scratch", ":)" ]'>
-    <span class="wrap"></span></p>
-  </div>
+<a id="profile_image" href="/{% unless page.lang == 'en' %}{{ page.lang }}{% endunless %}" width="100%"></a>
+<div class="card-body d-flex align-items-end">
+  <h2 class="pt-10"><a href="/about" class="text-dark">
+    Kaique de Queiroz
+  </a></h2>
 </div>
+<p class="typewrite p-2 d-flex" data-period="2000" data-type='[ "Game Developer", "C++ Java Python", "Game Designer", "Coding HTML, CSS and JS", "Games from scratch", ":)" ]'>
+  <span class="wrap"></span>
+</p>

@@ -1,7 +1,32 @@
-<ul class="card block left">
-	{% if page.tools %}<li>{{ site.data.locales[page.lang].cat }}:</li>
-	{% else %}<li>{{ site.data.locales[page.lang].more_tools }}:</li>
-		<li><a href="{% unless page.lang == 'en' %}/{{ page.lang }}{% endunless %}/tools">{{ site.data.locales[page.lang].back_tools }}</a></li>
-	{% endif %}{% for item in site.data.tools %}
-		<li><a href="{% unless page.lang == 'en' %}/{{ page.lang }}{% endunless %}{{ item.url }}">{{ item.cat[page.lang] }}</a></li>{% endfor %}
-</ul>
+{%- if page.lang == 'br' -%}
+	{%- assign text_category = "Categoria:" -%}
+	{%- assign text_more = "Mais ferramentas:" -%}
+	{%- assign text_back = "Voltar ás ferramentas" -%}
+{%- else -%}
+	{%- assign text_category = "Category:" -%}
+	{%- assign text_more = "More tools:" -%}
+	{%- assign text_back = "Back to Tools" -%}
+{%- endif -%}
+<div class="card float-left mr-2" style="width: 12rem;">
+	<div class="card-header">
+	{%- if page.tools -%}
+	{{ text_category }}
+	{%- else -%}
+	{{ text_more }}
+	{%- endif -%}
+	</div>
+	<ul class="list-group list-group-flush">
+		{%- unless page.tools -%}
+		<!--li class="list-group-item"-->
+			<a class="list-group-item btn btn-secondary text-dark" href="{% unless page.lang == 'en' %}/{{ page.lang }}{% endunless %}/tools" role="button">{{text_back}}</a>
+		<!--/li-->
+		{%- endunless -%}
+	{%- for item in site.data.tools -%}
+		{%- unless page.cat == item.cat.name -%}
+		<!--li class="list-group-item"-->
+			<a class="list-group-item btn btn-secondary text-dark" href="{% unless page.lang == 'en' %}/{{ page.lang }}{% endunless %}{{ item.url }}" role="button">{{ item.cat[page.lang] }}</a>
+		<!--/li-->
+		{%- endunless -%}
+	{%- endfor -%}
+	</ul>
+</div>

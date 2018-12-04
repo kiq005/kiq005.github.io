@@ -1,0 +1,196 @@
+{% if page.lang == "br" %}
+	{%- assign text_vog = "Vogais" -%}
+	{%- assign text_mon = "Monógrafos" -%}
+	{%- assign text_dia = "Diacríticos" -%}
+	{%- assign text_dig = "Dígrafos" -%}
+{% else %}
+	{%- assign text_vog = "Vowels" -%}
+	{%- assign text_mon = "Monographs" -%}
+	{%- assign text_dia = "Diacritics" -%}
+	{%- assign text_dig = "Digraphs" -%}
+{% endif %}
+<div class="table-responsive">
+<table border="0" width="100%" class="table table-sm table-hover table-hover-cell">
+	<thead>
+		<tr>
+			<th class="nohover" colspan="2" rowspan="2">{{text_vog}}</th>
+			<th class="nohover" colspan="10">{{text_mon}}</th>
+			<th class="nohover" colspan="10">{{text_dia}}</th>
+		</tr>
+		<tr>
+			<th class="nohover">k</th>
+			<th class="nohover">s</th>
+			<th class="nohover">t</th>
+			<th class="nohover">n</th>
+			<th class="nohover">h</th>
+			<th class="nohover">m</th>
+			<th class="nohover">y</th>
+			<th class="nohover">r</th>
+			<th class="nohover">w</th>
+			<th class="nohover"></th>
+			<th class="nohover">g</th>
+			<th class="nohover">z</th>
+			<th class="nohover">d</th>
+			<th class="nohover">b</th>
+			<th class="nohover">p</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th class="nohover">a</th>
+			<th onclick="PlaySound('あ')">あ</th>
+			<th onclick="PlaySound('か')">か</th>
+			<th onclick="PlaySound('さ')">さ</th>
+			<th onclick="PlaySound('た')">た</th>
+			<th onclick="PlaySound('な')">な</th>
+			<th onclick="PlaySound('は')">は</th>
+			<th onclick="PlaySound('ま')">ま</th>
+			<th onclick="PlaySound('や')">や</th>
+			<th onclick="PlaySound('ら')">ら</th>
+			<th onclick="PlaySound('わ')">わ</th>
+			<th class="nohover"></th>
+			<th onclick="PlaySound('が')">が</th>
+			<th onclick="PlaySound('ざ')">ざ</th>
+			<th onclick="PlaySound('だ')">だ</th>
+			<th onclick="PlaySound('ば')">ば</th>
+			<th onclick="PlaySound('ぱ')">ぱ</th>
+		</tr>
+		<tr>
+			<th class="nohover">i</th>
+			<th onclick="PlaySound('い')">い</th>
+			<th onclick="PlaySound('き')">き</th>
+			<th onclick="PlaySound('し')">し</th>
+			<th onclick="PlaySound('ち')">ち</th>
+			<th onclick="PlaySound('に')">に</th>
+			<th onclick="PlaySound('ひ')">ひ</th>
+			<th onclick="PlaySound('み')">み</th>
+			<th class="nohover"></th>
+			<th onclick="PlaySound('り')">り</th>
+			<th class="nohover"></th>
+			<th class="nohover"></th>
+			<th onclick="PlaySound('ぎ')">ぎ</th>
+			<th onclick="PlaySound('じ')">じ</th>
+			<th onclick="PlaySound('ぢ')">ぢ</th>
+			<th onclick="PlaySound('び')">び</th>
+			<th onclick="PlaySound('ぴ')">ぴ</th>
+		</tr>
+		<tr>
+			<th class="nohover">u</th>
+			<th onclick="PlaySound('う')">う</th>
+			<th onclick="PlaySound('く')">く</th>
+			<th onclick="PlaySound('す')">す</th>
+			<th onclick="PlaySound('つ')">つ</th>
+			<th onclick="PlaySound('ぬ')">ぬ</th>
+			<th onclick="PlaySound('ふ')">ふ</th>
+			<th onclick="PlaySound('む')">む</th>
+			<th onclick="PlaySound('ゆ')">ゆ</th>
+			<th onclick="PlaySound('る')">る</th>
+			<th class="nohover"></th>
+			<th onclick="PlaySound('ん')">ん</th>
+			<th onclick="PlaySound('ぐ')">ぐ</th>
+			<th onclick="PlaySound('ず')">ず</th>
+			<th onclick="PlaySound('づ')">づ</th>
+			<th onclick="PlaySound('ぶ')">ぶ</th>
+			<th onclick="PlaySound('ぷ')">ぷ</th>
+		</tr>
+		<tr>
+			<th class="nohover">e</th>
+			<th onclick="PlaySound('え')">え</th>
+			<th onclick="PlaySound('け')">け</th>
+			<th onclick="PlaySound('せ')">せ</th>
+			<th onclick="PlaySound('て')">て</th>
+			<th onclick="PlaySound('ね')">ね</th>
+			<th onclick="PlaySound('へ')">へ</th>
+			<th onclick="PlaySound('め')">め</th>
+			<th class="nohover"></th>
+			<th onclick="PlaySound('れ')">れ</th>
+			<th class="nohover"></th>
+			<th class="nohover"></th>
+			<th onclick="PlaySound('げ')">げ</th>
+			<th onclick="PlaySound('ぜ')">ぜ</th>
+			<th onclick="PlaySound('で')">で</th>
+			<th onclick="PlaySound('べ')">べ</th>
+			<th onclick="PlaySound('ぺ')">ぺ</th>
+		</tr>
+		<tr>
+			<th class="nohover">o</th>
+			<th onclick="PlaySound('お')">お</th>
+			<th onclick="PlaySound('こ')">こ</th>
+			<th onclick="PlaySound('そ')">そ</th>
+			<th onclick="PlaySound('と')">と</th>
+			<th onclick="PlaySound('の')">の</th>
+			<th onclick="PlaySound('ほ')">ほ</th>
+			<th onclick="PlaySound('も')">も</th>
+			<th onclick="PlaySound('よ')">よ</th>
+			<th onclick="PlaySound('ろ')">ろ</th>
+			<th onclick="PlaySound('を')">を</th>
+			<th class="nohover"></th>
+			<th onclick="PlaySound('ご')">ご</th>
+			<th onclick="PlaySound('ぞ')">ぞ</th>
+			<th onclick="PlaySound('ど')">ど</th>
+			<th onclick="PlaySound('ぼ')">ぼ</th>
+			<th onclick="PlaySound('ぽ')">ぽ</th>
+		</tr>
+		<tr>
+			<th class="nohover" colspan="17">{{text_dig}}</th>
+		</tr>
+		<tr>
+			<th class="nohover">ya</th>
+			<th onclick="PlaySound('や')">ゃ</th>
+			<th onclick="PlaySound('きゃ')">きゃ</th>
+			<th onclick="PlaySound('しゃ')">しゃ</th>
+			<th onclick="PlaySound('ちゃ')">ちゃ</th>
+			<th onclick="PlaySound('にゃ')">にゃ</th>
+			<th onclick="PlaySound('ひゃ')">ひゃ</th>
+			<th onclick="PlaySound('みゃ')">みゃ</th>
+			<th class="nohover"></th>
+			<th onclick="PlaySound('りゃ')">りゃ</th>
+			<th class="nohover"></th>
+			<th class="nohover"></th>
+			<th onclick="PlaySound('ぎゃ')">ぎゃ</th>
+			<th onclick="PlaySound('じゃ')">じゃ</th>
+			<th onclick="PlaySound('ぢゃ')">ぢゃ</th>
+			<th onclick="PlaySound('びゃ')">びゃ</th>
+			<th onclick="PlaySound('ぴゃ')">ぴゃ</th>
+		</tr>
+		<tr>
+			<th class="nohover">yu</th>
+			<th onclick="PlaySound('ゆ')">ゅ</th>
+			<th onclick="PlaySound('きゅ')">きゅ</th>
+			<th onclick="PlaySound('しゅ')">しゅ</th>
+			<th onclick="PlaySound('ちゅ')">ちゅ</th>
+			<th onclick="PlaySound('にゅ')">にゅ</th>
+			<th onclick="PlaySound('ひゅ')">ひゅ</th>
+			<th onclick="PlaySound('みゅ')">みゅ</th>
+			<th class="nohover"></th>
+			<th onclick="PlaySound('りゅ')">りゅ</th>
+			<th class="nohover"></th>
+			<th class="nohover"></th>
+			<th onclick="PlaySound('ぎゅ')">ぎゅ</th>
+			<th onclick="PlaySound('じゅ')">じゅ</th>
+			<th onclick="PlaySound('ぢゅ')">ぢゅ</th>
+			<th onclick="PlaySound('びゅ')">びゅ</th>
+			<th onclick="PlaySound('ぴゅ')">ぴゅ</th>
+		</tr>
+		<tr>
+			<th class="nohover">yo</th>
+			<th onclick="PlaySound('よ')">ょ</th>
+			<th onclick="PlaySound('きょ')">きょ</th>
+			<th onclick="PlaySound('しょ')">しょ</th>
+			<th onclick="PlaySound('ちょ')">ちょ</th>
+			<th onclick="PlaySound('にょ')">にょ</th>
+			<th onclick="PlaySound('ひょ')">ひょ</th>
+			<th onclick="PlaySound('みょ')">みょ</th>
+			<th class="nohover"></th>
+			<th onclick="PlaySound('りょ')">りょ</th>
+			<th class="nohover"></th>
+			<th class="nohover"></th>
+			<th onclick="PlaySound('ぎょ')">ぎょ</th>
+			<th onclick="PlaySound('じょ')">じょ</th>
+			<th onclick="PlaySound('ぢょ')">ぢょ</th>
+			<th onclick="PlaySound('びょ')">びょ</th>
+			<th onclick="PlaySound('ぴょ')">ぴょ</th>
+		</tr>
+	</tbody>
+</table>
+</div>

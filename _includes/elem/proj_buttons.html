@@ -1,12 +1,27 @@
-<div class="bar">
-	{{ site.data.locales[page.lang].filter }}:
-	<button id="defaultClass" class="link-button padding-small bg4 hover2 active cat_btn" onclick="filterSelection('all')">{{ site.data.locales[page.lang].show_all }}</button>
+{% if page.lang == "br" %}
+	{%- assign text_all = "Todos" -%}
+{% else %}
+	{%- assign text_all = "All" -%}
+{% endif %}
+<ul class="nav nav-tabs">
+	<li class="nav-item">
+		<a id="defaultClass" class="nav-link active" href="#" onclick="filterSelection('all')">
+			{{ text_all }}
+		</a>
+	</li>
 	{% for cat in site.data.proj_filter %}
-	<button id="{{ cat.name }}" class="link-button padding-small bg4 hover2 cat_btn" onclick="filterSelection('{{ cat.name }}')">{{ cat[page.lang] }}</button>
+	<li class="nav-item">
+		<a id="{{ cat.name }}" class="nav-link" href="#" onclick="filterSelection('{{ cat.name }}')">
+			{{ cat[page.lang] }}
+		</a>
+	</li>
 	{% endfor %}
-</div>
-<div class="games-tab flex">
+</ul>
+<div class="d-flex flex-wrap">
 	{% for proj in site.projects %}
-		<div class="left flex-grow filterDiv {{ proj.category }}"><button class="link-button bg4 hover2 min-192 full tablinks" onclick="openGame(event, '{{ proj.short }}', {{ forloop.index0 }})" {% if forloop.index0 == 0 %} id="defaultOpen" {% endif %} >{{ proj.title }}</button></div>
-    {% endfor %}<div style="clear:both;"></div>
+		<button class="filterDiv {{ proj.category }} tablinks flex-fill flex-grow-1 btn btn-light rounded-0" style="min-width: 192px;" onclick="openGame(event, '{{ proj.short }}', {{ forloop.index0 }})" {% if forloop.index0 == 0 %} id="defaultOpen" {% endif %} >
+				{{ proj.title }}
+		</button>
+  {% endfor %}
+	{%- include clear -%}
 </div>

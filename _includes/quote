@@ -1,0 +1,4 @@
+<blockquote class="blockquote">
+  <p class="mb-0">{{ include.text }}</p>
+<footer class="blockquote-footer">{{ include.author }}{% if include.source %} in <cite title="Source Title">{{ include.source }}</cite>{% endif %}</footer>
+</blockquote>

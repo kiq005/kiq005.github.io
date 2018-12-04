@@ -1,0 +1,32 @@
+<!-- Top Navigation bar -->
+<nav class="navbar bar bg3" id="topnavbar">
+	<!-- LANGUAGES -->
+  {%- if page.lang != "en" -%}
+  <a class="link-button right hover1" href="/">EN</a>
+  {%- endif -%}
+  {%- if page.lang != "br" -%}
+  <a class="link-button right hover1" href="/br/">PT-BR</a>
+  {%- endif -%}
+  <!-- NAVIGATION -->
+   {%- for item in site.data.navitems -%}
+    {%- if item.startdropdown -%}
+    <div class="dropdown">
+    {%- elsif item.dropdowncontent -%}
+    <div class="dropdown-content sub_{{ item.dropdowncontent }} bg1">
+    {%- elsif item.enddropdown -%}
+    </div></div>
+    {%- elsif item.menu -%}
+      {%- if page.lang == "br" -%}
+      <a class="link-button hover1 hover_{{ item.menu }}" href="/br/{{ item.addr }}" >{{ item.name_br }} &#x25BC;</a>
+      {%- else -%}
+      <a class="link-button hover1 hover_{{ item.menu }}" href="/{{ item.addr }}" >{{ item.name }} &#x25BC;</a>
+      {%- endif -%}
+    {%- else -%}
+      {%- if page.lang == "br" -%}
+      <a class="link-button hover1" href="/br/{{ item.addr }}" >{{ item.name_br }}</a>
+      {%- else -%}
+      <a class="link-button hover1" href="/{{ item.addr }}" >{{ item.name }}</a>
+      {%- endif -%}
+    {%- endif -%}
+   {%- endfor -%}
+</nav>

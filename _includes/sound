@@ -1,0 +1,1 @@
+<a onclick="PlaySound('{{ include.name | default: include.sound }}')">{{ include.sound }} &#x1f50a;</a>

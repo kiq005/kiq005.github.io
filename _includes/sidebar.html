@@ -1,22 +1,34 @@
-<aside class="third collapse"><!-- Side Navigation bar -->
-  <div class="bg2 text-c2 card">
-    {% include elem/card.html %}
+<!-- Side Navigation Bar -->
+<aside class="d-none d-sm-block">
+  <div class="card mb-2 d-flex">
+    {%- include elem/card.html -%}
   </div>
-  <div class="bg2 text-c1 card">
-    <div class="padding text-c2"><b>Social:</b></div>
-    <div class="padding-bottom">
-      {% include elem/social.html %}
+  <div class="card mb-2">
+    <h6 class="card-header font-weight-bold">Social:</h6>
+    <div class="card-body">
+      {%- include elem/social.html -%}
     </div>
   </div>
-  <div class="bg2 text-c2 card">
-    <div class="padding"><b>You may like:</b></div>
-    {% if page.related %}{% for item in page.related %}{% for c in site.data.related %}{% if c.name == item %}<a class="link-button full hover1" href="{{ c.addr }}">{{ c.title }}</a>{% endif %}{% endfor %}{% endfor %}
-    {% else %}
-    <a class="link-button full hover1" href="#">Artificial Inteligence</a>
-    <a class="link-button full hover1" href="#">Unreal Engine</a>
-    <a class="link-button full hover1" href="#">Events</a>
-    <a class="link-button full hover1" href="#">Games Developed</a>
-    {% endif %}
-    <p>The site is under development :)</p>
+  <div class="card mb-2">
+    <h6 class="card-header font-weight-bold">You may like:</h6>
+    <ul class="list-group list-group-flush">
+    {%- if page.related -%}
+      {%- for item in page.related -%}
+        {%- for c in site.data.related -%}
+          {%- if c.name == item -%}
+            <a class="list-group-item btn btn-outline-primary" href="{{ c.addr }}">{{ c.title }}</a>
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endfor -%}
+    {%- else -%}
+    <a class="list-group-item btn btn-outline-primary" href="/tools">Tools</a>
+    <a class="list-group-item btn btn-outline-primary" href="/category/ue4">Unreal Engine</a>
+    <a class="list-group-item btn btn-outline-primary" href="/category/jam">Jams</a>
+    <a class="list-group-item btn btn-outline-primary" href="/games">Games</a>
+    {%- endif -%}
+    </ul>
+    <div class="card-footer text-muted">
+      The site is under development :)
+    </div>
   </div>
-</aside><!-- END Side Navigation bar -->
+</aside>

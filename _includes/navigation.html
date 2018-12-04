@@ -1,19 +1,55 @@
 <!-- Top Navigation bar -->
-<nav class="bar bg3">
-  <!-- SIDEBAR BUTTON -->
-  {% if page.lang == "br" %}
-	 <!-- LANGUAGES -->
-	 <a class="link-button right hover1" href="/">EN</a>
-	 <!-- NAVIGATION -->
-	 {% for item in site.data.navitems %}
-	 <a class="link-button hover1" href="/br/{{ item.addr }}" >{{ item.name_br }}</a>
-	 {% endfor %}
-  {% else %}
-	 <!-- LANGUAGES -->
-	 <a class="link-button right hover1" href="/br">PT-BR</a>
-	 <!-- NAVIGATION -->
-	 {% for item in site.data.navitems %}
-	 <a class="link-button hover1" href="/{{ item.addr }}" >{{ item.name }}</a>
-	 {% endfor %}
-  {% endif %}
+{%- assign is_drop = false -%}
+<nav class="w-100">
+  <ul class="nav bg-light">
+    <!-- Languages -->
+    {%- if page.lang != "en" -%}
+    <li class="nav-item order-last">
+      <a href="/" class="nav-link">EN</a>
+    </li>
+    {%- endif -%}
+    {%- if page.lang != "br" -%}
+    <li class="nav-item order-last">
+      <a href="/br/" class="nav-link">PT-BR</a>
+    </li>
+    {%- endif -%}
+    <!-- Naviagation -->
+    {%- for item in site.data.navitems -%}
+      {%- if item.startdropdown -%}
+      {%- assign is_drop = true -%}
+      <li class="nav-item dropdown">
+      {%- elsif item.dropdowncontent -%}
+      <div class="dropdown-menu">
+      {%- elsif item.enddropdown -%}
+      {%- assign is_drop = false -%}
+      </div></li>
+      {%- elsif item.menu -%}
+        {%- if page.lang == "br" -%}
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/br/{{ item.addr }}" role="button" aria-haspopup="true" aria-expanded="false">{{ item.name_br }}</a>
+        {%- else -%}
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/{{ item.addr }}" role="button" aria-haspopup="true" aria-expanded="false">{{ item.name }}</a>
+        {%- endif -%}
+      {%- else -%}
+        {%- if page.lang == "br" -%}
+          {% if is_drop == true %}
+            <a class="dropdown-item" href="/br/{{ item.addr }}" >{{ item.name_br }}</a>
+          {% else %}
+            <li class="nav-item">
+              <a class="nav-link" href="/br/{{ item.addr }}" >{{ item.name_br }}</a>
+            </li>
+          {% endif %}
+        {%- else -%}
+          {% if is_drop == true %}
+            <a class="dropdown-item" href="/{{ item.addr }}" >{{ item.name }}</a>
+          {% else %}
+            <li class="nav-item">
+              <a class="nav-link" href="/{{ item.addr }}" >{{ item.name }}</a>
+            </li>
+          {% endif %}
+        {%- endif -%}
+      {%- endif -%}
+     {%- endfor -%}
+     <!-- Spacing -->
+     <li class="flex-grow-1"></li>
+    </ul>
 </nav>

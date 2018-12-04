@@ -1,4 +1,3 @@
-<script>
 /* Random Image */
 function displayRandomImage(){
   var holder = document.getElementById("profile_image");
@@ -51,30 +50,34 @@ function createMaximizeButtons(){
     let btn_menu, card, btn_max, btn_med, btn_min;
     card = elements[i];
     btn_menu = document.createElement("DIV");
+    spc = document.createElement("SPAN");
     btn_max = document.createElement("BUTTON");
     btn_med = document.createElement("BUTTON");
     btn_min = document.createElement("BUTTON");
     // Div
-    btn_menu.className = "flex disp-top disp-right";
+    //btn_menu.className = "flex disp-top disp-right";
+    btn_menu.className = "d-flex position-absolute w-100";
+    spc.className = "block w-100";
     // Maximize Btn
-    btn_max.innerHTML = "O";
-    btn_max.className = "link-button bg1 hover1";
+    btn_max.innerHTML = "+";
+    btn_max.className = "btn btn-outline-secondary btn-sm";
     btn_max.style.display = "block";
     // Minimize Btn
     btn_min.innerHTML = "X";
-    btn_min.className = "link-button bg1 hover1";
+    btn_min.className = "btn btn-outline-secondary btn-sm";
     btn_min.style.display = "none";
     // Medium Btn
-    btn_med.innerHTML = "+";
-    btn_med.className = "link-button bg1 hover1";
-    btn_med.style.display = "blcok";
+    btn_med.innerHTML = "M";
+    btn_med.className = "btn btn-outline-secondary btn-sm";
+    btn_med.style.display = "block";
     // Functions
     btn_max.onclick = function(){maximize(btn_max, btn_med, btn_min, card);}
     btn_med.onclick = function(){medium(btn_max, btn_med, btn_min, card);}
     btn_min.onclick = function(){restore(btn_max, btn_med, btn_min, card);}
     // Add the buttons
+    btn_menu.appendChild(spc);
     btn_menu.appendChild(btn_max);
-    btn_menu.appendChild(btn_med);
+    //btn_menu.appendChild(btn_med);
     btn_menu.appendChild(btn_min);
     card.appendChild(btn_menu);
   };
@@ -84,27 +87,34 @@ function maximize( max, med, min, el ){
   max.style.display = "none";
   med.style.display = "block";
   min.style.display = "block";
-  el.className = el.className.replace(" medium-size-pane", "");
-  el.className += " maximized-pane";
-  document.getElementsByTagName("BODY")[0].style.overflow = "hidden";
+  el.style.overflow = "scroll";
+  el.className += " fixed-top w-100 h-100";
+  //el.className = el.className.replace(" medium-size-pane", "");
+  //el.className += " maximized-pane";
+  document.getElementsByTagName("BODY")[0].style.overflowY = "hidden";
 }
 
 function medium( max, med, min, el ){
   max.style.display = "block";
   med.style.display = "none";
   min.style.display = "block";
-  el.className = el.className.replace(" maximized-pane", "");
-  el.className += " medium-size-pane";
-  document.getElementsByTagName("BODY")[0].style.overflow = "auto";
+  el.style.overflow = "auto";
+  //el.className = el.className.replace(" maximized-pane", "");
+  //el.className += " medium-size-pane";
+  //el.className += " ";
+  document.getElementsByTagName("BODY")[0].style.overflowY = "auto";
 }
 
 function restore( max, med, min, el ){
+  $(el).modal('hide');
   max.style.display = "block";
   med.style.display = "block";
   min.style.display = "none";
-  el.className = el.className.replace(" medium-size-pane", "");
-  el.className = el.className.replace(" maximized-pane", "");
-  document.getElementsByTagName("BODY")[0].style.overflow = "auto";
+  el.style.overflow = "auto";
+  el.className = el.className.replace(" fixed-top w-100 h-100", "");
+  //el.className = el.className.replace(" medium-size-pane", "");
+  //el.className = el.className.replace(" maximized-pane", "");
+  document.getElementsByTagName("BODY")[0].style.overflowY = "auto";
 }
 
 /* Máquina de Escrever */
@@ -162,4 +172,3 @@ window.onload = function() {
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff; animation: blink .75s infinite;} @keyframes blink{ to{border-right: 0.08em solid #fff0;}}";
   document.body.appendChild(css);
 };
-</script>

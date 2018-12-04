@@ -1,0 +1,28 @@
+{%- capture include_to_scssify -%}
+	{%- include sass/main.sass -%}
+{%- endcapture -%}
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Kaique de Queiroz">
+	<title>{{ page.title }} | Kaique de Queiroz | Game Developer. </title>
+	<!-- includes -->
+	{%- if page.jquery -%}
+	{%- endif -%}
+	<script>{% include /scripts/pre_load.js %}</script>
+	<!-- styles -->
+
+	{%- if page.hascode -%}
+	<!--link href="/css/syntax.css" rel="stylesheet"-->
+	{%- endif -%}
+	<style>
+		/* Generic */
+		{%- include css/main.css -%}
+		{{ include_to_scssify | scssify }}
+
+		{%- if page.css -%}
+			{%- include css/{{ page.css }} -%}
+		{%- endif -%}
+	</style>
+</head>
