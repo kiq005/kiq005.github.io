@@ -32,10 +32,6 @@ A ideia inicial do projeto era a de permitir que pessoas cegas jogassem o jogo, 
 
 Se você esteve na BGS 2016, você deve lembrar do jogo na área indie, no stand da Machine Bear, ao lado do [Aron: On Guardian Trials](https://brenooshiro.itch.io/aron), jogo desenvolvido pelos parceiros da [Frozen Dog Squad's](https://www.facebook.com/FrozenDogSquad/). Ambos os jogos receberam diversos jogadores, e aqueles que deixaram o email na nossa lista tiveram a oportunidade de baixar e jogar o jogo em casa. O evento nos permitiu aprimorar muito o jogo, com todas as dicas que recebemos e observações que pudemos realizar.
 
-#### Futuro
-
-Quando sai da Machine Bear, em Novembro de 2016, eles me deram os direitos sobre o jogo. Eu desejo voltar a desenvolver o jogo, mas primeiro estou reformulando algumas ideias, e buscando um time de desenvolvedores para ajudar no projeto.
-
 #### Externo
 
 - Marvox Brasil, falando sobre a BGS 2016:

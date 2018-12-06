@@ -29,10 +29,6 @@ The starting idea of the project was to allow blind people to play the game, yet
 
 If you have been on the BGS 2016, you may remember the game on the Machine Bear's stand, side-by-side with [Frozen Dog Squad's](https://www.facebook.com/FrozenDogSquad/) [Aron: On Guardian Trials](https://brenooshiro.itch.io/aron). Both games have received a lot of players, and those who signed up the list were able to download and play the game at home. We were able to improve the game, with all the tips we received and the observations that we performed during the event. 
 
-#### Future
-
-When I quit Machine Bear, in November 2016, they have given to me the rights over the game. I wish to get back developing the game, but first I am reworking some ideas of the game, and looking for a team of game developers to help on the project.
-
 #### External
 
 - Marvox Brasil, talking about the BGS 2016:
