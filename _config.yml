@@ -18,9 +18,6 @@ collections:
   projectsBR:
   toollist:
 
-# Includes
-include: .nojekyll
-
 # Plugins
 plugins:
   - jekyll-sitemap
