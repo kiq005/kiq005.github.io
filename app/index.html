@@ -1,0 +1,25 @@
+---
+layout: default
+title: Apps
+lang: en
+related:
+  - games
+  - projects
+  - cv
+  - jams
+---
+{%- for app in site.data.apps -%}
+<div class="card mb-2 maximize">
+	<div class="card-header">
+		<h2>{{ app.name }}</h2>
+	</div>
+  <div class="card-body text-center">
+    <p class="card-text">{{ app.desc }}</p>
+  </div>
+  <div class="card-footer text-right">
+    {%- for btn in app.buttons -%}
+      <a href="{{btn.link}}" {% if btn.target %} target={{btn.target}} {% endif %} class="{{btn.class}}">{{btn.name}}</a>
+    {%- endfor -%}
+  </div>
+</div>
+{%- endfor -%}

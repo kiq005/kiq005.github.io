@@ -66,7 +66,14 @@ lang: br
 			<h4>{{ course.name }}</h4>
 			<p>
 				&#128197; <i class="text-c2">{{ course.date }}</i><br>
-				<b>{{ course.course }}</b> - {{ course.details }}
+				{%- if course.link -%}
+				<a href="{{ course.link }}" target="_blank">
+				{%- endif -%}
+				<b>{{ course.course }}</b>
+				{%- if course.link -%}
+				</a>
+				{%- endif -%}
+				 - {{ course.details }}
 			</p>
 		</div>
 	{%- endfor -%}

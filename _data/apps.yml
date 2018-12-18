@@ -1,0 +1,11 @@
+- name: "Movie Recommendation"
+  desc: "A text analysis based technique for movie recommendation."
+  img:  ""
+  buttons:
+    - name: Source
+      link: https://github.com/kiq005/movie-recommendation
+      target: _blank
+      class: btn btn-secondary mr-2
+    - name: Movie Recommendation
+      link: /app/movie-recommendation
+      class: btn btn-primary

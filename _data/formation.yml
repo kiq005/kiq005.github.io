@@ -1,6 +1,7 @@
 - name: UFABC - Universidade Federal do ABC (Federal University of ABC)
   date: "2014-current"
-  course: "<a href='http://ufabc.edu.br/en/bachelor-in-science-and-technology/'>Bachelor in Science and Technology (BC&T)</a>"
+  link: http://ufabc.edu.br/en/bachelor-in-science-and-technology/
+  course: "Bachelor in Science and Technology (BC&T)"
   details: "Developing interdisciplinary skills, aiming scientific research and production."
 - name: SAGA - School of Arts, Games and Animations
   date: "2011-2013"

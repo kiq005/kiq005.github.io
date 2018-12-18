@@ -1,0 +1,52 @@
+---
+layout: app
+title: Apps
+lang: en
+---
+
+<div class="card text-white bg-transparent m-5">
+  <nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <a class="nav-item nav-link flex-grow-1 active" id="nav-sim-tab" data-toggle="tab" href="#nav-sim" role="tab" aria-controls="nav-sim" aria-selected="true">Movie Similarity</a>
+      <a class="nav-item nav-link flex-grow-1" id="nav-rec-tab" data-toggle="tab" href="#nav-rec" role="tab" aria-controls="nav-rec" aria-selected="false">Movie Recommendation</a>
+    </div>
+  </nav>
+  <div class="tab-content bg-dark p-2" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-sim" role="tabpanel" aria-labelledby="nav-sim-tab">
+      <!-- Movie Similarity -->
+      <div class="row">
+        <div class="col-sm-4">
+          <input type="text" class="form-control w-100 mb-2" placeholder="Search..." id="movie-search">
+          <div class="position-relative w-100">
+            <div class="d-none" id="movie-loader">
+              <div class="loader"></div>
+            </div>
+            <div id="movie-list-sim" class="mb-2">
+              <ul class="list-group">
+                <li class="list-group-item list-group-item-dark d-flex align-items-center">Loading...</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div class="card border-info mb-2" id="movie_holder_a">
+            <div class="card-header text-dark">Movie A</div>
+            <div class="card-body text-info">Please, select Movie A</div>
+          </div>
+          <div class="card border-info mb-2" id="movie_holder_b">
+            <div class="card-header text-dark">Movie B</div>
+            <div class="card-body text-info">Please, select Movie B</div>
+          </div>
+          <div id="movie_data"></div>
+        </div>
+      </div>
+      <!-- END: Movie Similarity -->
+    </div>
+    <div class="tab-pane fade" id="nav-rec" role="tabpanel" aria-labelledby="nav-rec-tab">
+      <button type="button" class="btn" id="btn_auth" style="color:#01d277;background-color:#081c24">Allow access to TMDb</button>
+    </div>
+  </div>
+  <div class="card-footer text-muted">
+    Data and images provided by <a href="https://www.themoviedb.org/" target="_blank">The Movie DB</a>.
+  </div>
+</div>
